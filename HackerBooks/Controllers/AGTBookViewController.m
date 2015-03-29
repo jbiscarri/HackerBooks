@@ -109,8 +109,6 @@
 #pragma mark - Actions
 - (IBAction)switchValueChanged:(id)sender {
     self.book.isFavorite = self.switchFavorite.on;
-    NSDictionary *userInfo = @{NOT_BOOK_KEY:self.book};
-    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_FAVORITE_FOR_BOOK_CHANGED object:self userInfo:userInfo];
 }
 
 - (IBAction)showPDF:(id)sender {
