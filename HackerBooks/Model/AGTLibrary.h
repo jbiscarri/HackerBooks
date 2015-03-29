@@ -23,5 +23,7 @@
 - (NSUInteger)booksCountForTag:(NSString*)tag;
 - (NSArray*)booksForTag:(NSString*)tag;
 - (AGTBook*)bookForTag:(NSString*)tag atIndex:(NSUInteger)index;
+- (NSArray*)allBooksOrdered;
+- (void)updateFavorites;
 
 @end

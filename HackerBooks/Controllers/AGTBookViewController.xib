@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AGTBookViewController">
+            <connections>
+                <outlet property="bookAuthors" destination="ppQ-zN-k9M" id="cRa-2g-XcD"/>
+                <outlet property="bookImageView" destination="V3L-Sh-yv2" id="5bR-u9-qBf"/>
+                <outlet property="bookTags" destination="3Ee-Tl-0Ma" id="War-p3-xBY"/>
+                <outlet property="bookTitle" destination="VEF-HV-gcz" id="hMy-Gx-b02"/>
+                <outlet property="switchFavorite" destination="Ta4-g6-4oi" id="PXZ-r5-gkc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhF-o2-e31">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jv4-pi-g4G" customClass="UIScrollView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ta4-g6-4oi">
+                            <rect key="frame" x="510" y="36" width="51" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="0Z0-DX-bye"/>
+                                <constraint firstAttribute="height" constant="31" id="thp-MA-edw"/>
+                            </constraints>
+                            <color key="onTintColor" red="0.94901960780000005" green="0.58039215690000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="thumbTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="switchValueChanged:" destination="-1" eventType="valueChanged" id="laa-hz-xik"/>
+                            </connections>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark as favorite" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DN-d3-thr">
+                            <rect key="frame" x="385" y="41" width="108" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="15"/>
+                            <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frU-Fa-y3b">
+                            <rect key="frame" x="39" y="81" width="522" height="325"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V3L-Sh-yv2">
+                            <rect key="frame" x="40" y="82" width="520" height="323"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="323" id="ody-Bc-U1f"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEF-HV-gcz">
+                            <rect key="frame" x="40" y="413" width="520" height="26"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="19"/>
+                            <color key="textColor" red="1" green="0.35686274509999999" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppQ-zN-k9M">
+                            <rect key="frame" x="40" y="439" width="520" height="22"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
+                            <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ee-Tl-0Ma">
+                            <rect key="frame" x="40" y="461" width="520" height="15"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="IowanOldStyle-Italic" family="Iowan Old Style" pointSize="16"/>
+                            <color key="textColor" red="0.49803921569999998" green="0.61176470589999998" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sh2-HU-Bzm">
+                            <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="d2R-ux-349"/>
+                            </constraints>
+                            <items>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="D2e-q9-EiN"/>
+                                <barButtonItem title="Show pdf" id="SMQ-y4-WNu">
+                                    <connections>
+                                        <action selector="showPDF:" destination="-1" id="xBQ-NL-2rj"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="Cwp-YM-8zJ"/>
+                            </items>
+                        </toolbar>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="V3L-Sh-yv2" secondAttribute="trailing" constant="40" id="1n2-qP-Ige"/>
+                        <constraint firstAttribute="trailing" secondItem="sh2-HU-Bzm" secondAttribute="trailing" id="529-jT-Rvb"/>
+                        <constraint firstItem="frU-Fa-y3b" firstAttribute="centerY" secondItem="V3L-Sh-yv2" secondAttribute="centerY" id="7N0-6f-cPR"/>
+                        <constraint firstItem="V3L-Sh-yv2" firstAttribute="top" secondItem="9DN-d3-thr" secondAttribute="bottom" constant="20" id="9HI-TW-YuX"/>
+                        <constraint firstItem="frU-Fa-y3b" firstAttribute="width" secondItem="V3L-Sh-yv2" secondAttribute="width" constant="2" id="9kt-Up-O1K"/>
+                        <constraint firstItem="V3L-Sh-yv2" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" constant="40" id="CZ2-8h-QOq"/>
+                        <constraint firstAttribute="trailing" secondItem="ppQ-zN-k9M" secondAttribute="trailing" constant="40" id="EE5-aX-NAt"/>
+                        <constraint firstItem="Ta4-g6-4oi" firstAttribute="top" secondItem="jv4-pi-g4G" secondAttribute="top" constant="36" id="Gkf-kt-GQW"/>
+                        <constraint firstAttribute="trailing" secondItem="VEF-HV-gcz" secondAttribute="trailing" constant="40" id="INz-Jo-Eeo"/>
+                        <constraint firstItem="frU-Fa-y3b" firstAttribute="height" secondItem="V3L-Sh-yv2" secondAttribute="height" constant="2" id="LyT-yz-cad"/>
+                        <constraint firstAttribute="trailing" secondItem="3Ee-Tl-0Ma" secondAttribute="trailing" constant="40" id="MCZ-hZ-qxx"/>
+                        <constraint firstItem="V3L-Sh-yv2" firstAttribute="top" secondItem="Ta4-g6-4oi" secondAttribute="bottom" constant="15" id="RvC-IG-qoj"/>
+                        <constraint firstItem="VEF-HV-gcz" firstAttribute="top" secondItem="V3L-Sh-yv2" secondAttribute="bottom" constant="8" id="SLW-WH-aKF"/>
+                        <constraint firstItem="VEF-HV-gcz" firstAttribute="top" secondItem="V3L-Sh-yv2" secondAttribute="bottom" constant="8" id="Sxg-oj-mnG"/>
+                        <constraint firstItem="ppQ-zN-k9M" firstAttribute="top" secondItem="VEF-HV-gcz" secondAttribute="bottom" id="UcH-gd-U1x"/>
+                        <constraint firstAttribute="bottom" secondItem="sh2-HU-Bzm" secondAttribute="bottom" id="W38-ws-yxp"/>
+                        <constraint firstItem="3Ee-Tl-0Ma" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" constant="40" id="WSQ-Zb-lqz"/>
+                        <constraint firstItem="Ta4-g6-4oi" firstAttribute="leading" secondItem="9DN-d3-thr" secondAttribute="trailing" constant="17" id="abG-V2-z6b"/>
+                        <constraint firstItem="3Ee-Tl-0Ma" firstAttribute="top" secondItem="ppQ-zN-k9M" secondAttribute="bottom" id="dzH-JA-T9G"/>
+                        <constraint firstItem="VEF-HV-gcz" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" constant="40" id="eVs-FL-hpZ"/>
+                        <constraint firstItem="V3L-Sh-yv2" firstAttribute="top" secondItem="Ta4-g6-4oi" secondAttribute="bottom" constant="15" id="hCH-3o-0fK"/>
+                        <constraint firstItem="sh2-HU-Bzm" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" id="k2i-tR-qe7"/>
+                        <constraint firstItem="9DN-d3-thr" firstAttribute="top" secondItem="jv4-pi-g4G" secondAttribute="top" constant="41" id="lYA-Td-jJR"/>
+                        <constraint firstItem="ppQ-zN-k9M" firstAttribute="top" secondItem="VEF-HV-gcz" secondAttribute="bottom" id="mys-yZ-W9v"/>
+                        <constraint firstItem="3Ee-Tl-0Ma" firstAttribute="top" secondItem="ppQ-zN-k9M" secondAttribute="bottom" id="owj-Ij-3Et"/>
+                        <constraint firstAttribute="trailing" secondItem="Ta4-g6-4oi" secondAttribute="trailing" constant="41" id="pdY-lJ-hZd"/>
+                        <constraint firstItem="sh2-HU-Bzm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3Ee-Tl-0Ma" secondAttribute="bottom" constant="80" id="rOa-92-cph"/>
+                        <constraint firstItem="ppQ-zN-k9M" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" constant="40" id="vhM-e2-Rgq"/>
+                        <constraint firstItem="frU-Fa-y3b" firstAttribute="centerX" secondItem="V3L-Sh-yv2" secondAttribute="centerX" id="wP1-kR-C5L"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="9HI-TW-YuX"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jv4-pi-g4G" firstAttribute="top" secondItem="fhF-o2-e31" secondAttribute="bottom" constant="-600" id="0z0-7l-Ns7"/>
+                <constraint firstItem="sh2-HU-Bzm" firstAttribute="bottom" secondItem="fhF-o2-e31" secondAttribute="bottom" id="3h0-MK-pTx"/>
+                <constraint firstAttribute="trailing" secondItem="fhF-o2-e31" secondAttribute="trailing" id="687-hQ-YIr"/>
+                <constraint firstItem="fhF-o2-e31" firstAttribute="width" secondItem="ppQ-zN-k9M" secondAttribute="width" constant="80" id="7SE-Kk-EPH"/>
+                <constraint firstItem="fhF-o2-e31" firstAttribute="width" secondItem="3Ee-Tl-0Ma" secondAttribute="width" constant="80" id="FpO-hp-7jk"/>
+                <constraint firstItem="VEF-HV-gcz" firstAttribute="width" secondItem="fhF-o2-e31" secondAttribute="width" constant="-80" id="GVV-Vj-Bet"/>
+                <constraint firstItem="fhF-o2-e31" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O8L-Jc-lXM"/>
+                <constraint firstItem="fhF-o2-e31" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c5p-ij-U5N"/>
+                <constraint firstItem="jv4-pi-g4G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c8T-vX-Syb"/>
+                <constraint firstItem="jv4-pi-g4G" firstAttribute="bottom" secondItem="fhF-o2-e31" secondAttribute="bottom" id="dig-3G-mIs"/>
+                <constraint firstItem="jv4-pi-g4G" firstAttribute="leading" secondItem="fhF-o2-e31" secondAttribute="trailing" constant="-600" id="gfN-6k-kdO"/>
+                <constraint firstItem="jv4-pi-g4G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gwJ-py-79C"/>
+                <constraint firstAttribute="bottom" secondItem="fhF-o2-e31" secondAttribute="bottom" id="kad-1I-0XP"/>
+                <constraint firstAttribute="trailing" secondItem="jv4-pi-g4G" secondAttribute="trailing" id="n8K-Dm-QG2"/>
+                <constraint firstAttribute="bottom" secondItem="jv4-pi-g4G" secondAttribute="bottom" id="rkn-AK-Z50"/>
+                <constraint firstItem="jv4-pi-g4G" firstAttribute="top" secondItem="fhF-o2-e31" secondAttribute="top" id="sE8-dk-cDo"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0z0-7l-Ns7"/>
+                    <exclude reference="dig-3G-mIs"/>
+                    <exclude reference="gfN-6k-kdO"/>
+                    <exclude reference="sE8-dk-cDo"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

@@ -15,6 +15,13 @@
 
 //Auxiliar
 #define FAVORITE_KEY @"My Favorites"
+#define NOT_BOOK_KEY @"NotificationBookKey"
+
+
+//NOTIFICATIONS
+#define NOTIFICATION_SELECTED_BOOK_CHANGED @"selectedBookChanged"
+#define NOTIFICATION_FAVORITE_FOR_BOOK_CHANGED @"favoriteChanged"
+
 
 
 

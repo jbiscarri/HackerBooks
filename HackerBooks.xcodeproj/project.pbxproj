@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B82C049E1AC747E600E3D07F /* AGTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B82C049C1AC747E600E3D07F /* AGTTableViewCell.m */; };
+		B82C049F1AC747E600E3D07F /* AGTTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82C049D1AC747E600E3D07F /* AGTTableViewCell.xib */; };
+		B82C04A21AC749E800E3D07F /* blue_ball.png in Resources */ = {isa = PBXBuildFile; fileRef = B82C04A11AC749E800E3D07F /* blue_ball.png */; };
+		B82C04A61AC7508A00E3D07F /* AGTBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82C04A41AC7508A00E3D07F /* AGTBookViewController.m */; };
+		B82C04A71AC7508A00E3D07F /* AGTBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82C04A51AC7508A00E3D07F /* AGTBookViewController.xib */; };
+		B82C04AB1AC76FEC00E3D07F /* AGTSimplePDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82C04A91AC76FEC00E3D07F /* AGTSimplePDFViewController.m */; };
+		B82C04AC1AC76FEC00E3D07F /* AGTSimplePDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82C04AA1AC76FEC00E3D07F /* AGTSimplePDFViewController.xib */; };
 		B8B842381AC6AE4E0076A0D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842371AC6AE4E0076A0D1 /* main.m */; };
 		B8B8423B1AC6AE4E0076A0D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B8423A1AC6AE4E0076A0D1 /* AppDelegate.m */; };
 		B8B842431AC6AE4E0076A0D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B842421AC6AE4E0076A0D1 /* Images.xcassets */; };
@@ -15,7 +22,7 @@
 		B8B8425D1AC6B10C0076A0D1 /* AGTBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B8425C1AC6B10C0076A0D1 /* AGTBook.m */; };
 		B8B842611AC6B49D0076A0D1 /* AGTLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842601AC6B49D0076A0D1 /* AGTLibrary.m */; };
 		B8B842671AC6CB500076A0D1 /* AGTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842651AC6CB500076A0D1 /* AGTableViewController.m */; };
-		B8B842681AC6CB500076A0D1 /* AGTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B842661AC6CB500076A0D1 /* AGTableViewController.xib */; };
+		B8B842681AC6CB500076A0D1 /* AGTTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B842661AC6CB500076A0D1 /* AGTTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B82C049B1AC747E600E3D07F /* AGTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTTableViewCell.h; path = Controllers/AGTTableViewCell.h; sourceTree = "<group>"; };
+		B82C049C1AC747E600E3D07F /* AGTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTTableViewCell.m; path = Controllers/AGTTableViewCell.m; sourceTree = "<group>"; };
+		B82C049D1AC747E600E3D07F /* AGTTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AGTTableViewCell.xib; path = Controllers/AGTTableViewCell.xib; sourceTree = "<group>"; };
+		B82C04A11AC749E800E3D07F /* blue_ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_ball.png; sourceTree = "<group>"; };
+		B82C04A31AC7508A00E3D07F /* AGTBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTBookViewController.h; path = Controllers/AGTBookViewController.h; sourceTree = "<group>"; };
+		B82C04A41AC7508A00E3D07F /* AGTBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTBookViewController.m; path = Controllers/AGTBookViewController.m; sourceTree = "<group>"; };
+		B82C04A51AC7508A00E3D07F /* AGTBookViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AGTBookViewController.xib; path = Controllers/AGTBookViewController.xib; sourceTree = "<group>"; };
+		B82C04A81AC76FEC00E3D07F /* AGTSimplePDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTSimplePDFViewController.h; path = Controllers/AGTSimplePDFViewController.h; sourceTree = "<group>"; };
+		B82C04A91AC76FEC00E3D07F /* AGTSimplePDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTSimplePDFViewController.m; path = Controllers/AGTSimplePDFViewController.m; sourceTree = "<group>"; };
+		B82C04AA1AC76FEC00E3D07F /* AGTSimplePDFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AGTSimplePDFViewController.xib; path = Controllers/AGTSimplePDFViewController.xib; sourceTree = "<group>"; };
 		B8B842321AC6AE4E0076A0D1 /* HackerBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B842361AC6AE4E0076A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B842371AC6AE4E0076A0D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,9 +61,9 @@
 		B8B8425F1AC6B49D0076A0D1 /* AGTLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTLibrary.h; path = Model/AGTLibrary.h; sourceTree = "<group>"; };
 		B8B842601AC6B49D0076A0D1 /* AGTLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTLibrary.m; path = Model/AGTLibrary.m; sourceTree = "<group>"; };
 		B8B842621AC6B6510076A0D1 /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
-		B8B842641AC6CB500076A0D1 /* AGTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTableViewController.h; path = Controllers/AGTableViewController.h; sourceTree = "<group>"; };
+		B8B842641AC6CB500076A0D1 /* AGTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTTableViewController.h; path = Controllers/AGTTableViewController.h; sourceTree = "<group>"; };
 		B8B842651AC6CB500076A0D1 /* AGTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTableViewController.m; path = Controllers/AGTableViewController.m; sourceTree = "<group>"; };
-		B8B842661AC6CB500076A0D1 /* AGTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AGTableViewController.xib; path = Controllers/AGTableViewController.xib; sourceTree = "<group>"; };
+		B8B842661AC6CB500076A0D1 /* AGTTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AGTTableViewController.xib; path = Controllers/AGTTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B82C04A01AC749E800E3D07F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B82C04A11AC749E800E3D07F /* blue_ball.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B8B842291AC6AE4E0076A0D1 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +119,7 @@
 				B8B842421AC6AE4E0076A0D1 /* Images.xcassets */,
 				B8B842441AC6AE4E0076A0D1 /* LaunchScreen.xib */,
 				B8B8425E1AC6B1110076A0D1 /* Model */,
+				B82C04A01AC749E800E3D07F /* Resources */,
 				B8B842351AC6AE4E0076A0D1 /* Supporting Files */,
 				B8B842621AC6B6510076A0D1 /* Settings.h */,
 			);
@@ -140,9 +166,18 @@
 		B8B842631AC6CB050076A0D1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B8B842641AC6CB500076A0D1 /* AGTableViewController.h */,
+				B8B842641AC6CB500076A0D1 /* AGTTableViewController.h */,
 				B8B842651AC6CB500076A0D1 /* AGTableViewController.m */,
-				B8B842661AC6CB500076A0D1 /* AGTableViewController.xib */,
+				B8B842661AC6CB500076A0D1 /* AGTTableViewController.xib */,
+				B82C049B1AC747E600E3D07F /* AGTTableViewCell.h */,
+				B82C049C1AC747E600E3D07F /* AGTTableViewCell.m */,
+				B82C049D1AC747E600E3D07F /* AGTTableViewCell.xib */,
+				B82C04A31AC7508A00E3D07F /* AGTBookViewController.h */,
+				B82C04A41AC7508A00E3D07F /* AGTBookViewController.m */,
+				B82C04A51AC7508A00E3D07F /* AGTBookViewController.xib */,
+				B82C04A81AC76FEC00E3D07F /* AGTSimplePDFViewController.h */,
+				B82C04A91AC76FEC00E3D07F /* AGTSimplePDFViewController.m */,
+				B82C04AA1AC76FEC00E3D07F /* AGTSimplePDFViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -227,8 +262,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82C04AC1AC76FEC00E3D07F /* AGTSimplePDFViewController.xib in Resources */,
+				B82C049F1AC747E600E3D07F /* AGTTableViewCell.xib in Resources */,
 				B8B842461AC6AE4E0076A0D1 /* LaunchScreen.xib in Resources */,
-				B8B842681AC6CB500076A0D1 /* AGTableViewController.xib in Resources */,
+				B82C04A71AC7508A00E3D07F /* AGTBookViewController.xib in Resources */,
+				B8B842681AC6CB500076A0D1 /* AGTTableViewController.xib in Resources */,
+				B82C04A21AC749E800E3D07F /* blue_ball.png in Resources */,
 				B8B842431AC6AE4E0076A0D1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,10 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82C049E1AC747E600E3D07F /* AGTTableViewCell.m in Sources */,
+				B82C04A61AC7508A00E3D07F /* AGTBookViewController.m in Sources */,
 				B8B842611AC6B49D0076A0D1 /* AGTLibrary.m in Sources */,
 				B8B8423B1AC6AE4E0076A0D1 /* AppDelegate.m in Sources */,
 				B8B842671AC6CB500076A0D1 /* AGTableViewController.m in Sources */,
 				B8B8425D1AC6B10C0076A0D1 /* AGTBook.m in Sources */,
+				B82C04AB1AC76FEC00E3D07F /* AGTSimplePDFViewController.m in Sources */,
 				B8B842381AC6AE4E0076A0D1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +413,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -382,6 +425,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -438,6 +482,7 @@
 				B8B842571AC6AE4E0076A0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8B842581AC6AE4E0076A0D1 /* Build configuration list for PBXNativeTarget "HackerBooksTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +491,7 @@
 				B8B8425A1AC6AE4E0076A0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

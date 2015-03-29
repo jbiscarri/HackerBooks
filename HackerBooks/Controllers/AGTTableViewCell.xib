@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AGTBookCellId" rowHeight="80" id="KGk-i7-Jjw" customClass="AGTTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="702" placeholderIntrinsicHeight="21" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7i-TC-gaC">
+                        <rect key="frame" x="20" y="7" width="702" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="4Oc-Hw-vd6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="19"/>
+                        <color key="textColor" red="1" green="0.35686274509999999" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h3-Nz-QTo">
+                        <rect key="frame" x="20" y="28" width="702" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giO-X4-gzC">
+                        <rect key="frame" x="20" y="49" width="702" height="21"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="IowanOldStyle-Italic" family="Iowan Old Style" pointSize="16"/>
+                        <color key="textColor" red="0.49803921569999998" green="0.61176470589999998" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue_ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="ybi-Bu-xBa">
+                        <rect key="frame" x="730" y="24" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="QX2-xo-jwa"/>
+                            <constraint firstAttribute="height" constant="30" id="lny-mg-h65"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3h3-Nz-QTo" firstAttribute="top" secondItem="N7i-TC-gaC" secondAttribute="bottom" id="Asy-L9-0by"/>
+                    <constraint firstItem="3h3-Nz-QTo" firstAttribute="width" secondItem="giO-X4-gzC" secondAttribute="width" id="Bqe-cx-Jo4"/>
+                    <constraint firstItem="N7i-TC-gaC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="CXW-dX-TJo"/>
+                    <constraint firstItem="giO-X4-gzC" firstAttribute="top" secondItem="3h3-Nz-QTo" secondAttribute="bottom" id="DLW-jF-ieS"/>
+                    <constraint firstItem="ybi-Bu-xBa" firstAttribute="leading" secondItem="N7i-TC-gaC" secondAttribute="trailing" constant="8" id="G4J-kf-za8"/>
+                    <constraint firstItem="3h3-Nz-QTo" firstAttribute="leading" secondItem="giO-X4-gzC" secondAttribute="leading" id="Kor-fS-xNH"/>
+                    <constraint firstItem="N7i-TC-gaC" firstAttribute="height" secondItem="3h3-Nz-QTo" secondAttribute="height" id="L1o-n7-eeE"/>
+                    <constraint firstItem="ybi-Bu-xBa" firstAttribute="leading" secondItem="giO-X4-gzC" secondAttribute="trailing" constant="8" id="LpN-J0-pc4"/>
+                    <constraint firstItem="3h3-Nz-QTo" firstAttribute="height" secondItem="giO-X4-gzC" secondAttribute="height" id="Nj5-2I-pdN"/>
+                    <constraint firstItem="ybi-Bu-xBa" firstAttribute="leading" secondItem="3h3-Nz-QTo" secondAttribute="trailing" constant="8" id="QBO-Ox-ww2"/>
+                    <constraint firstItem="ybi-Bu-xBa" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="aHq-QK-XdT"/>
+                    <constraint firstAttribute="centerY" secondItem="ybi-Bu-xBa" secondAttribute="centerY" id="neu-c5-qSy"/>
+                    <constraint firstItem="N7i-TC-gaC" firstAttribute="width" secondItem="3h3-Nz-QTo" secondAttribute="width" id="o27-rY-wXk"/>
+                    <constraint firstItem="N7i-TC-gaC" firstAttribute="leading" secondItem="3h3-Nz-QTo" secondAttribute="leading" id="o58-sH-ihJ"/>
+                    <constraint firstItem="N7i-TC-gaC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zMr-vy-i99"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="o27-rY-wXk"/>
+                        <exclude reference="Bqe-cx-Jo4"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellAuthors" destination="3h3-Nz-QTo" id="adF-S3-gAE"/>
+                <outlet property="cellTags" destination="giO-X4-gzC" id="lPV-dK-G5D"/>
+                <outlet property="cellTitle" destination="N7i-TC-gaC" id="MoX-Xf-s8O"/>
+                <outlet property="favoriteImage" destination="ybi-Bu-xBa" id="IB0-Wz-LJB"/>
+            </connections>
+            <point key="canvasLocation" x="530" y="211"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blue_ball.png" width="60" height="60"/>
+    </resources>
+</document>

@@ -89,6 +89,16 @@
     return nil;
 }
 
+- (NSArray*)allBooksOrdered
+{
+    NSArray *orderedBooks = [self.allBooks sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+        AGTBook *first = (AGTBook*)a;
+        AGTBook *second = (AGTBook*)b;
+        return [first.title localizedCompare:second.title];
+    }];
+    return orderedBooks;
+}
+
 #pragma mark - Utils
 
 - (void)fillTagsDictionaryWithBooks:(NSArray*)booksDictionary
@@ -115,6 +125,17 @@
             
             [((NSMutableArray*)self.tagsDictionary[trimmedTag]) addObject:book];
         }
+    }
+}
+
+- (void)updateFavorites
+{
+    self.tagsDictionary[FAVORITE_KEY] = [NSMutableArray array];
+    for (AGTBook *book in self.allBooks)
+    {
+        if (book.isFavorite)
+            [((NSMutableArray*)self.tagsDictionary[FAVORITE_KEY]) addObject:book];
+  
     }
 }
 
