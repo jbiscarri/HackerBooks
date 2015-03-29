@@ -45,11 +45,11 @@
 {
     self.bookImageView.image = nil;
     [self.activityIndicator startAnimating];
+    self.bookTitle.text = self.book.title;
+    self.bookAuthors.text = self.book.authors;
+    self.bookTags.text = self.book.tags;
+    self.switchFavorite.on = self.book.isFavorite;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        self.bookTitle.text = self.book.title;
-        self.bookAuthors.text = self.book.authors;
-        self.bookTags.text = self.book.tags;
-        self.switchFavorite.on = self.book.isFavorite;
         
         //Dowload Image
         if ([self.book.image_url isFileURL])
