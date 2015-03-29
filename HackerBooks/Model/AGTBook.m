@@ -31,6 +31,12 @@
     favorites[self.pdf_url.absoluteString] = @(isFavorite);
     [userDefaults setObject:favorites forKey:USER_DEFAULTS_FAVORITES];
     [userDefaults synchronize];
+    
+    [self.delegate book:self modifiedFavoriteValue:isFavorite];
+    //Send notification to update
+    NSDictionary *userInfo = @{NOT_BOOK_KEY:self};
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_FAVORITE_FOR_BOOK_CHANGED object:self userInfo:userInfo];
+
 }
 
 - (BOOL)isFavorite

@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class AGTBook;
+
+@protocol AGTBookDelegate <NSObject>
+
+- (void)book:(AGTBook*)book modifiedFavoriteValue:(BOOL)favorite;
+
+@end
+
 @interface AGTBook : NSObject
 
 @property (nonatomic, strong) NSString *title;
@@ -16,6 +24,8 @@
 @property (nonatomic, strong) NSURL *image_url;
 @property (nonatomic, strong) NSURL *pdf_url;
 @property (nonatomic, assign) BOOL isFavorite;
+@property (nonatomic, weak) id<AGTBookDelegate> delegate;
+
 
 - (instancetype)initWithDictionary:(NSDictionary*)dictionary;
 

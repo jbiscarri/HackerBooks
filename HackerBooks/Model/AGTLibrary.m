@@ -7,7 +7,6 @@
 //
 
 #import "AGTLibrary.h"
-#import "AGTBook.h"
 #import "Settings.h"
 
 @implementation AGTLibrary
@@ -106,7 +105,7 @@
     for (NSDictionary *bookDictionary in booksDictionary)
     {
         AGTBook *book = [[AGTBook alloc] initWithDictionary:bookDictionary];
-        
+        book.delegate = self;
         //I add this book in list
         [self.allBooks addObject:book];
         
@@ -128,14 +127,16 @@
     }
 }
 
-- (void)updateFavorites
-{
-    self.tagsDictionary[FAVORITE_KEY] = [NSMutableArray array];
-    for (AGTBook *book in self.allBooks)
+#pragma mark - AGTBookDelegate
+
+- (void)book:(AGTBook*)book modifiedFavoriteValue:(BOOL)favorite{
+    if (book.isFavorite)
     {
-        if (book.isFavorite)
-            [((NSMutableArray*)self.tagsDictionary[FAVORITE_KEY]) addObject:book];
-  
+        //Add book
+        [((NSMutableArray*)self.tagsDictionary[FAVORITE_KEY]) addObject:book];
+    }else{
+        //Remove
+        [((NSMutableArray*)self.tagsDictionary[FAVORITE_KEY]) removeObject:book];
     }
 }
 
