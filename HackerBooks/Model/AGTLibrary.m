@@ -111,8 +111,8 @@
         [self.allBooks addObject:book];
         
         //Should I have to add this book to favorites
-        if (book.isFavorite)
-            [((NSMutableArray*)self.tagsDictionary[FAVORITE_KEY]) addObject:book];
+        //if (book.isFavorite)
+        //    [((NSMutableArray*)self.tagsDictionary[FAVORITE_KEY]) addObject:book];
         
         //I add this book in tags dictionary
         NSArray *tagsArray = [book.tags componentsSeparatedByString:@","];
@@ -128,15 +128,30 @@
     }
 }
 
-- (void)updateFavorites
+- (void)updateFavorites:(AGTBook*)book
 {
-    self.tagsDictionary[FAVORITE_KEY] = [NSMutableArray array];
-    for (AGTBook *book in self.allBooks)
-    {
+    if (book){
         if (book.isFavorite)
+        {
+            //Add book
             [((NSMutableArray*)self.tagsDictionary[FAVORITE_KEY]) addObject:book];
-  
+        }else{
+            //Remove
+            [((NSMutableArray*)self.tagsDictionary[FAVORITE_KEY]) removeObject:book];
+        }
+    }else{
+        self.tagsDictionary[FAVORITE_KEY] = [NSMutableArray array];
+        for (AGTBook *book in self.allBooks)
+        {
+            if (book.isFavorite)
+                [((NSMutableArray*)self.tagsDictionary[FAVORITE_KEY]) addObject:book];
+            
+        }
     }
 }
+
+
+
+
 
 @end

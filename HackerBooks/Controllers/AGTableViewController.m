@@ -37,7 +37,8 @@
 {
     [super viewWillAppear:animated];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    [self.library updateFavorites];
+    
+    [self.library updateFavorites:nil];
     [self.tableView reloadData];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedThatFavoriteChanged:) name:NOTIFICATION_FAVORITE_FOR_BOOK_CHANGED object:nil];
@@ -136,8 +137,8 @@
 //NOTIFICATION_SELECTED_BOOK_CHANGED
 - (void)notifiedThatFavoriteChanged:(NSNotification*)notification
 {
-    //AGTBook *book = notification.userInfo[NOT_BOOK_KEY];
-    [self.library updateFavorites];
+    AGTBook *book = notification.userInfo[NOT_BOOK_KEY];
+    [self.library updateFavorites:book];
     [self.tableView reloadData];
 }
 

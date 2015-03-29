@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AGTBookViewController">
             <connections>
+                <outlet property="activityIndicator" destination="7jQ-1v-H7T" id="eLQ-q0-nV9"/>
                 <outlet property="bookAuthors" destination="ppQ-zN-k9M" id="cRa-2g-XcD"/>
                 <outlet property="bookImageView" destination="V3L-Sh-yv2" id="5bR-u9-qBf"/>
                 <outlet property="bookTags" destination="3Ee-Tl-0Ma" id="War-p3-xBY"/>
@@ -92,6 +93,14 @@
                                 <barButtonItem style="plain" systemItem="flexibleSpace" id="Cwp-YM-8zJ"/>
                             </items>
                         </toolbar>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="7jQ-1v-H7T">
+                            <rect key="frame" x="282" y="225" width="37" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="37" id="Oco-OV-EyH"/>
+                                <constraint firstAttribute="height" constant="37" id="d7m-RP-MyC"/>
+                            </constraints>
+                            <color key="color" red="0.94901960780000005" green="0.58039215690000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -104,6 +113,7 @@
                         <constraint firstAttribute="trailing" secondItem="ppQ-zN-k9M" secondAttribute="trailing" constant="40" id="EE5-aX-NAt"/>
                         <constraint firstItem="Ta4-g6-4oi" firstAttribute="top" secondItem="jv4-pi-g4G" secondAttribute="top" constant="36" id="Gkf-kt-GQW"/>
                         <constraint firstAttribute="trailing" secondItem="VEF-HV-gcz" secondAttribute="trailing" constant="40" id="INz-Jo-Eeo"/>
+                        <constraint firstItem="V3L-Sh-yv2" firstAttribute="centerY" secondItem="7jQ-1v-H7T" secondAttribute="centerY" id="JGC-ok-gTA"/>
                         <constraint firstItem="frU-Fa-y3b" firstAttribute="height" secondItem="V3L-Sh-yv2" secondAttribute="height" constant="2" id="LyT-yz-cad"/>
                         <constraint firstAttribute="trailing" secondItem="3Ee-Tl-0Ma" secondAttribute="trailing" constant="40" id="MCZ-hZ-qxx"/>
                         <constraint firstItem="V3L-Sh-yv2" firstAttribute="top" secondItem="Ta4-g6-4oi" secondAttribute="bottom" constant="15" id="RvC-IG-qoj"/>
@@ -121,6 +131,7 @@
                         <constraint firstItem="ppQ-zN-k9M" firstAttribute="top" secondItem="VEF-HV-gcz" secondAttribute="bottom" id="mys-yZ-W9v"/>
                         <constraint firstItem="3Ee-Tl-0Ma" firstAttribute="top" secondItem="ppQ-zN-k9M" secondAttribute="bottom" id="owj-Ij-3Et"/>
                         <constraint firstAttribute="trailing" secondItem="Ta4-g6-4oi" secondAttribute="trailing" constant="41" id="pdY-lJ-hZd"/>
+                        <constraint firstItem="V3L-Sh-yv2" firstAttribute="centerX" secondItem="7jQ-1v-H7T" secondAttribute="centerX" constant="-0.5" id="qA1-4b-iuV"/>
                         <constraint firstItem="sh2-HU-Bzm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3Ee-Tl-0Ma" secondAttribute="bottom" constant="80" id="rOa-92-cph"/>
                         <constraint firstItem="ppQ-zN-k9M" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" constant="40" id="vhM-e2-Rgq"/>
                         <constraint firstItem="frU-Fa-y3b" firstAttribute="centerX" secondItem="V3L-Sh-yv2" secondAttribute="centerX" id="wP1-kR-C5L"/>

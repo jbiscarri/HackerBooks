@@ -43,54 +43,62 @@
 
 - (void)syncWithModel
 {
-    self.bookTitle.text = self.book.title;
-    self.bookAuthors.text = self.book.authors;
-    self.bookTags.text = self.book.tags;
-    self.switchFavorite.on = self.book.isFavorite;
-    
-    //Dowload Image
-    if ([self.book.image_url isFileURL])
-    {
-        //Replace With current cachesDirectory
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSURL *fileUrl = [[fileManager URLsForDirectory:NSCachesDirectory
-                                              inDomains:NSUserDomainMask] lastObject];
-        self.book.image_url = [fileUrl URLByAppendingPathComponent:[self.book.image_url.absoluteString lastPathComponent]];
-    }
-    
-    NSData *data = [NSData dataWithContentsOfURL:self.book.image_url];
-    //Save image if it's necessary
-    if (![self.book.image_url isFileURL] || (data==nil)){
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSURL *fileUrl = [[fileManager URLsForDirectory:NSCachesDirectory
-                                              inDomains:NSUserDomainMask] lastObject];
-        fileUrl = [fileUrl URLByAppendingPathComponent:[self.book.image_url.absoluteString lastPathComponent]];
-        BOOL imageSaved = [data writeToURL:fileUrl atomically:YES];
-        if (imageSaved){
-            //Change Json File
-            NSURL *jsonFileUrl = [[fileManager URLsForDirectory:NSDocumentDirectory
-                                                      inDomains:NSUserDomainMask] lastObject];
-            jsonFileUrl = [jsonFileUrl URLByAppendingPathComponent:JSON_FILE_NAME];
-            NSError *error;
-            NSString *stringData = [NSString stringWithContentsOfURL:jsonFileUrl encoding:NSUTF8StringEncoding error:&error];
-            if (stringData){
-                //Replace url
-                stringData = [stringData stringByReplacingOccurrencesOfString:self.book.image_url.absoluteString withString:fileUrl.absoluteString];
-                //save file
-                BOOL result = [stringData writeToURL:jsonFileUrl atomically:YES encoding:NSUTF8StringEncoding error:&error];
-                if (!result)
-                {
-                    NSLog(@"Error saving json file: %@", error.userInfo);
-                }else{
-                    self.book.image_url = fileUrl;
+    self.bookImageView.image = nil;
+    [self.activityIndicator startAnimating];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        self.bookTitle.text = self.book.title;
+        self.bookAuthors.text = self.book.authors;
+        self.bookTags.text = self.book.tags;
+        self.switchFavorite.on = self.book.isFavorite;
+        
+        //Dowload Image
+        if ([self.book.image_url isFileURL])
+        {
+            //Replace With current cachesDirectory
+            NSFileManager *fileManager = [NSFileManager defaultManager];
+            NSURL *fileUrl = [[fileManager URLsForDirectory:NSCachesDirectory
+                                                  inDomains:NSUserDomainMask] lastObject];
+            self.book.image_url = [fileUrl URLByAppendingPathComponent:[self.book.image_url.absoluteString lastPathComponent]];
+        }
+        
+        NSData *data = [NSData dataWithContentsOfURL:self.book.image_url];
+        //Save image if it's necessary
+        if (![self.book.image_url isFileURL] || (data==nil)){
+            NSFileManager *fileManager = [NSFileManager defaultManager];
+            NSURL *fileUrl = [[fileManager URLsForDirectory:NSCachesDirectory
+                                                  inDomains:NSUserDomainMask] lastObject];
+            fileUrl = [fileUrl URLByAppendingPathComponent:[self.book.image_url.absoluteString lastPathComponent]];
+            BOOL imageSaved = [data writeToURL:fileUrl atomically:YES];
+            if (imageSaved){
+                //Change Json File
+                NSURL *jsonFileUrl = [[fileManager URLsForDirectory:NSDocumentDirectory
+                                                          inDomains:NSUserDomainMask] lastObject];
+                jsonFileUrl = [jsonFileUrl URLByAppendingPathComponent:JSON_FILE_NAME];
+                NSError *error;
+                NSString *stringData = [NSString stringWithContentsOfURL:jsonFileUrl encoding:NSUTF8StringEncoding error:&error];
+                if (stringData){
+                    //Replace url
+                    stringData = [stringData stringByReplacingOccurrencesOfString:self.book.image_url.absoluteString withString:fileUrl.absoluteString];
+                    //save file
+                    BOOL result = [stringData writeToURL:jsonFileUrl atomically:YES encoding:NSUTF8StringEncoding error:&error];
+                    if (!result)
+                    {
+                        NSLog(@"Error saving json file: %@", error.userInfo);
+                    }else{
+                        self.book.image_url = fileUrl;
+                    }
+                    
                 }
                 
             }
-            
         }
-    }
-    UIImage *image = [UIImage imageWithData:data];
-    self.bookImageView.image = image;
+        UIImage *image = [UIImage imageWithData:data];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.bookImageView.image = image;
+            [self.activityIndicator stopAnimating];
+
+        });
+    });
 }
 
 - (void)didReceiveMemoryWarning {

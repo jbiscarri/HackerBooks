@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *bookAuthors;
 @property (weak, nonatomic) IBOutlet UILabel *bookTags;
 @property (strong, nonatomic) AGTBook *book;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
 
 
 - (instancetype)initWithBook:(AGTBook*)book;
