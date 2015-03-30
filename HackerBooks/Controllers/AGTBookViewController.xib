@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AGTBookViewController">
@@ -48,7 +48,7 @@
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frU-Fa-y3b">
                             <rect key="frame" x="39" y="81" width="522" height="325"/>
-                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V3L-Sh-yv2">
                             <rect key="frame" x="40" y="82" width="520" height="323"/>
@@ -64,39 +64,37 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppQ-zN-k9M">
-                            <rect key="frame" x="40" y="439" width="520" height="22"/>
+                            <rect key="frame" x="40" y="439" width="520" height="49"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="16"/>
                             <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ee-Tl-0Ma">
-                            <rect key="frame" x="40" y="461" width="520" height="15"/>
+                            <rect key="frame" x="40" y="488" width="520" height="22"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" name="IowanOldStyle-Italic" family="Iowan Old Style" pointSize="16"/>
                             <color key="textColor" red="0.49803921569999998" green="0.61176470589999998" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sh2-HU-Bzm">
-                            <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tt-Ie-txw">
+                            <rect key="frame" x="246" y="550" width="110" height="30"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="44" id="d2R-ux-349"/>
+                                <constraint firstAttribute="width" constant="110" id="LgY-s0-KcM"/>
+                                <constraint firstAttribute="height" constant="30" id="wAA-sy-8xS"/>
                             </constraints>
-                            <items>
-                                <barButtonItem style="plain" systemItem="flexibleSpace" id="D2e-q9-EiN"/>
-                                <barButtonItem title="Show pdf" id="SMQ-y4-WNu">
-                                    <connections>
-                                        <action selector="showPDF:" destination="-1" id="xBQ-NL-2rj"/>
-                                    </connections>
-                                </barButtonItem>
-                                <barButtonItem style="plain" systemItem="flexibleSpace" id="Cwp-YM-8zJ"/>
-                            </items>
-                        </toolbar>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <state key="normal" title="show PDF">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="showPDF:" destination="-1" eventType="touchUpInside" id="c1p-qM-ItQ"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="V3L-Sh-yv2" secondAttribute="trailing" constant="40" id="1n2-qP-Ige"/>
-                        <constraint firstAttribute="trailing" secondItem="sh2-HU-Bzm" secondAttribute="trailing" id="529-jT-Rvb"/>
                         <constraint firstItem="frU-Fa-y3b" firstAttribute="centerY" secondItem="V3L-Sh-yv2" secondAttribute="centerY" id="7N0-6f-cPR"/>
                         <constraint firstItem="V3L-Sh-yv2" firstAttribute="top" secondItem="9DN-d3-thr" secondAttribute="bottom" constant="20" id="9HI-TW-YuX"/>
                         <constraint firstItem="frU-Fa-y3b" firstAttribute="width" secondItem="V3L-Sh-yv2" secondAttribute="width" constant="2" id="9kt-Up-O1K"/>
@@ -106,22 +104,22 @@
                         <constraint firstAttribute="trailing" secondItem="VEF-HV-gcz" secondAttribute="trailing" constant="40" id="INz-Jo-Eeo"/>
                         <constraint firstItem="frU-Fa-y3b" firstAttribute="height" secondItem="V3L-Sh-yv2" secondAttribute="height" constant="2" id="LyT-yz-cad"/>
                         <constraint firstAttribute="trailing" secondItem="3Ee-Tl-0Ma" secondAttribute="trailing" constant="40" id="MCZ-hZ-qxx"/>
+                        <constraint firstItem="3tt-Ie-txw" firstAttribute="top" secondItem="3Ee-Tl-0Ma" secondAttribute="bottom" constant="40" id="PVU-Y3-ZUx"/>
                         <constraint firstItem="V3L-Sh-yv2" firstAttribute="top" secondItem="Ta4-g6-4oi" secondAttribute="bottom" constant="15" id="RvC-IG-qoj"/>
                         <constraint firstItem="VEF-HV-gcz" firstAttribute="top" secondItem="V3L-Sh-yv2" secondAttribute="bottom" constant="8" id="SLW-WH-aKF"/>
                         <constraint firstItem="VEF-HV-gcz" firstAttribute="top" secondItem="V3L-Sh-yv2" secondAttribute="bottom" constant="8" id="Sxg-oj-mnG"/>
                         <constraint firstItem="ppQ-zN-k9M" firstAttribute="top" secondItem="VEF-HV-gcz" secondAttribute="bottom" id="UcH-gd-U1x"/>
-                        <constraint firstAttribute="bottom" secondItem="sh2-HU-Bzm" secondAttribute="bottom" id="W38-ws-yxp"/>
                         <constraint firstItem="3Ee-Tl-0Ma" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" constant="40" id="WSQ-Zb-lqz"/>
                         <constraint firstItem="Ta4-g6-4oi" firstAttribute="leading" secondItem="9DN-d3-thr" secondAttribute="trailing" constant="17" id="abG-V2-z6b"/>
                         <constraint firstItem="3Ee-Tl-0Ma" firstAttribute="top" secondItem="ppQ-zN-k9M" secondAttribute="bottom" id="dzH-JA-T9G"/>
                         <constraint firstItem="VEF-HV-gcz" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" constant="40" id="eVs-FL-hpZ"/>
+                        <constraint firstAttribute="centerX" secondItem="3tt-Ie-txw" secondAttribute="centerX" constant="-0.5" id="fBB-DO-Vh6"/>
                         <constraint firstItem="V3L-Sh-yv2" firstAttribute="top" secondItem="Ta4-g6-4oi" secondAttribute="bottom" constant="15" id="hCH-3o-0fK"/>
-                        <constraint firstItem="sh2-HU-Bzm" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" id="k2i-tR-qe7"/>
                         <constraint firstItem="9DN-d3-thr" firstAttribute="top" secondItem="jv4-pi-g4G" secondAttribute="top" constant="41" id="lYA-Td-jJR"/>
                         <constraint firstItem="ppQ-zN-k9M" firstAttribute="top" secondItem="VEF-HV-gcz" secondAttribute="bottom" id="mys-yZ-W9v"/>
                         <constraint firstItem="3Ee-Tl-0Ma" firstAttribute="top" secondItem="ppQ-zN-k9M" secondAttribute="bottom" id="owj-Ij-3Et"/>
                         <constraint firstAttribute="trailing" secondItem="Ta4-g6-4oi" secondAttribute="trailing" constant="41" id="pdY-lJ-hZd"/>
-                        <constraint firstItem="sh2-HU-Bzm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3Ee-Tl-0Ma" secondAttribute="bottom" constant="80" id="rOa-92-cph"/>
+                        <constraint firstAttribute="bottom" secondItem="3tt-Ie-txw" secondAttribute="bottom" constant="20" id="tCn-jo-pxn"/>
                         <constraint firstItem="ppQ-zN-k9M" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" constant="40" id="vhM-e2-Rgq"/>
                         <constraint firstItem="frU-Fa-y3b" firstAttribute="centerX" secondItem="V3L-Sh-yv2" secondAttribute="centerX" id="wP1-kR-C5L"/>
                     </constraints>
@@ -135,7 +133,6 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="jv4-pi-g4G" firstAttribute="top" secondItem="fhF-o2-e31" secondAttribute="bottom" constant="-600" id="0z0-7l-Ns7"/>
-                <constraint firstItem="sh2-HU-Bzm" firstAttribute="bottom" secondItem="fhF-o2-e31" secondAttribute="bottom" id="3h0-MK-pTx"/>
                 <constraint firstAttribute="trailing" secondItem="fhF-o2-e31" secondAttribute="trailing" id="687-hQ-YIr"/>
                 <constraint firstItem="fhF-o2-e31" firstAttribute="width" secondItem="ppQ-zN-k9M" secondAttribute="width" constant="80" id="7SE-Kk-EPH"/>
                 <constraint firstItem="fhF-o2-e31" firstAttribute="width" secondItem="3Ee-Tl-0Ma" secondAttribute="width" constant="80" id="FpO-hp-7jk"/>
@@ -158,7 +155,6 @@
                     <exclude reference="dig-3G-mIs"/>
                     <exclude reference="gfN-6k-kdO"/>
                     <exclude reference="sE8-dk-cDo"/>
-                    <exclude reference="3h0-MK-pTx"/>
                 </mask>
             </variation>
         </view>
