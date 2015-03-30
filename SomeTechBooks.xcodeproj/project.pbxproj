@@ -25,6 +25,13 @@
 		B806D7E41ACA0CF200FF044A /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = B806D7D51ACA0CF200FF044A /* Icon-144.png */; };
 		B806D7E51ACA0CF200FF044A /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = B806D7D61ACA0CF200FF044A /* Icon-152.png */; };
 		B806D7E61ACA0CF200FF044A /* icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = B806D7D71ACA0CF200FF044A /* icon1024.png */; };
+		B806D7ED1ACA12AA00FF044A /* ipad_land.png in Resources */ = {isa = PBXBuildFile; fileRef = B806D7E71ACA12AA00FF044A /* ipad_land.png */; };
+		B806D7EE1ACA12AA00FF044A /* ipad_land@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B806D7E81ACA12AA00FF044A /* ipad_land@2x.png */; };
+		B806D7EF1ACA12AA00FF044A /* ipad_port.png in Resources */ = {isa = PBXBuildFile; fileRef = B806D7E91ACA12AA00FF044A /* ipad_port.png */; };
+		B806D7F01ACA12AA00FF044A /* ipad_port@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B806D7EA1ACA12AA00FF044A /* ipad_port@2x.png */; };
+		B806D7F11ACA12AA00FF044A /* iphone4.png in Resources */ = {isa = PBXBuildFile; fileRef = B806D7EB1ACA12AA00FF044A /* iphone4.png */; };
+		B806D7F21ACA12AA00FF044A /* iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = B806D7EC1ACA12AA00FF044A /* iphone5.png */; };
+		B806D7F41ACA162000FF044A /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = B806D7F31ACA162000FF044A /* Icon-180.png */; };
 		B82C049E1AC747E600E3D07F /* AGTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B82C049C1AC747E600E3D07F /* AGTTableViewCell.m */; };
 		B82C049F1AC747E600E3D07F /* AGTTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82C049D1AC747E600E3D07F /* AGTTableViewCell.xib */; };
 		B82C04A21AC749E800E3D07F /* blue_ball.png in Resources */ = {isa = PBXBuildFile; fileRef = B82C04A11AC749E800E3D07F /* blue_ball.png */; };
@@ -77,6 +84,13 @@
 		B806D7D51ACA0CF200FF044A /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
 		B806D7D61ACA0CF200FF044A /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
 		B806D7D71ACA0CF200FF044A /* icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1024.png; sourceTree = "<group>"; };
+		B806D7E71ACA12AA00FF044A /* ipad_land.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad_land.png; sourceTree = "<group>"; };
+		B806D7E81ACA12AA00FF044A /* ipad_land@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad_land@2x.png"; sourceTree = "<group>"; };
+		B806D7E91ACA12AA00FF044A /* ipad_port.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad_port.png; sourceTree = "<group>"; };
+		B806D7EA1ACA12AA00FF044A /* ipad_port@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad_port@2x.png"; sourceTree = "<group>"; };
+		B806D7EB1ACA12AA00FF044A /* iphone4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone4.png; sourceTree = "<group>"; };
+		B806D7EC1ACA12AA00FF044A /* iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone5.png; sourceTree = "<group>"; };
+		B806D7F31ACA162000FF044A /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
 		B82C049B1AC747E600E3D07F /* AGTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTTableViewCell.h; path = Controllers/AGTTableViewCell.h; sourceTree = "<group>"; };
 		B82C049C1AC747E600E3D07F /* AGTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTTableViewCell.m; path = Controllers/AGTTableViewCell.m; sourceTree = "<group>"; };
 		B82C049D1AC747E600E3D07F /* AGTTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AGTTableViewCell.xib; path = Controllers/AGTTableViewCell.xib; sourceTree = "<group>"; };
@@ -87,14 +101,14 @@
 		B82C04A81AC76FEC00E3D07F /* AGTSimplePDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTSimplePDFViewController.h; path = Controllers/AGTSimplePDFViewController.h; sourceTree = "<group>"; };
 		B82C04A91AC76FEC00E3D07F /* AGTSimplePDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTSimplePDFViewController.m; path = Controllers/AGTSimplePDFViewController.m; sourceTree = "<group>"; };
 		B82C04AA1AC76FEC00E3D07F /* AGTSimplePDFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AGTSimplePDFViewController.xib; path = Controllers/AGTSimplePDFViewController.xib; sourceTree = "<group>"; };
-		B8B842321AC6AE4E0076A0D1 /* HackerBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B842321AC6AE4E0076A0D1 /* SomeTechBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomeTechBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B842361AC6AE4E0076A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B842371AC6AE4E0076A0D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8B842391AC6AE4E0076A0D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B8B8423A1AC6AE4E0076A0D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B8B842421AC6AE4E0076A0D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B8B842451AC6AE4E0076A0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B8B8424B1AC6AE4E0076A0D1 /* HackerBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B8424B1AC6AE4E0076A0D1 /* SomeTechBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomeTechBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B842501AC6AE4E0076A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B842511AC6AE4E0076A0D1 /* HackerBooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerBooksTests.m; sourceTree = "<group>"; };
 		B8B8425B1AC6B10C0076A0D1 /* AGTBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTBook.h; path = Model/AGTBook.h; sourceTree = "<group>"; };
@@ -156,6 +170,12 @@
 		B82C04A01AC749E800E3D07F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B806D7E71ACA12AA00FF044A /* ipad_land.png */,
+				B806D7E81ACA12AA00FF044A /* ipad_land@2x.png */,
+				B806D7E91ACA12AA00FF044A /* ipad_port.png */,
+				B806D7EA1ACA12AA00FF044A /* ipad_port@2x.png */,
+				B806D7EB1ACA12AA00FF044A /* iphone4.png */,
+				B806D7EC1ACA12AA00FF044A /* iphone5.png */,
 				B806D7C91ACA0CF200FF044A /* Icon-29.png */,
 				B806D7CA1ACA0CF200FF044A /* Icon-40.png */,
 				B806D7CB1ACA0CF200FF044A /* Icon-50.png */,
@@ -170,6 +190,7 @@
 				B806D7D41ACA0CF200FF044A /* Icon-120.png */,
 				B806D7D51ACA0CF200FF044A /* Icon-144.png */,
 				B806D7D61ACA0CF200FF044A /* Icon-152.png */,
+				B806D7F31ACA162000FF044A /* Icon-180.png */,
 				B806D7D71ACA0CF200FF044A /* icon1024.png */,
 				B82C04A11AC749E800E3D07F /* blue_ball.png */,
 			);
@@ -190,8 +211,8 @@
 		B8B842331AC6AE4E0076A0D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B8B842321AC6AE4E0076A0D1 /* HackerBooks.app */,
-				B8B8424B1AC6AE4E0076A0D1 /* HackerBooksTests.xctest */,
+				B8B842321AC6AE4E0076A0D1 /* SomeTechBooks.app */,
+				B8B8424B1AC6AE4E0076A0D1 /* SomeTechBooksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,9 +296,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B8B842311AC6AE4E0076A0D1 /* HackerBooks */ = {
+		B8B842311AC6AE4E0076A0D1 /* SomeTechBooks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8B842551AC6AE4E0076A0D1 /* Build configuration list for PBXNativeTarget "HackerBooks" */;
+			buildConfigurationList = B8B842551AC6AE4E0076A0D1 /* Build configuration list for PBXNativeTarget "SomeTechBooks" */;
 			buildPhases = (
 				9D7598D4CCE719062DB400D1 /* Check Pods Manifest.lock */,
 				B8B8422E1AC6AE4E0076A0D1 /* Sources */,
@@ -289,14 +310,14 @@
 			);
 			dependencies = (
 			);
-			name = HackerBooks;
+			name = SomeTechBooks;
 			productName = HackerBooks;
-			productReference = B8B842321AC6AE4E0076A0D1 /* HackerBooks.app */;
+			productReference = B8B842321AC6AE4E0076A0D1 /* SomeTechBooks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B8B8424A1AC6AE4E0076A0D1 /* HackerBooksTests */ = {
+		B8B8424A1AC6AE4E0076A0D1 /* SomeTechBooksTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8B842581AC6AE4E0076A0D1 /* Build configuration list for PBXNativeTarget "HackerBooksTests" */;
+			buildConfigurationList = B8B842581AC6AE4E0076A0D1 /* Build configuration list for PBXNativeTarget "SomeTechBooksTests" */;
 			buildPhases = (
 				B8B842471AC6AE4E0076A0D1 /* Sources */,
 				B8B842481AC6AE4E0076A0D1 /* Frameworks */,
@@ -307,9 +328,9 @@
 			dependencies = (
 				B8B8424D1AC6AE4E0076A0D1 /* PBXTargetDependency */,
 			);
-			name = HackerBooksTests;
+			name = SomeTechBooksTests;
 			productName = HackerBooksTests;
-			productReference = B8B8424B1AC6AE4E0076A0D1 /* HackerBooksTests.xctest */;
+			productReference = B8B8424B1AC6AE4E0076A0D1 /* SomeTechBooksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -330,7 +351,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B8B8422D1AC6AE4E0076A0D1 /* Build configuration list for PBXProject "HackerBooks" */;
+			buildConfigurationList = B8B8422D1AC6AE4E0076A0D1 /* Build configuration list for PBXProject "SomeTechBooks" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -343,8 +364,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B8B842311AC6AE4E0076A0D1 /* HackerBooks */,
-				B8B8424A1AC6AE4E0076A0D1 /* HackerBooksTests */,
+				B8B842311AC6AE4E0076A0D1 /* SomeTechBooks */,
+				B8B8424A1AC6AE4E0076A0D1 /* SomeTechBooksTests */,
 			);
 		};
 /* End PBXProject section */
@@ -358,24 +379,31 @@
 				B806D7DF1ACA0CF200FF044A /* Icon-76.png in Resources */,
 				B806D7E61ACA0CF200FF044A /* icon1024.png in Resources */,
 				B806D7DA1ACA0CF200FF044A /* Icon-50.png in Resources */,
+				B806D7ED1ACA12AA00FF044A /* ipad_land.png in Resources */,
 				B82C049F1AC747E600E3D07F /* AGTTableViewCell.xib in Resources */,
+				B806D7EF1ACA12AA00FF044A /* ipad_port.png in Resources */,
 				B806D7D81ACA0CF200FF044A /* Icon-29.png in Resources */,
 				B8B842461AC6AE4E0076A0D1 /* LaunchScreen.xib in Resources */,
 				B806D7D91ACA0CF200FF044A /* Icon-40.png in Resources */,
 				B806D7E41ACA0CF200FF044A /* Icon-144.png in Resources */,
 				B82C04A71AC7508A00E3D07F /* AGTBookViewController.xib in Resources */,
 				B806D7E31ACA0CF200FF044A /* Icon-120.png in Resources */,
+				B806D7F21ACA12AA00FF044A /* iphone5.png in Resources */,
 				B8B842681AC6CB500076A0D1 /* AGTTableViewController.xib in Resources */,
 				B806D7DB1ACA0CF200FF044A /* Icon-57.png in Resources */,
 				B82C04A21AC749E800E3D07F /* blue_ball.png in Resources */,
+				B806D7F01ACA12AA00FF044A /* ipad_port@2x.png in Resources */,
 				B806D7E21ACA0CF200FF044A /* Icon-114.png in Resources */,
 				B806D7C01AC9FBBF00FF044A /* AGTPDFViewController.xib in Resources */,
 				B806D7DE1ACA0CF200FF044A /* Icon-72.png in Resources */,
 				B806D7DC1ACA0CF200FF044A /* Icon-58.png in Resources */,
 				B806D7E01ACA0CF200FF044A /* Icon-80.png in Resources */,
 				B806D7DD1ACA0CF200FF044A /* Icon-60.png in Resources */,
+				B806D7EE1ACA12AA00FF044A /* ipad_land@2x.png in Resources */,
 				B806D7E51ACA0CF200FF044A /* Icon-152.png in Resources */,
+				B806D7F11ACA12AA00FF044A /* iphone4.png in Resources */,
 				B8B842431AC6AE4E0076A0D1 /* Images.xcassets in Resources */,
+				B806D7F41ACA162000FF044A /* Icon-180.png in Resources */,
 				B806D7E11ACA0CF200FF044A /* Icon-87.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +481,7 @@
 /* Begin PBXTargetDependency section */
 		B8B8424D1AC6AE4E0076A0D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B8B842311AC6AE4E0076A0D1 /* HackerBooks */;
+			target = B8B842311AC6AE4E0076A0D1 /* SomeTechBooks */;
 			targetProxy = B8B8424C1AC6AE4E0076A0D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -553,10 +581,12 @@
 			baseConfigurationReference = A38F4DDE82F52CABCF2869AA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joan Biscarri (PQJ4C2AQM6)";
 				INFOPLIST_FILE = HackerBooks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SomeTechBooks;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -566,10 +596,12 @@
 			baseConfigurationReference = FAD85DD40EAFDB107562BF46 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joan Biscarri (PQJ4C2AQM6)";
 				INFOPLIST_FILE = HackerBooks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SomeTechBooks;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -588,7 +620,7 @@
 				);
 				INFOPLIST_FILE = HackerBooksTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SomeTechBooksTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerBooks.app/HackerBooks";
 			};
 			name = Debug;
@@ -603,7 +635,7 @@
 				);
 				INFOPLIST_FILE = HackerBooksTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SomeTechBooksTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerBooks.app/HackerBooks";
 			};
 			name = Release;
@@ -611,7 +643,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B8B8422D1AC6AE4E0076A0D1 /* Build configuration list for PBXProject "HackerBooks" */ = {
+		B8B8422D1AC6AE4E0076A0D1 /* Build configuration list for PBXProject "SomeTechBooks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8B842531AC6AE4E0076A0D1 /* Debug */,
@@ -620,7 +652,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8B842551AC6AE4E0076A0D1 /* Build configuration list for PBXNativeTarget "HackerBooks" */ = {
+		B8B842551AC6AE4E0076A0D1 /* Build configuration list for PBXNativeTarget "SomeTechBooks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8B842561AC6AE4E0076A0D1 /* Debug */,
@@ -629,7 +661,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8B842581AC6AE4E0076A0D1 /* Build configuration list for PBXNativeTarget "HackerBooksTests" */ = {
+		B8B842581AC6AE4E0076A0D1 /* Build configuration list for PBXNativeTarget "SomeTechBooksTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8B842591AC6AE4E0076A0D1 /* Debug */,

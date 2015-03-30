@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B8B842311AC6AE4E0076A0D1"
-               BuildableName = "HackerBooks.app"
-               BlueprintName = "HackerBooks"
-               ReferencedContainer = "container:HackerBooks.xcodeproj">
+               BuildableName = "SomeTechBooks.app"
+               BlueprintName = "SomeTechBooks"
+               ReferencedContainer = "container:SomeTechBooks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B8B8424A1AC6AE4E0076A0D1"
-               BuildableName = "HackerBooksTests.xctest"
-               BlueprintName = "HackerBooksTests"
-               ReferencedContainer = "container:HackerBooks.xcodeproj">
+               BuildableName = "SomeTechBooksTests.xctest"
+               BlueprintName = "SomeTechBooksTests"
+               ReferencedContainer = "container:SomeTechBooks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B8B8424A1AC6AE4E0076A0D1"
-               BuildableName = "HackerBooksTests.xctest"
-               BlueprintName = "HackerBooksTests"
-               ReferencedContainer = "container:HackerBooks.xcodeproj">
+               BuildableName = "SomeTechBooksTests.xctest"
+               BlueprintName = "SomeTechBooksTests"
+               ReferencedContainer = "container:SomeTechBooks.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B8B842311AC6AE4E0076A0D1"
-            BuildableName = "HackerBooks.app"
-            BlueprintName = "HackerBooks"
-            ReferencedContainer = "container:HackerBooks.xcodeproj">
+            BuildableName = "SomeTechBooks.app"
+            BlueprintName = "SomeTechBooks"
+            ReferencedContainer = "container:SomeTechBooks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B8B842311AC6AE4E0076A0D1"
-            BuildableName = "HackerBooks.app"
-            BlueprintName = "HackerBooks"
-            ReferencedContainer = "container:HackerBooks.xcodeproj">
+            BuildableName = "SomeTechBooks.app"
+            BlueprintName = "SomeTechBooks"
+            ReferencedContainer = "container:SomeTechBooks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B8B842311AC6AE4E0076A0D1"
-            BuildableName = "HackerBooks.app"
-            BlueprintName = "HackerBooks"
-            ReferencedContainer = "container:HackerBooks.xcodeproj">
+            BuildableName = "SomeTechBooks.app"
+            BlueprintName = "SomeTechBooks"
+            ReferencedContainer = "container:SomeTechBooks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
