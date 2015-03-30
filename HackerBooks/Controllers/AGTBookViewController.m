@@ -11,6 +11,7 @@
 #import "Settings.h"
 #import "AGTSimplePDFViewController.h"
 #import "AGTTableViewController.h"
+#import "AGTPDFViewController.h"
 
 @interface AGTBookViewController ()
 
@@ -112,8 +113,8 @@
 }
 
 - (IBAction)showPDF:(id)sender {
-    AGTSimplePDFViewController *simplePDFViewController = [[AGTSimplePDFViewController alloc] initWithBook:self.book];
-    [self.navigationController pushViewController:simplePDFViewController animated:YES];
+    AGTPDFViewController *pdfViewController = [[AGTPDFViewController alloc] initWithBook:self.book];
+    [self.navigationController pushViewController:pdfViewController animated:YES];
 }
 
 #pragma mark - AGTTableViewControllerDelegate
