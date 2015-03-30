@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class AGTBook;
+#import "AGTBook.h"
 
-@interface AGTLibrary : NSObject
+@interface AGTLibrary : NSObject<AGTBookDelegate>
 
 @property (nonatomic, strong) NSMutableDictionary* tagsDictionary;
 @property (nonatomic, strong) NSMutableArray* allBooks;
@@ -24,6 +24,5 @@
 - (NSArray*)booksForTag:(NSString*)tag;
 - (AGTBook*)bookForTag:(NSString*)tag atIndex:(NSUInteger)index;
 - (NSArray*)allBooksOrdered;
-- (void)updateFavorites;
 
 @end
