@@ -48,4 +48,34 @@ Con una NSNotification enviando como UserInfo el AGTBook.
 
 ## Extra
 ---
-***Comentario:*** He añadido la carga de pdf e imágenes en otro thread de cara a mejorar algo la usabilidad de la App.
+
+
+**a) ¿Qué funcionalidades le añadirías antes de subirla a la App Store?**
+
+Permitiría la edición y añadir nuevos libros. 
+También incluiría el JSON dentro del bundle para no tener que tenerlo alojado en ningún servidor.
+Posiblemente intentaría detectar si hay algún dato en el pasteboard y al entrar mostraría un mensaje para añadir nueva entrada para facilitar el trabajo (al estilo *Pocket*).
+Poder añadir notas a los libros para tener por ejemplo, las páginas interesantes o datos a recordar.
+Share por twitter y Facebook de los libros.
+Y sobre todo, una UI más cuidada a nivel gráfico.
+
+**b) Ponle otro nombre e intenta subir esta primera versión a la App Store. Como aun notienes idea de diseño,**
+*Prepare for Submission*, le he añadido un icono y está pendiente de que añada descripción, URLs, y datos para pasarla a revisar.
+**c) Usando esta App como "plantilla", ¿qué otras versiones se te ocurren? ¿Algo que puedasmonetizar?**
+Conservando bastante la funcionalidad podría ser una App para un centro comercial donde el listado fueran tiendas y en el detalle ver la foto, datos y como PDF el catálogo o las ofertas.
+El mismo concepto podría valer como App para colocar en la recepción de un edificio y que la gente consulte datos de sus empresas.
+Ambas opciones se podrían monetizar pero vendiéndolas B2B. 
+
+
+
+## Comentarios
+---
+ He añadido la carga de pdf e imágenes asíncronas de cara a mejorar algo la experiencia de usuario de la App.
+
+Para utilizar el vfrReader he creado un ReaderViewController y he añadido su view en mi ViewController.
+
+A parte, yo no hubiera modificado el JSON descargado añadiendo las URL locales, hubiera descargado el archivo con el nombre del PDF y al hacer la carga se comprobaría antes si existe el fichero. De esta forma evitas modificar la fuente y que si se produce algún fallo o se eliminan los pdf se puedan recuperar.
+
+
+
+Keep coding! :D
