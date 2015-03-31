@@ -77,6 +77,7 @@
     if (self.tagsDictionary[tag])
     {
         NSArray *books = self.tagsDictionary[tag];
+            
         NSArray *orderedBooks = [books sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
             AGTBook *first = (AGTBook*)a;
             AGTBook *second = (AGTBook*)b;
@@ -131,6 +132,7 @@
 #pragma mark - AGTBookDelegate
 
 - (void)book:(AGTBook*)book modifiedFavoriteValue:(BOOL)favorite{
+    /*
     if (book.isFavorite)
     {
         //Add book
@@ -138,6 +140,19 @@
     }else{
         //Remove
         [((NSMutableArray*)self.tagsDictionary[FAVORITE_KEY]) removeObject:book];
+    }*/
+    [self refreshFavorites];
+}
+
+#pragma mark - reload favorites array
+- (void)refreshFavorites
+{
+    self.tagsDictionary[FAVORITE_KEY] = [NSMutableArray array];
+    for (AGTBook *book in self.allBooks)
+    {
+        //Should I have to add this book to favorites
+        if (book.isFavorite)
+            [((NSMutableArray*)self.tagsDictionary[FAVORITE_KEY]) addObject:book];
     }
 }
 
