@@ -43,23 +43,12 @@
 		B8B8423B1AC6AE4E0076A0D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B8423A1AC6AE4E0076A0D1 /* AppDelegate.m */; };
 		B8B842431AC6AE4E0076A0D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B842421AC6AE4E0076A0D1 /* Images.xcassets */; };
 		B8B842461AC6AE4E0076A0D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B842441AC6AE4E0076A0D1 /* LaunchScreen.xib */; };
-		B8B842521AC6AE4E0076A0D1 /* HackerBooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842511AC6AE4E0076A0D1 /* HackerBooksTests.m */; };
 		B8B8425D1AC6B10C0076A0D1 /* AGTBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B8425C1AC6B10C0076A0D1 /* AGTBook.m */; };
 		B8B842611AC6B49D0076A0D1 /* AGTLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842601AC6B49D0076A0D1 /* AGTLibrary.m */; };
 		B8B842671AC6CB500076A0D1 /* AGTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842651AC6CB500076A0D1 /* AGTableViewController.m */; };
 		B8B842681AC6CB500076A0D1 /* AGTTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B842661AC6CB500076A0D1 /* AGTTableViewController.xib */; };
 		C607F2AFA66CFF161178990F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A92874FA52E2F8825B6985 /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B8B8424C1AC6AE4E0076A0D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B8B8422A1AC6AE4E0076A0D1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B8B842311AC6AE4E0076A0D1;
-			remoteInfo = HackerBooks;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		78A92874FA52E2F8825B6985 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +97,6 @@
 		B8B8423A1AC6AE4E0076A0D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B8B842421AC6AE4E0076A0D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B8B842451AC6AE4E0076A0D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B8B8424B1AC6AE4E0076A0D1 /* SomeTechBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomeTechBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B842501AC6AE4E0076A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B842511AC6AE4E0076A0D1 /* HackerBooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerBooksTests.m; sourceTree = "<group>"; };
 		B8B8425B1AC6B10C0076A0D1 /* AGTBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTBook.h; path = Model/AGTBook.h; sourceTree = "<group>"; };
@@ -128,13 +116,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C607F2AFA66CFF161178990F /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8B842481AC6AE4E0076A0D1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				B8B842321AC6AE4E0076A0D1 /* SomeTechBooks.app */,
-				B8B8424B1AC6AE4E0076A0D1 /* SomeTechBooksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -315,24 +295,6 @@
 			productReference = B8B842321AC6AE4E0076A0D1 /* SomeTechBooks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B8B8424A1AC6AE4E0076A0D1 /* SomeTechBooksTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B8B842581AC6AE4E0076A0D1 /* Build configuration list for PBXNativeTarget "SomeTechBooksTests" */;
-			buildPhases = (
-				B8B842471AC6AE4E0076A0D1 /* Sources */,
-				B8B842481AC6AE4E0076A0D1 /* Frameworks */,
-				B8B842491AC6AE4E0076A0D1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B8B8424D1AC6AE4E0076A0D1 /* PBXTargetDependency */,
-			);
-			name = SomeTechBooksTests;
-			productName = HackerBooksTests;
-			productReference = B8B8424B1AC6AE4E0076A0D1 /* SomeTechBooksTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -344,10 +306,6 @@
 				TargetAttributes = {
 					B8B842311AC6AE4E0076A0D1 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					B8B8424A1AC6AE4E0076A0D1 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = B8B842311AC6AE4E0076A0D1;
 					};
 				};
 			};
@@ -365,7 +323,6 @@
 			projectRoot = "";
 			targets = (
 				B8B842311AC6AE4E0076A0D1 /* SomeTechBooks */,
-				B8B8424A1AC6AE4E0076A0D1 /* SomeTechBooksTests */,
 			);
 		};
 /* End PBXProject section */
@@ -405,13 +362,6 @@
 				B8B842431AC6AE4E0076A0D1 /* Images.xcassets in Resources */,
 				B806D7F41ACA162000FF044A /* Icon-180.png in Resources */,
 				B806D7E11ACA0CF200FF044A /* Icon-87.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B8B842491AC6AE4E0076A0D1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,23 +418,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8B842471AC6AE4E0076A0D1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8B842521AC6AE4E0076A0D1 /* HackerBooksTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B8B8424D1AC6AE4E0076A0D1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B8B842311AC6AE4E0076A0D1 /* SomeTechBooks */;
-			targetProxy = B8B8424C1AC6AE4E0076A0D1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B8B842441AC6AE4E0076A0D1 /* LaunchScreen.xib */ = {
@@ -532,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -568,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -606,40 +540,6 @@
 			};
 			name = Release;
 		};
-		B8B842591AC6AE4E0076A0D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HackerBooksTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = SomeTechBooksTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerBooks.app/HackerBooks";
-			};
-			name = Debug;
-		};
-		B8B8425A1AC6AE4E0076A0D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HackerBooksTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = SomeTechBooksTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerBooks.app/HackerBooks";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -657,15 +557,6 @@
 			buildConfigurations = (
 				B8B842561AC6AE4E0076A0D1 /* Debug */,
 				B8B842571AC6AE4E0076A0D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B8B842581AC6AE4E0076A0D1 /* Build configuration list for PBXNativeTarget "SomeTechBooksTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B8B842591AC6AE4E0076A0D1 /* Debug */,
-				B8B8425A1AC6AE4E0076A0D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

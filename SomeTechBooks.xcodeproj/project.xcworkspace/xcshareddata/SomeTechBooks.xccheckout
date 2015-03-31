@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>606C6B42-0F54-48EC-AED1-41EC6D732241</string>
+	<string>FF506BCF-C006-4FE7-8A8F-51609567281B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>HackerBooks</string>
+	<string>SomeTechBooks</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D876F6BC76F6C28432C3926995EAEF3991C3741E</key>
 		<string>https://bitbucket.org/jbiscarri/hackerbooks.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HackerBooks.xcworkspace</string>
+	<string>SomeTechBooks.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D876F6BC76F6C28432C3926995EAEF3991C3741E</key>
-		<string>..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://bitbucket.org/jbiscarri/hackerbooks.git</string>

@@ -1,2299 +1,639 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>00E17B6808FE06060D8709E0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>AA4F05CCDF702DBE83F48573</string>
-				<string>2D3DF3EE0557AAF18E9B8C2C</string>
-				<string>A4CA674C999ACD497F9AF0D7</string>
-				<string>2FEE4C991B6489B50DA142C6</string>
-				<string>A40D7C22E86C7D047BA94145</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0383F5D91DD511A94A379F83</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A68FAA42DED801622489B84</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>047E9F76009C6228F7FB28FD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderThumbRender.m</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbRender.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0799DCA6EC0DD4BB2BCBDAF4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>72FDCC34D0D66414E2129B41</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0828085971A16F1AFE551FD7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ThumbsViewController.m</string>
-			<key>path</key>
-			<string>Sources/ThumbsViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>088EE02F0D3F89B238581515</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A87C63DDF70743F5B2CFF3E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>09A131832EE2147DB27BB08B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2A5FB9023B0C14E5B90AC005</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0A72CF471F9619F628BDF003</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-environment.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0B3B04CEE2CACD7D02380BFA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>379F99615586D4F2F7C610BF</string>
-				<string>98842491038FB5249E828060</string>
-				<string>4191EF385FF127FB53A864F7</string>
-				<string>114E0175ECEE5BCA09204DC4</string>
-				<string>346D06CF951192D803D795D9</string>
-				<string>49B008A045040944A7F10C97</string>
-				<string>37DFD15D73DCBF8A06B07AD4</string>
-				<string>81F44AB37E1BFD0A97525CF3</string>
-				<string>7F17B07A69BCF9F6AEB4E3AD</string>
-				<string>4BE34FC8922F05D3AC7CF0DF</string>
-				<string>9BE2BEF0CA2D2E1420AF2840</string>
-				<string>317EFFFBCA3D6459CEFB4B0F</string>
-				<string>3A1690032472899FB307D2AD</string>
-				<string>721552DD6345D652F2A4E213</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E52A9E2AA69AC0AE5859AA3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ThumbsMainToolbar.h</string>
-			<key>path</key>
-			<string>Sources/ThumbsMainToolbar.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>114E0175ECEE5BCA09204DC4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Button-N@2x.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Button-N@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>15F05FABAE27CFDC2BE62576</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3CF14CAF8B2C21203E165519</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>172EAC12DE5A050D3DB69BAF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>1957BD4F3EC3682460C667F9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-vfrReader-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1E85C41A2102DD12BE72450D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-vfrReader.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1F76588B1A011348DF91AE16</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CC259AA6ED4F9C94524EA6E4</string>
-				<string>3AE8CBA9F271C3A591B21731</string>
-				<string>1957BD4F3EC3682460C667F9</string>
-				<string>6030147C8A8629E646EDA045</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/Pods-vfrReader</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>24CAD22EF249EBDA4B646E86</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderMainPagebar.h</string>
-			<key>path</key>
-			<string>Sources/ReaderMainPagebar.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>261C333D2A2377FD36BCC7AA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>MessageUI.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MessageUI.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>287CDD72C3B796BF0E243DF7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>99DED5D398562FD8BCB0EA69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>2A5FB9023B0C14E5B90AC005</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>2D3DF3EE0557AAF18E9B8C2C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>43B59390B2935FB118617CAD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2EC7A6FBBD812EFD264288BC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9919227B5B03536CA024FF14</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>2FEE4C991B6489B50DA142C6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B4AB2F179919C6CC9C0F93B1</string>
-				<string>1E85C41A2102DD12BE72450D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30955E175636C4B6529761EC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderThumbRequest.m</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbRequest.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>317EFFFBCA3D6459CEFB4B0F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Print@2x.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Print@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>346D06CF951192D803D795D9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Email.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Email.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3503C3A838A2BF149D156F33</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderThumbQueue.h</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbQueue.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>36CE02C962337F05DF84E96D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderThumbCache.h</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbCache.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>379F99615586D4F2F7C610BF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Button-H.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Button-H.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>37D695DF05E5341ECD22B903</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIXToolbarView.m</string>
-			<key>path</key>
-			<string>Sources/UIXToolbarView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>37DFD15D73DCBF8A06B07AD4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Mark-N.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Mark-N.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>381C73B31C23818BFFD47B9E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderThumbFetch.m</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbFetch.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3A1690032472899FB307D2AD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Thumbs.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Thumbs.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3AE8CBA9F271C3A591B21731</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-vfrReader-Private.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3CF14CAF8B2C21203E165519</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIXToolbarView.h</string>
-			<key>path</key>
-			<string>Sources/UIXToolbarView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3D53F549AE675E7AF358B759</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>CGPDFDocument.h</string>
-			<key>path</key>
-			<string>Sources/CGPDFDocument.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4191EF385FF127FB53A864F7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Button-N.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Button-N.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>42E31264A4951AD16C978913</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderContentPage.h</string>
-			<key>path</key>
-			<string>Sources/ReaderContentPage.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>43B59390B2935FB118617CAD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>172EAC12DE5A050D3DB69BAF</string>
-				<string>D54F6A1BF45B209F45878C72</string>
-				<string>A318119DE041C868823EF90F</string>
-				<string>261C333D2A2377FD36BCC7AA</string>
-				<string>D2B4607DDC19E94A336C7B5E</string>
-				<string>2A5FB9023B0C14E5B90AC005</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>44E0F51A815E28B668040A05</key>
-		<dict>
-			<key>fileRef</key>
-			<string>381C73B31C23818BFFD47B9E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>45518A7F33ACCC5AA20A2D16</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderMainToolbar.h</string>
-			<key>path</key>
-			<string>Sources/ReaderMainToolbar.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>49B008A045040944A7F10C97</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Email@2x.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Email@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4A51B7F54D83FA715F217E4B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FB908375D83592EECD1DE44F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>4B5FC75B7561E0286E70356F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DD7C3B67C4D72B00A16C0165</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>4BE34FC8922F05D3AC7CF0DF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Mark-Y@2x.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Mark-Y@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4E73608B137B5E4D5B59FF3C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>508107D2789630455D381420</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderDocumentOutline.h</string>
-			<key>path</key>
-			<string>Sources/ReaderDocumentOutline.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>53701E85A20F95980F134B55</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7331ADCDCA0A4A4FC1D7B373</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>53C2E6E90FF18EE8A184FBA7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderThumbQueue.m</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbQueue.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>55831B44E53103E8F6357DA6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BEB74112AF156C21A30FEDA2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>59679078276480BA547B9630</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>7F4392E45A0D280070E52755</string>
-				<string>6CA625DAD76BF79C705D5A8D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>5A2532D45D99147CFA659C21</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>FCA543A2D10889F77E8A75B8</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>A5A2B65C2FC38966B275549D</string>
-			<key>remoteInfo</key>
-			<string>Pods-vfrReader</string>
-		</dict>
-		<key>5B127616E2FF2756762795CD</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>5B36C07A47F5C400301B94AD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A4E2B3A1CECD227E28D765FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5E2DFF3824261AF894F58FFB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBE0B2B8133A161E931A9264</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6030147C8A8629E646EDA045</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-vfrReader-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6041B3E50FFC2EAB8A83ADDB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>640113E3B18C7572B8D434B1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24CAD22EF249EBDA4B646E86</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>67E0DBD437EBD743DCF19516</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F41FF0A9DEC590C96EF38E25</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6CA625DAD76BF79C705D5A8D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3AE8CBA9F271C3A591B21731</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-vfrReader/Pods-vfrReader-prefix.pch</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6DC9B25991E322923CDB8785</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>Pods-vfrReader</string>
-			<key>target</key>
-			<string>A5A2B65C2FC38966B275549D</string>
-			<key>targetProxy</key>
-			<string>5A2532D45D99147CFA659C21</string>
-		</dict>
-		<key>6F076B26342FF93EDEA08FCD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A318119DE041C868823EF90F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6F3CA212AB05EBE32F5EA5C0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderMainPagebar.m</string>
-			<key>path</key>
-			<string>Sources/ReaderMainPagebar.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6F46F5AE48FB8B452D1712A1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A8CAD4CF117A348D8043B1E2</string>
-				<string>719137505A05F60D410EF58D</string>
-				<string>BAC9C74EE6EF0822BF46D300</string>
-				<string>088EE02F0D3F89B238581515</string>
-				<string>F49F034A2DA4C37F3E9D3E43</string>
-				<string>9512612312AC74FA7A25F48C</string>
-				<string>4A51B7F54D83FA715F217E4B</string>
-				<string>55831B44E53103E8F6357DA6</string>
-				<string>B92CCA1ADAC22BD6B7537199</string>
-				<string>287CDD72C3B796BF0E243DF7</string>
-				<string>2EC7A6FBBD812EFD264288BC</string>
-				<string>44E0F51A815E28B668040A05</string>
-				<string>8D169758ABCCB21999A28C54</string>
-				<string>E77B787E46950DF91DAB72AC</string>
-				<string>9A587625372ACE36D9846D88</string>
-				<string>DC3DC9677F9B740F4F7BDB2A</string>
-				<string>9D7CEA80ED8BDD1D64B7DB33</string>
-				<string>79EBA65ABC5A6F11A01134B0</string>
-				<string>9E0988C2E34EEE393B232504</string>
-				<string>D84AB2625AC57949BD96B87E</string>
-				<string>7750C44FC63D824193BBD7C8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>700B070021309F72D414257A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B40F693D905FBE8371BFEB99</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>719137505A05F60D410EF58D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1957BD4F3EC3682460C667F9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>721552DD6345D652F2A4E213</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Thumbs@2x.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Thumbs@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>72FDCC34D0D66414E2129B41</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderThumbRequest.h</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbRequest.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7331ADCDCA0A4A4FC1D7B373</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderContentView.h</string>
-			<key>path</key>
-			<string>Sources/ReaderContentView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>740A5F2A9649A7E73866F558</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2B4607DDC19E94A336C7B5E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>756FC780A654B59FAEEE17D4</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>7750C44FC63D824193BBD7C8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>37D695DF05E5341ECD22B903</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>77BB901D3A31596A4B5E4B82</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderThumbsView.m</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbsView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>796AF7D8574344B38138DD8D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderViewController.h</string>
-			<key>path</key>
-			<string>Sources/ReaderViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79EBA65ABC5A6F11A01134B0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FDD082782DFE2F7D7F1E07C8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>7D786409A29041F2F9403BAC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D54F6A1BF45B209F45878C72</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7DA8B4C16B96F2FA6BC6B9EE</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FC18D22CBBE3F39D095C62E5</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EB4BA6BD246127C02BC5C00F</string>
-				<string>700B070021309F72D414257A</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>6DC9B25991E322923CDB8785</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>productName</key>
-			<string>Pods</string>
-			<key>productReference</key>
-			<string>B4AB2F179919C6CC9C0F93B1</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>7EA4E7C67366EEC7DAACF4ED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderThumbFetch.h</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbFetch.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7F17B07A69BCF9F6AEB4E3AD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Mark-Y.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Mark-Y.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7F4392E45A0D280070E52755</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>3AE8CBA9F271C3A591B21731</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Pods-vfrReader/Pods-vfrReader-prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>7FD1D694F292F4A08029FFAF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderThumbRender.h</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbRender.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81F44AB37E1BFD0A97525CF3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Mark-N@2x.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Mark-N@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>85D4B7BF737217ECBE73CB2B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3D53F549AE675E7AF358B759</string>
-				<string>884727AB4020D6DEEC7C0190</string>
-				<string>F41FF0A9DEC590C96EF38E25</string>
-				<string>E5BC5821955D8FB599DC1554</string>
-				<string>42E31264A4951AD16C978913</string>
-				<string>9A87C63DDF70743F5B2CFF3E</string>
-				<string>A887F753E2B0BAC557F3CFEB</string>
-				<string>EE9C8D7F42C4C73166D00C66</string>
-				<string>7331ADCDCA0A4A4FC1D7B373</string>
-				<string>A70806450C5C5B7D69621C74</string>
-				<string>9A68FAA42DED801622489B84</string>
-				<string>FB908375D83592EECD1DE44F</string>
-				<string>508107D2789630455D381420</string>
-				<string>BEB74112AF156C21A30FEDA2</string>
-				<string>24CAD22EF249EBDA4B646E86</string>
-				<string>6F3CA212AB05EBE32F5EA5C0</string>
-				<string>45518A7F33ACCC5AA20A2D16</string>
-				<string>99DED5D398562FD8BCB0EA69</string>
-				<string>36CE02C962337F05DF84E96D</string>
-				<string>9919227B5B03536CA024FF14</string>
-				<string>7EA4E7C67366EEC7DAACF4ED</string>
-				<string>381C73B31C23818BFFD47B9E</string>
-				<string>3503C3A838A2BF149D156F33</string>
-				<string>53C2E6E90FF18EE8A184FBA7</string>
-				<string>7FD1D694F292F4A08029FFAF</string>
-				<string>047E9F76009C6228F7FB28FD</string>
-				<string>72FDCC34D0D66414E2129B41</string>
-				<string>30955E175636C4B6529761EC</string>
-				<string>CBE0B2B8133A161E931A9264</string>
-				<string>D4E1588FD047F38995818C29</string>
-				<string>958E019CF14F29D45B3970D5</string>
-				<string>77BB901D3A31596A4B5E4B82</string>
-				<string>796AF7D8574344B38138DD8D</string>
-				<string>FDD082782DFE2F7D7F1E07C8</string>
-				<string>0E52A9E2AA69AC0AE5859AA3</string>
-				<string>C369BC98769E07AE4B3EBE8A</string>
-				<string>DD7C3B67C4D72B00A16C0165</string>
-				<string>0828085971A16F1AFE551FD7</string>
-				<string>3CF14CAF8B2C21203E165519</string>
-				<string>37D695DF05E5341ECD22B903</string>
-				<string>0B3B04CEE2CACD7D02380BFA</string>
-				<string>1F76588B1A011348DF91AE16</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>vfrReader</string>
-			<key>path</key>
-			<string>vfrReader</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>884727AB4020D6DEEC7C0190</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>CGPDFDocument.m</string>
-			<key>path</key>
-			<string>Sources/CGPDFDocument.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8D169758ABCCB21999A28C54</key>
-		<dict>
-			<key>fileRef</key>
-			<string>53C2E6E90FF18EE8A184FBA7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>8E427D77D61EE2A5E4BA13EE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4E73608B137B5E4D5B59FF3C</string>
-				<string>AE2C982B5DB35A2C9F6EC3D0</string>
-				<string>A4E2B3A1CECD227E28D765FF</string>
-				<string>0A72CF471F9619F628BDF003</string>
-				<string>E2ADB0AC4F4F981688B5CCC3</string>
-				<string>CE87C8992F6EAA98026B966F</string>
-				<string>6041B3E50FFC2EAB8A83ADDB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>path</key>
-			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>92A0A5388941FAA60E6A5755</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0E52A9E2AA69AC0AE5859AA3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9512612312AC74FA7A25F48C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A70806450C5C5B7D69621C74</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>958E019CF14F29D45B3970D5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderThumbsView.h</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbsView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>96551F372D73730F3FDD1DAB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>CE87C8992F6EAA98026B966F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9680BD50A42983B0D4827F46</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3D53F549AE675E7AF358B759</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>98842491038FB5249E828060</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Button-H@2x.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Button-H@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9919227B5B03536CA024FF14</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderThumbCache.m</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbCache.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>99DED5D398562FD8BCB0EA69</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderMainToolbar.m</string>
-			<key>path</key>
-			<string>Sources/ReaderMainToolbar.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A587625372ACE36D9846D88</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30955E175636C4B6529761EC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>9A68FAA42DED801622489B84</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderDocument.h</string>
-			<key>path</key>
-			<string>Sources/ReaderDocument.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A87C63DDF70743F5B2CFF3E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderContentPage.m</string>
-			<key>path</key>
-			<string>Sources/ReaderContentPage.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9BE2BEF0CA2D2E1420AF2840</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Reader-Print.png</string>
-			<key>path</key>
-			<string>Graphics/Reader-Print.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D7CEA80ED8BDD1D64B7DB33</key>
-		<dict>
-			<key>fileRef</key>
-			<string>77BB901D3A31596A4B5E4B82</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>9E0988C2E34EEE393B232504</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C369BC98769E07AE4B3EBE8A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>9F072178556E71F9FADED0BA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6041B3E50FFC2EAB8A83ADDB</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>INSTALL_PATH</key>
-				<string>$(BUILT_PRODUCTS_DIR)</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>OTHER_CFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_CPLUSPLUSFLAGS</key>
-				<array>
-					<string>-DNS_BLOCK_ASSERTIONS=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A318119DE041C868823EF90F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>ImageIO.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>A40D7C22E86C7D047BA94145</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8E427D77D61EE2A5E4BA13EE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A4CA674C999ACD497F9AF0D7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>85D4B7BF737217ECBE73CB2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A4E2B3A1CECD227E28D765FF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A5A2B65C2FC38966B275549D</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>59679078276480BA547B9630</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6F46F5AE48FB8B452D1712A1</string>
-				<string>D308511385D7BFCDBB1E7BBF</string>
-				<string>BF15DB4BF25201086DABAB75</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-vfrReader</string>
-			<key>productName</key>
-			<string>Pods-vfrReader</string>
-			<key>productReference</key>
-			<string>1E85C41A2102DD12BE72450D</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>A70806450C5C5B7D69621C74</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderContentView.m</string>
-			<key>path</key>
-			<string>Sources/ReaderContentView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A887F753E2B0BAC557F3CFEB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderContentTile.h</string>
-			<key>path</key>
-			<string>Sources/ReaderContentTile.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A8CAD4CF117A348D8043B1E2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>884727AB4020D6DEEC7C0190</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>AA4F05CCDF702DBE83F48573</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>AE1D6260DCECAC628729D989</key>
-		<dict>
-			<key>fileRef</key>
-			<string>958E019CF14F29D45B3970D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>AE2C982B5DB35A2C9F6EC3D0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AF8FD6D36B1520F0BCD1299A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>36CE02C962337F05DF84E96D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B027B2D805E4AB823F82493B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A887F753E2B0BAC557F3CFEB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B40F693D905FBE8371BFEB99</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D54F6A1BF45B209F45878C72</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B4AB2F179919C6CC9C0F93B1</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B58BEA15A24CFA6A16735290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>172EAC12DE5A050D3DB69BAF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B92CCA1ADAC22BD6B7537199</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6F3CA212AB05EBE32F5EA5C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>BAC9C74EE6EF0822BF46D300</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5BC5821955D8FB599DC1554</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>BEB74112AF156C21A30FEDA2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderDocumentOutline.m</string>
-			<key>path</key>
-			<string>Sources/ReaderDocumentOutline.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF15DB4BF25201086DABAB75</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9680BD50A42983B0D4827F46</string>
-				<string>67E0DBD437EBD743DCF19516</string>
-				<string>CC5437372F5018254FC571A2</string>
-				<string>B027B2D805E4AB823F82493B</string>
-				<string>53701E85A20F95980F134B55</string>
-				<string>0383F5D91DD511A94A379F83</string>
-				<string>F98D1BA10AD63DE90D9A667B</string>
-				<string>640113E3B18C7572B8D434B1</string>
-				<string>C9392313952981C9096F9472</string>
-				<string>AF8FD6D36B1520F0BCD1299A</string>
-				<string>ED8344090C818B1550EEB389</string>
-				<string>CA279C91E65615F430280062</string>
-				<string>C43416AB9B4B7EE8EB8F1BDF</string>
-				<string>0799DCA6EC0DD4BB2BCBDAF4</string>
-				<string>5E2DFF3824261AF894F58FFB</string>
-				<string>AE1D6260DCECAC628729D989</string>
-				<string>D44F7D560C4321C7E6231FF8</string>
-				<string>92A0A5388941FAA60E6A5755</string>
-				<string>4B5FC75B7561E0286E70356F</string>
-				<string>15F05FABAE27CFDC2BE62576</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C2410371C9AF84D187B3DE04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>261C333D2A2377FD36BCC7AA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C369BC98769E07AE4B3EBE8A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ThumbsMainToolbar.m</string>
-			<key>path</key>
-			<string>Sources/ThumbsMainToolbar.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C43416AB9B4B7EE8EB8F1BDF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7FD1D694F292F4A08029FFAF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C9392313952981C9096F9472</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45518A7F33ACCC5AA20A2D16</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CA279C91E65615F430280062</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3503C3A838A2BF149D156F33</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBE0B2B8133A161E931A9264</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderThumbView.h</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC259AA6ED4F9C94524EA6E4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-vfrReader.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC5437372F5018254FC571A2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>42E31264A4951AD16C978913</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CE87C8992F6EAA98026B966F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2B4607DDC19E94A336C7B5E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>QuartzCore.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D308511385D7BFCDBB1E7BBF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B58BEA15A24CFA6A16735290</string>
-				<string>7D786409A29041F2F9403BAC</string>
-				<string>6F076B26342FF93EDEA08FCD</string>
-				<string>C2410371C9AF84D187B3DE04</string>
-				<string>740A5F2A9649A7E73866F558</string>
-				<string>09A131832EE2147DB27BB08B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D44F7D560C4321C7E6231FF8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>796AF7D8574344B38138DD8D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4E1588FD047F38995818C29</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderThumbView.m</string>
-			<key>path</key>
-			<string>Sources/ReaderThumbView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D54F6A1BF45B209F45878C72</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>D84AB2625AC57949BD96B87E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0828085971A16F1AFE551FD7</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>DC3DC9677F9B740F4F7BDB2A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D4E1588FD047F38995818C29</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>DD7C3B67C4D72B00A16C0165</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ThumbsViewController.h</string>
-			<key>path</key>
-			<string>Sources/ThumbsViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DDC12127525335D912ED0A55</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>5B127616E2FF2756762795CD</string>
-				<string>756FC780A654B59FAEEE17D4</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E2ADB0AC4F4F981688B5CCC3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E5BC5821955D8FB599DC1554</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderConstants.m</string>
-			<key>path</key>
-			<string>Sources/ReaderConstants.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E77B787E46950DF91DAB72AC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>047E9F76009C6228F7FB28FD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>EB4BA6BD246127C02BC5C00F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5B36C07A47F5C400301B94AD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>ED8344090C818B1550EEB389</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7EA4E7C67366EEC7DAACF4ED</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EE9C8D7F42C4C73166D00C66</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderContentTile.m</string>
-			<key>path</key>
-			<string>Sources/ReaderContentTile.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F41FF0A9DEC590C96EF38E25</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ReaderConstants.h</string>
-			<key>path</key>
-			<string>Sources/ReaderConstants.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F49F034A2DA4C37F3E9D3E43</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EE9C8D7F42C4C73166D00C66</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>F98D1BA10AD63DE90D9A667B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>508107D2789630455D381420</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FB908375D83592EECD1DE44F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderDocument.m</string>
-			<key>path</key>
-			<string>Sources/ReaderDocument.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FC18D22CBBE3F39D095C62E5</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>96551F372D73730F3FDD1DAB</string>
-				<string>9F072178556E71F9FADED0BA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FCA543A2D10889F77E8A75B8</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0510</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>DDC12127525335D912ED0A55</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>00E17B6808FE06060D8709E0</string>
-			<key>productRefGroup</key>
-			<string>2FEE4C991B6489B50DA142C6</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>7DA8B4C16B96F2FA6BC6B9EE</string>
-				<string>A5A2B65C2FC38966B275549D</string>
-			</array>
-		</dict>
-		<key>FDD082782DFE2F7D7F1E07C8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ReaderViewController.m</string>
-			<key>path</key>
-			<string>Sources/ReaderViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>FCA543A2D10889F77E8A75B8</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C9DAE351FEC0E59BD84D2BF /* ReaderThumbCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B6446E95B8D70C02EF2D60 /* ReaderThumbCache.h */; };
+		0E63471DF0A8B2A6BB3D3334 /* Pods-vfrReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B36708D18AA134E43B904816 /* Pods-vfrReader-dummy.m */; };
+		17F181AE681CAFF8A2995331 /* CGPDFDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 6007449DD191FD916E2F1F1A /* CGPDFDocument.h */; };
+		1E240799C54C4625EF0BA24F /* ReaderThumbRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5EEE018CAFABAC86243B4A /* ReaderThumbRequest.h */; };
+		21CD9132BEE329883CF693C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE6662B6952BA66BB1913B5 /* Foundation.framework */; };
+		2594679ED5E002DEA6B65877 /* ReaderContentPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B866E0A274ECA2F11959C18 /* ReaderContentPage.h */; };
+		27D09EAAFBF257B60BDF028D /* ReaderDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB726E73EA6F044CE622467 /* ReaderDocument.h */; };
+		28423C19C105023003A5801C /* ReaderThumbCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEAB6773AB8CED45500A3B7 /* ReaderThumbCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		28B66671AC99FD93C56ED276 /* ReaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD4D1C5378B952238D36374 /* ReaderViewController.h */; };
+		2F127FF8362587B5E0AEAC5A /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B0EDA9C98C8ED0268CF86 /* UIXToolbarView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		351DA2924FD01B72D306A172 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329AC89786539D7ADD0BF05D /* ImageIO.framework */; };
+		41C1C98220919E35A9540DAC /* ReaderThumbRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CA51A1E1B9A774439E8FF33 /* ReaderThumbRender.h */; };
+		45EA8DC61ACC58B13E5B92AF /* ReaderThumbsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 078B16BFC6F79073B0C5FECF /* ReaderThumbsView.h */; };
+		47628842732E1CC2FFE1F7F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99148A76D515C5170C2AA8E /* CoreGraphics.framework */; };
+		496077DBEDB3673E1216835C /* ReaderThumbFetch.h in Headers */ = {isa = PBXBuildFile; fileRef = D9FA40BD261077F162043638 /* ReaderThumbFetch.h */; };
+		4E999E2637A8E6388092CA58 /* ThumbsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7CE57892C339F9B70E802F /* ThumbsViewController.h */; };
+		5066B388ACB1C7C0F5634B43 /* ReaderDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A6D66CC724AC3DB2E229B /* ReaderDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		50FFC39FB90B2C9FF28307E2 /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = E860BA5E7672E6F832A5B9C2 /* ReaderContentPage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		55E4A4A960D560CA452AF794 /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F6C24FAF07EEAEC69D7EA /* ReaderConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		56B16DACA603DDB2E80E197D /* ReaderContentTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0851F6DD0A4B27BCF83E2A88 /* ReaderContentTile.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5ED2C2755EF7BD63C0E66A84 /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2109E8E10305B975D7E164E6 /* CGPDFDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		624F354D0BF136500CC07122 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58A7800AE397FD1ED62C43F /* MessageUI.framework */; };
+		72E54A2B6B2CC3908EFC6E59 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3665346C682F954A39AE4500 /* QuartzCore.framework */; };
+		7310F63812B67F3473FC779C /* ReaderDocumentOutline.h in Headers */ = {isa = PBXBuildFile; fileRef = 30069FA7B4BDA49BF9F2481B /* ReaderDocumentOutline.h */; };
+		739693E25431DC6AA61C11DA /* ReaderThumbFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEDD14F2BBFA4DED237FDE1 /* ReaderThumbFetch.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		74C0A5EFCFA7682552B75853 /* ReaderMainPagebar.m in Sources */ = {isa = PBXBuildFile; fileRef = BAEA6255FEF4BF0551873006 /* ReaderMainPagebar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		75C7B2A8198D36A0D1AEA78D /* ReaderThumbQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C31D88D5389BC0440F8DDCD8 /* ReaderThumbQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7849D4F394158D4D232259E4 /* ReaderContentTile.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2EC60B57841266FF85F464 /* ReaderContentTile.h */; };
+		788BF6100F453EF0C691903B /* ReaderThumbQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = A83ECB6804E49C58A0C2339E /* ReaderThumbQueue.h */; };
+		7A4A2CEAE61C20FC1D61F49B /* ReaderDocumentOutline.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F74D43121FB922D65A9D3FD /* ReaderDocumentOutline.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AD138CC086DDD18BB97B5191 /* ReaderMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 706FAA9EEACC26A985DF5CD9 /* ReaderMainToolbar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ADE8F4E55A309175DA247EC2 /* ThumbsMainToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1CB3002C9029224AB41E54 /* ThumbsMainToolbar.h */; };
+		B3DF44A1C446A1F745A4438D /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1A0D05F9ACDEC4423A072 /* ReaderViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B6454043DE5378A11CE0E097 /* ReaderMainPagebar.h in Headers */ = {isa = PBXBuildFile; fileRef = 79EFED4A3EC9EFCF4178A0F2 /* ReaderMainPagebar.h */; };
+		C362DC819BDD601A20169ADE /* ReaderThumbRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8A2B791066D10E96243B6F /* ReaderThumbRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D04C0B0F32959E8C72DEB321 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE6662B6952BA66BB1913B5 /* Foundation.framework */; };
+		D4F68B19123A211F8452E6B5 /* ReaderMainToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = ED1FE1E08AC151A4367EA217 /* ReaderMainToolbar.h */; };
+		D9902E192A3253E8E09075BA /* ReaderContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 260C3D686DA98C721A883D95 /* ReaderContentView.h */; };
+		DBF39BED55FF7F45A23CF2D6 /* ReaderThumbView.h in Headers */ = {isa = PBXBuildFile; fileRef = 40141BA6AAE7F936FF735005 /* ReaderThumbView.h */; };
+		DECE3C6B840183F477C7F7F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CABBA8CB9893F9AF409BF2 /* UIKit.framework */; };
+		E90F403149F1CBEA713796C6 /* ThumbsMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = A8245A3CD87CD58680C53565 /* ThumbsMainToolbar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ED4AC8A948E0269B7276A27E /* ReaderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC94F15C0A2804F4C0A80C6A /* ReaderThumbView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F27F8B504B6060DB44282874 /* UIXToolbarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7236ADC0B8EA96855AF766DC /* UIXToolbarView.h */; };
+		F31712F945F95E89F472004A /* ReaderThumbsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F61C6EA9ECD286064CE3657E /* ReaderThumbsView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F76BC4625874828C80F35156 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F24B98FC5A2A27D4088B8C99 /* Pods-dummy.m */; };
+		F8950E6AB2BCCE718AC68D85 /* ReaderThumbRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7E1E478A255AD4FBCDE85 /* ReaderThumbRender.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F92034A46894F8A8C57C6AF9 /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C61CBF234A49220C1F482B15 /* ThumbsViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F9E0921465FFA53826542D40 /* ReaderConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F9866D8BA00D09B1E6D9125E /* ReaderConstants.h */; };
+		FF3731A840121D59A7B294A7 /* ReaderContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1306A2086C64B32DFC8D2807 /* ReaderContentView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F60B5192042D7B42EBBB4DDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 239E69F1EC29DA769A6D46ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD04DADEC4EBF6AAB7C068E3;
+			remoteInfo = "Pods-vfrReader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04B6446E95B8D70C02EF2D60 /* ReaderThumbCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbCache.h; path = Sources/ReaderThumbCache.h; sourceTree = "<group>"; };
+		078B16BFC6F79073B0C5FECF /* ReaderThumbsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbsView.h; path = Sources/ReaderThumbsView.h; sourceTree = "<group>"; };
+		0851F6DD0A4B27BCF83E2A88 /* ReaderContentTile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderContentTile.m; path = Sources/ReaderContentTile.m; sourceTree = "<group>"; };
+		0D1CB3002C9029224AB41E54 /* ThumbsMainToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ThumbsMainToolbar.h; path = Sources/ThumbsMainToolbar.h; sourceTree = "<group>"; };
+		1306A2086C64B32DFC8D2807 /* ReaderContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderContentView.m; path = Sources/ReaderContentView.m; sourceTree = "<group>"; };
+		181B0EDA9C98C8ED0268CF86 /* UIXToolbarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIXToolbarView.m; path = Sources/UIXToolbarView.m; sourceTree = "<group>"; };
+		1CA51A1E1B9A774439E8FF33 /* ReaderThumbRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRender.h; path = Sources/ReaderThumbRender.h; sourceTree = "<group>"; };
+		1DF1A0D05F9ACDEC4423A072 /* ReaderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderViewController.m; path = Sources/ReaderViewController.m; sourceTree = "<group>"; };
+		1F8AAEBFC3D2A8C774AAE8B6 /* Reader-Thumbs@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Thumbs@2x.png"; path = "Graphics/Reader-Thumbs@2x.png"; sourceTree = "<group>"; };
+		2109E8E10305B975D7E164E6 /* CGPDFDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGPDFDocument.m; path = Sources/CGPDFDocument.m; sourceTree = "<group>"; };
+		21ABD27235C53E7551045EDD /* Reader-Mark-N@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-N@2x.png"; path = "Graphics/Reader-Mark-N@2x.png"; sourceTree = "<group>"; };
+		260C3D686DA98C721A883D95 /* ReaderContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderContentView.h; path = Sources/ReaderContentView.h; sourceTree = "<group>"; };
+		2D8608888ADCAA0CD4A8D268 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		2EEAB6773AB8CED45500A3B7 /* ReaderThumbCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbCache.m; path = Sources/ReaderThumbCache.m; sourceTree = "<group>"; };
+		2F74D43121FB922D65A9D3FD /* ReaderDocumentOutline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderDocumentOutline.m; path = Sources/ReaderDocumentOutline.m; sourceTree = "<group>"; };
+		30069FA7B4BDA49BF9F2481B /* ReaderDocumentOutline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderDocumentOutline.h; path = Sources/ReaderDocumentOutline.h; sourceTree = "<group>"; };
+		329AC89786539D7ADD0BF05D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		33AC962954ABA2C3C38DD325 /* Reader-Button-H.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-H.png"; path = "Graphics/Reader-Button-H.png"; sourceTree = "<group>"; };
+		352E1836D3C4CB9CDEB4EFD2 /* Pods-vfrReader-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-vfrReader-Private.xcconfig"; sourceTree = "<group>"; };
+		3665346C682F954A39AE4500 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3BE8F4CD5C2BA0817208BC0B /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		40141BA6AAE7F936FF735005 /* ReaderThumbView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbView.h; path = Sources/ReaderThumbView.h; sourceTree = "<group>"; };
+		4393A48382AD81FD55EAE266 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		4B11BB2D299041730563E699 /* Pods-vfrReader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-vfrReader-prefix.pch"; sourceTree = "<group>"; };
+		4B6F6C24FAF07EEAEC69D7EA /* ReaderConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderConstants.m; path = Sources/ReaderConstants.m; sourceTree = "<group>"; };
+		52CABBA8CB9893F9AF409BF2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		532E7DB44480BA665CA8532F /* Reader-Email@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Email@2x.png"; path = "Graphics/Reader-Email@2x.png"; sourceTree = "<group>"; };
+		5DE997D50C88FCC1B174C0DD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6007449DD191FD916E2F1F1A /* CGPDFDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGPDFDocument.h; path = Sources/CGPDFDocument.h; sourceTree = "<group>"; };
+		60A9E7637FAD18EB0E673739 /* Reader-Mark-Y@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-Y@2x.png"; path = "Graphics/Reader-Mark-Y@2x.png"; sourceTree = "<group>"; };
+		62B5CA07E1118282F00EC222 /* Reader-Thumbs.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Thumbs.png"; path = "Graphics/Reader-Thumbs.png"; sourceTree = "<group>"; };
+		6B866E0A274ECA2F11959C18 /* ReaderContentPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderContentPage.h; path = Sources/ReaderContentPage.h; sourceTree = "<group>"; };
+		6BDC604A397F135D31071F6F /* Reader-Print.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Print.png"; path = "Graphics/Reader-Print.png"; sourceTree = "<group>"; };
+		6EEDD14F2BBFA4DED237FDE1 /* ReaderThumbFetch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbFetch.m; path = Sources/ReaderThumbFetch.m; sourceTree = "<group>"; };
+		706FAA9EEACC26A985DF5CD9 /* ReaderMainToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderMainToolbar.m; path = Sources/ReaderMainToolbar.m; sourceTree = "<group>"; };
+		7236ADC0B8EA96855AF766DC /* UIXToolbarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIXToolbarView.h; path = Sources/UIXToolbarView.h; sourceTree = "<group>"; };
+		79EFED4A3EC9EFCF4178A0F2 /* ReaderMainPagebar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderMainPagebar.h; path = Sources/ReaderMainPagebar.h; sourceTree = "<group>"; };
+		7E5A6D66CC724AC3DB2E229B /* ReaderDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderDocument.m; path = Sources/ReaderDocument.m; sourceTree = "<group>"; };
+		7EB726E73EA6F044CE622467 /* ReaderDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderDocument.h; path = Sources/ReaderDocument.h; sourceTree = "<group>"; };
+		80A7E1E478A255AD4FBCDE85 /* ReaderThumbRender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbRender.m; path = Sources/ReaderThumbRender.m; sourceTree = "<group>"; };
+		8A4FD2DD6F9022CE7390EF0D /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		8E39371C74DC4C0175F3AB79 /* Reader-Mark-Y.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-Y.png"; path = "Graphics/Reader-Mark-Y.png"; sourceTree = "<group>"; };
+		9197BCB987F77FFB92C01A4F /* libPods-vfrReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vfrReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		968E0EF385D0F495796D2C66 /* Reader-Print@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Print@2x.png"; path = "Graphics/Reader-Print@2x.png"; sourceTree = "<group>"; };
+		9D5EEE018CAFABAC86243B4A /* ReaderThumbRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRequest.h; path = Sources/ReaderThumbRequest.h; sourceTree = "<group>"; };
+		9F2EC60B57841266FF85F464 /* ReaderContentTile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderContentTile.h; path = Sources/ReaderContentTile.h; sourceTree = "<group>"; };
+		A0097235AD29C546BBF27C8B /* Reader-Button-H@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-H@2x.png"; path = "Graphics/Reader-Button-H@2x.png"; sourceTree = "<group>"; };
+		A8245A3CD87CD58680C53565 /* ThumbsMainToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ThumbsMainToolbar.m; path = Sources/ThumbsMainToolbar.m; sourceTree = "<group>"; };
+		A83ECB6804E49C58A0C2339E /* ReaderThumbQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbQueue.h; path = Sources/ReaderThumbQueue.h; sourceTree = "<group>"; };
+		A99148A76D515C5170C2AA8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		ADE6662B6952BA66BB1913B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B36708D18AA134E43B904816 /* Pods-vfrReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-vfrReader-dummy.m"; sourceTree = "<group>"; };
+		BAEA6255FEF4BF0551873006 /* ReaderMainPagebar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderMainPagebar.m; path = Sources/ReaderMainPagebar.m; sourceTree = "<group>"; };
+		BC94F15C0A2804F4C0A80C6A /* ReaderThumbView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbView.m; path = Sources/ReaderThumbView.m; sourceTree = "<group>"; };
+		C1213F982611384FADD1A91E /* Pods-vfrReader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-vfrReader.xcconfig"; sourceTree = "<group>"; };
+		C31D88D5389BC0440F8DDCD8 /* ReaderThumbQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbQueue.m; path = Sources/ReaderThumbQueue.m; sourceTree = "<group>"; };
+		C61CBF234A49220C1F482B15 /* ThumbsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ThumbsViewController.m; path = Sources/ThumbsViewController.m; sourceTree = "<group>"; };
+		CCB952BED949A61B992609AB /* Reader-Button-N@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-N@2x.png"; path = "Graphics/Reader-Button-N@2x.png"; sourceTree = "<group>"; };
+		CE7CE57892C339F9B70E802F /* ThumbsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ThumbsViewController.h; path = Sources/ThumbsViewController.h; sourceTree = "<group>"; };
+		CFD4D1C5378B952238D36374 /* ReaderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderViewController.h; path = Sources/ReaderViewController.h; sourceTree = "<group>"; };
+		D9FA40BD261077F162043638 /* ReaderThumbFetch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbFetch.h; path = Sources/ReaderThumbFetch.h; sourceTree = "<group>"; };
+		E1B5CF9F04B7C14FA25EE2AC /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		E58A7800AE397FD1ED62C43F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		E860BA5E7672E6F832A5B9C2 /* ReaderContentPage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderContentPage.m; path = Sources/ReaderContentPage.m; sourceTree = "<group>"; };
+		E990E1720AD375A7EA5B3701 /* Reader-Email.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Email.png"; path = "Graphics/Reader-Email.png"; sourceTree = "<group>"; };
+		EBB3CA203733B862B75AD13C /* Reader-Button-N.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-N.png"; path = "Graphics/Reader-Button-N.png"; sourceTree = "<group>"; };
+		ED1FE1E08AC151A4367EA217 /* ReaderMainToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderMainToolbar.h; path = Sources/ReaderMainToolbar.h; sourceTree = "<group>"; };
+		EE4ECC1D727B5F919F1169E2 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EE9B0468E88FB1EAFF269708 /* Reader-Mark-N.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-N.png"; path = "Graphics/Reader-Mark-N.png"; sourceTree = "<group>"; };
+		F24B98FC5A2A27D4088B8C99 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		F61C6EA9ECD286064CE3657E /* ReaderThumbsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbsView.m; path = Sources/ReaderThumbsView.m; sourceTree = "<group>"; };
+		F74FA7017D213733BF5C73A3 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		F9866D8BA00D09B1E6D9125E /* ReaderConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderConstants.h; path = Sources/ReaderConstants.h; sourceTree = "<group>"; };
+		FA8A2B791066D10E96243B6F /* ReaderThumbRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbRequest.m; path = Sources/ReaderThumbRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045DA1D8FC714A920CB79BAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47628842732E1CC2FFE1F7F1 /* CoreGraphics.framework in Frameworks */,
+				D04C0B0F32959E8C72DEB321 /* Foundation.framework in Frameworks */,
+				351DA2924FD01B72D306A172 /* ImageIO.framework in Frameworks */,
+				624F354D0BF136500CC07122 /* MessageUI.framework in Frameworks */,
+				72E54A2B6B2CC3908EFC6E59 /* QuartzCore.framework in Frameworks */,
+				DECE3C6B840183F477C7F7F4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20B0BB3B122CC062B8599A48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CD9132BEE329883CF693C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		073D1C5E49C8CC11A5DCC66B /* vfrReader */ = {
+			isa = PBXGroup;
+			children = (
+				6007449DD191FD916E2F1F1A /* CGPDFDocument.h */,
+				2109E8E10305B975D7E164E6 /* CGPDFDocument.m */,
+				F9866D8BA00D09B1E6D9125E /* ReaderConstants.h */,
+				4B6F6C24FAF07EEAEC69D7EA /* ReaderConstants.m */,
+				6B866E0A274ECA2F11959C18 /* ReaderContentPage.h */,
+				E860BA5E7672E6F832A5B9C2 /* ReaderContentPage.m */,
+				9F2EC60B57841266FF85F464 /* ReaderContentTile.h */,
+				0851F6DD0A4B27BCF83E2A88 /* ReaderContentTile.m */,
+				260C3D686DA98C721A883D95 /* ReaderContentView.h */,
+				1306A2086C64B32DFC8D2807 /* ReaderContentView.m */,
+				7EB726E73EA6F044CE622467 /* ReaderDocument.h */,
+				7E5A6D66CC724AC3DB2E229B /* ReaderDocument.m */,
+				30069FA7B4BDA49BF9F2481B /* ReaderDocumentOutline.h */,
+				2F74D43121FB922D65A9D3FD /* ReaderDocumentOutline.m */,
+				79EFED4A3EC9EFCF4178A0F2 /* ReaderMainPagebar.h */,
+				BAEA6255FEF4BF0551873006 /* ReaderMainPagebar.m */,
+				ED1FE1E08AC151A4367EA217 /* ReaderMainToolbar.h */,
+				706FAA9EEACC26A985DF5CD9 /* ReaderMainToolbar.m */,
+				04B6446E95B8D70C02EF2D60 /* ReaderThumbCache.h */,
+				2EEAB6773AB8CED45500A3B7 /* ReaderThumbCache.m */,
+				D9FA40BD261077F162043638 /* ReaderThumbFetch.h */,
+				6EEDD14F2BBFA4DED237FDE1 /* ReaderThumbFetch.m */,
+				A83ECB6804E49C58A0C2339E /* ReaderThumbQueue.h */,
+				C31D88D5389BC0440F8DDCD8 /* ReaderThumbQueue.m */,
+				1CA51A1E1B9A774439E8FF33 /* ReaderThumbRender.h */,
+				80A7E1E478A255AD4FBCDE85 /* ReaderThumbRender.m */,
+				9D5EEE018CAFABAC86243B4A /* ReaderThumbRequest.h */,
+				FA8A2B791066D10E96243B6F /* ReaderThumbRequest.m */,
+				40141BA6AAE7F936FF735005 /* ReaderThumbView.h */,
+				BC94F15C0A2804F4C0A80C6A /* ReaderThumbView.m */,
+				078B16BFC6F79073B0C5FECF /* ReaderThumbsView.h */,
+				F61C6EA9ECD286064CE3657E /* ReaderThumbsView.m */,
+				CFD4D1C5378B952238D36374 /* ReaderViewController.h */,
+				1DF1A0D05F9ACDEC4423A072 /* ReaderViewController.m */,
+				0D1CB3002C9029224AB41E54 /* ThumbsMainToolbar.h */,
+				A8245A3CD87CD58680C53565 /* ThumbsMainToolbar.m */,
+				CE7CE57892C339F9B70E802F /* ThumbsViewController.h */,
+				C61CBF234A49220C1F482B15 /* ThumbsViewController.m */,
+				7236ADC0B8EA96855AF766DC /* UIXToolbarView.h */,
+				181B0EDA9C98C8ED0268CF86 /* UIXToolbarView.m */,
+				B02C099F752E87086D75BCFE /* Resources */,
+				CF0509C7D3F3ACBEC817B9E4 /* Support Files */,
+			);
+			path = vfrReader;
+			sourceTree = "<group>";
+		};
+		3CE06A97DCA35814A7447D3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				073D1C5E49C8CC11A5DCC66B /* vfrReader */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5B6146ACE079D78E9ABA4609 = {
+			isa = PBXGroup;
+			children = (
+				EE4ECC1D727B5F919F1169E2 /* Podfile */,
+				A1AE1174E01FF93FA01F67DD /* Frameworks */,
+				3CE06A97DCA35814A7447D3B /* Pods */,
+				90B179CA34842994EBED0A82 /* Products */,
+				8D924E5ABF76A2CC56EC4452 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8D924E5ABF76A2CC56EC4452 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF8D92A9EFEA5E4E3D56E209 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		90B179CA34842994EBED0A82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DE997D50C88FCC1B174C0DD /* libPods.a */,
+				9197BCB987F77FFB92C01A4F /* libPods-vfrReader.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1AE1174E01FF93FA01F67DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B48DFF4B4034C22B7E6B8204 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF8D92A9EFEA5E4E3D56E209 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BE8F4CD5C2BA0817208BC0B /* Pods-acknowledgements.markdown */,
+				E1B5CF9F04B7C14FA25EE2AC /* Pods-acknowledgements.plist */,
+				F24B98FC5A2A27D4088B8C99 /* Pods-dummy.m */,
+				F74FA7017D213733BF5C73A3 /* Pods-environment.h */,
+				8A4FD2DD6F9022CE7390EF0D /* Pods-resources.sh */,
+				2D8608888ADCAA0CD4A8D268 /* Pods.debug.xcconfig */,
+				4393A48382AD81FD55EAE266 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		B02C099F752E87086D75BCFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				33AC962954ABA2C3C38DD325 /* Reader-Button-H.png */,
+				A0097235AD29C546BBF27C8B /* Reader-Button-H@2x.png */,
+				EBB3CA203733B862B75AD13C /* Reader-Button-N.png */,
+				CCB952BED949A61B992609AB /* Reader-Button-N@2x.png */,
+				E990E1720AD375A7EA5B3701 /* Reader-Email.png */,
+				532E7DB44480BA665CA8532F /* Reader-Email@2x.png */,
+				EE9B0468E88FB1EAFF269708 /* Reader-Mark-N.png */,
+				21ABD27235C53E7551045EDD /* Reader-Mark-N@2x.png */,
+				8E39371C74DC4C0175F3AB79 /* Reader-Mark-Y.png */,
+				60A9E7637FAD18EB0E673739 /* Reader-Mark-Y@2x.png */,
+				6BDC604A397F135D31071F6F /* Reader-Print.png */,
+				968E0EF385D0F495796D2C66 /* Reader-Print@2x.png */,
+				62B5CA07E1118282F00EC222 /* Reader-Thumbs.png */,
+				1F8AAEBFC3D2A8C774AAE8B6 /* Reader-Thumbs@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B48DFF4B4034C22B7E6B8204 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A99148A76D515C5170C2AA8E /* CoreGraphics.framework */,
+				ADE6662B6952BA66BB1913B5 /* Foundation.framework */,
+				329AC89786539D7ADD0BF05D /* ImageIO.framework */,
+				E58A7800AE397FD1ED62C43F /* MessageUI.framework */,
+				3665346C682F954A39AE4500 /* QuartzCore.framework */,
+				52CABBA8CB9893F9AF409BF2 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF0509C7D3F3ACBEC817B9E4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1213F982611384FADD1A91E /* Pods-vfrReader.xcconfig */,
+				352E1836D3C4CB9CDEB4EFD2 /* Pods-vfrReader-Private.xcconfig */,
+				B36708D18AA134E43B904816 /* Pods-vfrReader-dummy.m */,
+				4B11BB2D299041730563E699 /* Pods-vfrReader-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-vfrReader";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87AFBE80C096A7722CE41DCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F181AE681CAFF8A2995331 /* CGPDFDocument.h in Headers */,
+				F9E0921465FFA53826542D40 /* ReaderConstants.h in Headers */,
+				2594679ED5E002DEA6B65877 /* ReaderContentPage.h in Headers */,
+				7849D4F394158D4D232259E4 /* ReaderContentTile.h in Headers */,
+				D9902E192A3253E8E09075BA /* ReaderContentView.h in Headers */,
+				27D09EAAFBF257B60BDF028D /* ReaderDocument.h in Headers */,
+				7310F63812B67F3473FC779C /* ReaderDocumentOutline.h in Headers */,
+				B6454043DE5378A11CE0E097 /* ReaderMainPagebar.h in Headers */,
+				D4F68B19123A211F8452E6B5 /* ReaderMainToolbar.h in Headers */,
+				0C9DAE351FEC0E59BD84D2BF /* ReaderThumbCache.h in Headers */,
+				496077DBEDB3673E1216835C /* ReaderThumbFetch.h in Headers */,
+				788BF6100F453EF0C691903B /* ReaderThumbQueue.h in Headers */,
+				41C1C98220919E35A9540DAC /* ReaderThumbRender.h in Headers */,
+				1E240799C54C4625EF0BA24F /* ReaderThumbRequest.h in Headers */,
+				DBF39BED55FF7F45A23CF2D6 /* ReaderThumbView.h in Headers */,
+				45EA8DC61ACC58B13E5B92AF /* ReaderThumbsView.h in Headers */,
+				28B66671AC99FD93C56ED276 /* ReaderViewController.h in Headers */,
+				ADE8F4E55A309175DA247EC2 /* ThumbsMainToolbar.h in Headers */,
+				4E999E2637A8E6388092CA58 /* ThumbsViewController.h in Headers */,
+				F27F8B504B6060DB44282874 /* UIXToolbarView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		331070A76D836B419C75B67A /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC9255BA83871DF1598E2A00 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				F03E1723F5DE868E6F2D6F6B /* Sources */,
+				20B0BB3B122CC062B8599A48 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50FC11DFEFFDE6CD915CC468 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 5DE997D50C88FCC1B174C0DD /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AD04DADEC4EBF6AAB7C068E3 /* Pods-vfrReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9959A44778C40674827D1093 /* Build configuration list for PBXNativeTarget "Pods-vfrReader" */;
+			buildPhases = (
+				9ADFB56BB529EDD53B142461 /* Sources */,
+				045DA1D8FC714A920CB79BAD /* Frameworks */,
+				87AFBE80C096A7722CE41DCF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-vfrReader";
+			productName = "Pods-vfrReader";
+			productReference = 9197BCB987F77FFB92C01A4F /* libPods-vfrReader.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		239E69F1EC29DA769A6D46ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = CCD1CC8E49E8266AFCE79DFF /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B6146ACE079D78E9ABA4609;
+			productRefGroup = 90B179CA34842994EBED0A82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				331070A76D836B419C75B67A /* Pods */,
+				AD04DADEC4EBF6AAB7C068E3 /* Pods-vfrReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ADFB56BB529EDD53B142461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED2C2755EF7BD63C0E66A84 /* CGPDFDocument.m in Sources */,
+				0E63471DF0A8B2A6BB3D3334 /* Pods-vfrReader-dummy.m in Sources */,
+				55E4A4A960D560CA452AF794 /* ReaderConstants.m in Sources */,
+				50FFC39FB90B2C9FF28307E2 /* ReaderContentPage.m in Sources */,
+				56B16DACA603DDB2E80E197D /* ReaderContentTile.m in Sources */,
+				FF3731A840121D59A7B294A7 /* ReaderContentView.m in Sources */,
+				5066B388ACB1C7C0F5634B43 /* ReaderDocument.m in Sources */,
+				7A4A2CEAE61C20FC1D61F49B /* ReaderDocumentOutline.m in Sources */,
+				74C0A5EFCFA7682552B75853 /* ReaderMainPagebar.m in Sources */,
+				AD138CC086DDD18BB97B5191 /* ReaderMainToolbar.m in Sources */,
+				28423C19C105023003A5801C /* ReaderThumbCache.m in Sources */,
+				739693E25431DC6AA61C11DA /* ReaderThumbFetch.m in Sources */,
+				75C7B2A8198D36A0D1AEA78D /* ReaderThumbQueue.m in Sources */,
+				F8950E6AB2BCCE718AC68D85 /* ReaderThumbRender.m in Sources */,
+				C362DC819BDD601A20169ADE /* ReaderThumbRequest.m in Sources */,
+				ED4AC8A948E0269B7276A27E /* ReaderThumbView.m in Sources */,
+				F31712F945F95E89F472004A /* ReaderThumbsView.m in Sources */,
+				B3DF44A1C446A1F745A4438D /* ReaderViewController.m in Sources */,
+				E90F403149F1CBEA713796C6 /* ThumbsMainToolbar.m in Sources */,
+				F92034A46894F8A8C57C6AF9 /* ThumbsViewController.m in Sources */,
+				2F127FF8362587B5E0AEAC5A /* UIXToolbarView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03E1723F5DE868E6F2D6F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76BC4625874828C80F35156 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50FC11DFEFFDE6CD915CC468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-vfrReader";
+			target = AD04DADEC4EBF6AAB7C068E3 /* Pods-vfrReader */;
+			targetProxy = F60B5192042D7B42EBBB4DDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11F342BB67FC77A8F3F186F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D8608888ADCAA0CD4A8D268 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1D05F0F6C52627C02358389A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352E1836D3C4CB9CDEB4EFD2 /* Pods-vfrReader-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-vfrReader/Pods-vfrReader-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		30B252440E842AF3286A2A95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4393A48382AD81FD55EAE266 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		517232C0CEFFAB23063C7076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B327F08B23DD81CFE9DA736B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 352E1836D3C4CB9CDEB4EFD2 /* Pods-vfrReader-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-vfrReader/Pods-vfrReader-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BBF21E85697CF52A9E54184C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9959A44778C40674827D1093 /* Build configuration list for PBXNativeTarget "Pods-vfrReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D05F0F6C52627C02358389A /* Debug */,
+				B327F08B23DD81CFE9DA736B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCD1CC8E49E8266AFCE79DFF /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF21E85697CF52A9E54184C /* Debug */,
+				517232C0CEFFAB23063C7076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC9255BA83871DF1598E2A00 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F342BB67FC77A8F3F186F2 /* Debug */,
+				30B252440E842AF3286A2A95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 239E69F1EC29DA769A6D46ED /* Project object */;
+}
