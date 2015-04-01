@@ -28,7 +28,7 @@
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSMutableDictionary *favorites = [[userDefaults objectForKey:USER_DEFAULTS_FAVORITES] mutableCopy];
-    favorites[self.pdf_url.absoluteString] = @(isFavorite);
+    favorites[[self.pdf_url.absoluteString lastPathComponent]] = @(isFavorite);
     [userDefaults setObject:favorites forKey:USER_DEFAULTS_FAVORITES];
     [userDefaults synchronize];
     
@@ -43,9 +43,9 @@
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSMutableDictionary *favorites = [[userDefaults objectForKey:USER_DEFAULTS_FAVORITES] mutableCopy];
-    if ([favorites objectForKey:self.pdf_url.absoluteString])
+    if ([favorites objectForKey:[self.pdf_url.absoluteString lastPathComponent]])
     {
-        return [[favorites objectForKey:self.pdf_url.absoluteString] boolValue];
+        return [[favorites objectForKey:[self.pdf_url.absoluteString lastPathComponent]] boolValue];
     }
     return NO;
  
