@@ -29,7 +29,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
             endingLineNumber = "103"
-            landmarkName = "-switchValueChanged:"
+            landmarkName = "-syncWithModel"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
