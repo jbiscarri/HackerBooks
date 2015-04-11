@@ -1,5 +1,7 @@
 #import "_Book.h"
 
 @interface Book : _Book {}
-// Custom logic goes here.
+
++ (void)fillGroupsWithInitialData:(NSArray*)data context:(NSManagedObjectContext*)context;
+
 @end

@@ -10,11 +10,12 @@
 #import "Settings.h"
 #import "AGTLibrary.h"
 #import "AGTBookViewController.h"
-
 #import "AGTTableViewController.h"
+#import "AGTCoreDataStack.h"
+#import "Book.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) AGTCoreDataStack *stack;
 @end
 
 @implementation AppDelegate
@@ -22,6 +23,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    
+    self.stack = [AGTCoreDataStack coreDataStackWithModelName:@"Books"];
     
     AGTLibrary *library = [self setupApp];
     
@@ -43,7 +46,7 @@
     NSURL *fileUrl = [[fileManager URLsForDirectory:NSDocumentDirectory
                                           inDomains:NSUserDomainMask] lastObject];
     fileUrl = [fileUrl URLByAppendingPathComponent:JSON_FILE_NAME];
-    
+    NSLog(fileUrl.path);
     //If I haven't download JSON yet, I'll do now and I'll save It
     NSData * jsonData;
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -52,21 +55,30 @@
         jsonData = [NSData dataWithContentsOfURL:jsonUrl];
         if (jsonData)
         {
-            BOOL writeResult = [jsonData writeToURL:fileUrl atomically:YES];
-            if (writeResult)
-            {
+            //Parse JSON
+            NSError *error;
+            id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData
+                                                            options:NSJSONReadingAllowFragments
+                                                              error:&error];
+            
+            if (jsonObject &&
+                [jsonObject isKindOfClass:[NSArray class]]){
+                NSArray *books = (NSArray*)jsonObject;
+                [Book fillGroupsWithInitialData:books context:self.stack.context];
+                [self.stack saveWithErrorBlock:nil];
+                
                 //Mark json as downloaded
                 [userDefaults setObject:@(1) forKey:USER_DEFAULTS_JSON_DONWLOADED];
                 //Store a NSDictionary to manage favorites
                 [userDefaults setObject:[NSDictionary dictionary] forKey:USER_DEFAULTS_FAVORITES];
                 [userDefaults synchronize];
+            }else{
+                NSLog(@"Error parsing json: %@", error.userInfo);
             }
         }       
-    }else{
-        jsonData = [NSData dataWithContentsOfURL:fileUrl];
     }
-    AGTLibrary *library = [[AGTLibrary alloc] initWithJSONData:jsonData];
-    return library;
+//    AGTLibrary *library = [[AGTLibrary alloc] initWithJSONData:jsonData];
+    return nil;
 }
 
 - (void)configureForPadWithModel:(AGTLibrary*)library

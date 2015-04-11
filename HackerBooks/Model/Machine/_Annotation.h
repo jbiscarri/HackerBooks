@@ -28,11 +28,11 @@ extern const struct AnnotationRelationships {
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 @property (nonatomic, readonly, strong) AnnotationID* objectID;
 
-@property (nonatomic, strong) NSString* creationDate;
+@property (nonatomic, strong) NSDate* creationDate;
 
 //- (BOOL)validateCreationDate:(id*)value_ error:(NSError**)error_;
 
-@property (nonatomic, strong) NSString* modificationDate;
+@property (nonatomic, strong) NSDate* modificationDate;
 
 //- (BOOL)validateModificationDate:(id*)value_ error:(NSError**)error_;
 
@@ -56,11 +56,11 @@ extern const struct AnnotationRelationships {
 
 @interface _Annotation (CoreDataGeneratedPrimitiveAccessors)
 
-- (NSString*)primitiveCreationDate;
-- (void)setPrimitiveCreationDate:(NSString*)value;
+- (NSDate*)primitiveCreationDate;
+- (void)setPrimitiveCreationDate:(NSDate*)value;
 
-- (NSString*)primitiveModificationDate;
-- (void)setPrimitiveModificationDate:(NSString*)value;
+- (NSDate*)primitiveModificationDate;
+- (void)setPrimitiveModificationDate:(NSDate*)value;
 
 - (NSString*)primitiveText;
 - (void)setPrimitiveText:(NSString*)value;

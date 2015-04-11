@@ -30,7 +30,7 @@
 @synthesize context=_context;
 
 
--(NSManagedObjectContext *)context{
+- (NSManagedObjectContext *)context{
     
     if (_context == nil){
         _context = [[NSManagedObjectContext alloc] init];
@@ -39,17 +39,18 @@
     return _context;
 }
 
--(NSPersistentStoreCoordinator *) storeCoordinator{
+- (NSPersistentStoreCoordinator *)storeCoordinator{
     if (_storeCoordinator == nil) {
         _storeCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.model];
         
-
+        NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @YES,
+                                  NSInferMappingModelAutomaticallyOption : @YES};
         
         NSError *err = nil;
         if (![_storeCoordinator addPersistentStoreWithType:NSSQLiteStoreType
                                              configuration:nil
                                                        URL:self.dbURL
-                                                   options:nil
+                                                   options:options
                                                      error:&err ]) {
             // Something went really wrong...
             // Send a notification and return nil
@@ -66,7 +67,7 @@
     return _storeCoordinator;
 }
 
--(NSManagedObjectModel *) model{
+- (NSManagedObjectModel *)model{
     
     if (_model == nil) {
         _model = [[NSManagedObjectModel alloc] initWithContentsOfURL:self.modelURL];
@@ -81,13 +82,13 @@
 }
 
 // Returns the URL to the application's Documents directory.
-+ (NSURL *)applicationDocumentsDirectory
++(NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
-+(AGTCoreDataStack *) coreDataStackWithModelName:(NSString *)aModelName
-                               databaseFilename:(NSString*) aDBName{
++ (AGTCoreDataStack *)coreDataStackWithModelName:(NSString *)aModelName
+                                databaseFilename:(NSString*) aDBName{
     
     NSURL *url = nil;
     
@@ -101,21 +102,21 @@
                                 databaseURL:url];
 }
 
-+(AGTCoreDataStack *) coreDataStackWithModelName:(NSString *)aModelName{
++ (AGTCoreDataStack *)coreDataStackWithModelName:(NSString *)aModelName{
     
     return [self coreDataStackWithModelName:aModelName
                            databaseFilename:nil];
 }
 
-+(AGTCoreDataStack *) coreDataStackWithModelName:(NSString *)aModelName
-                                    databaseURL:(NSURL*) aDBURL{
++ (AGTCoreDataStack *)coreDataStackWithModelName:(NSString *)aModelName
+                                     databaseURL:(NSURL*) aDBURL{
     return [[self alloc] initWithModelName: aModelName databaseURL:aDBURL];
     
 }
 
 #pragma mark - Init
 
--(id) initWithModelName:(NSString *)aModelName
+- (id)initWithModelName:(NSString *)aModelName
             databaseURL:(NSURL*) aDBURL{
     
     if (self = [super init]) {
@@ -131,7 +132,7 @@
 
 
 #pragma mark - Others
--(void) zapAllData{
+- (void)zapAllData{
     
     NSError *err = nil;
     for (NSPersistentStore *store in self.storeCoordinator.persistentStores) {
@@ -156,11 +157,11 @@
     _context = nil;
     _storeCoordinator = nil;
     _context = [self context]; // this will rebuild the stack
-
+    
 }
 
 
--(void) saveWithErrorBlock: (void(^)(NSError *error))errorBlock{
+- (void)saveWithErrorBlock: (void(^)(NSError *error))errorBlock{
     
     NSError *err = nil;
     // If a context is nil, saving it should also be considered an
@@ -170,20 +171,20 @@
         err = [NSError errorWithDomain:@"AGTCoreDataStack"
                                   code:1
                               userInfo:@{NSLocalizedDescriptionKey :
-               @"Attempted to save a nil NSManagedObjectContext. This AGTCoreDataStack has no context - probably there was an earlier error trying to access the CoreData database file."}];
+                                             @"Attempted to save a nil NSManagedObjectContext. This AGTCoreDataStack has no context - probably there was an earlier error trying to access the CoreData database file."}];
         errorBlock(err);
         
     }else if (self.context.hasChanges) {
         if (![self.context save:&err]) {
             if (errorBlock != nil) {
                 errorBlock(err);
-            }            
+            }
         }
     }
     
 }
 
--(NSArray *) executeFetchRequest:(NSFetchRequest *)req
+- (NSArray *)executeFetchRequest:(NSFetchRequest *)req
                       errorBlock:(void(^)(NSError *error)) errorBlock{
     
     NSError *err;

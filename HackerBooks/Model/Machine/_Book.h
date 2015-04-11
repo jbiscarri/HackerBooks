@@ -29,6 +29,14 @@ extern const struct BookRelationships {
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 @property (nonatomic, readonly, strong) BookID* objectID;
 
+@property (nonatomic, strong) NSString* authors;
+
+//- (BOOL)validateAuthors:(id*)value_ error:(NSError**)error_;
+
+@property (nonatomic, strong) NSString* title;
+
+//- (BOOL)validateTitle:(id*)value_ error:(NSError**)error_;
+
 @property (nonatomic, strong) NSSet *annotations;
 
 - (NSMutableSet*)annotationsSet;
@@ -64,6 +72,12 @@ extern const struct BookRelationships {
 @end
 
 @interface _Book (CoreDataGeneratedPrimitiveAccessors)
+
+- (NSString*)primitiveAuthors;
+- (void)setPrimitiveAuthors:(NSString*)value;
+
+- (NSString*)primitiveTitle;
+- (void)setPrimitiveTitle:(NSString*)value;
 
 - (NSMutableSet*)primitiveAnnotations;
 - (void)setPrimitiveAnnotations:(NSMutableSet*)value;

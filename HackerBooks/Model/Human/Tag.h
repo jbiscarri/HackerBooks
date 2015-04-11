@@ -1,5 +1,6 @@
 #import "_Tag.h"
 
 @interface Tag : _Tag {}
-// Custom logic goes here.
++ (instancetype)TagWithName:(NSString*)tag
+                    context:(NSManagedObjectContext*)context;
 @end

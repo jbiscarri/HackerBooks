@@ -44,6 +44,10 @@ const struct BookRelationships BookRelationships = {
 	return keyPaths;
 }
 
+@dynamic authors;
+
+@dynamic title;
+
 @dynamic annotations;
 
 - (NSMutableSet*)annotationsSet {

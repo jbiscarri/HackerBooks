@@ -1,5 +1,11 @@
 #import "_Photo.h"
+@import UIKit;
 
 @interface Photo : _Photo {}
-// Custom logic goes here.
+
+@property (nonatomic, strong) UIImage *image;
+
++ (instancetype)photoWithImageUrl:(NSString*)imageUrl
+                          context:(NSManagedObjectContext*)context;
+
 @end

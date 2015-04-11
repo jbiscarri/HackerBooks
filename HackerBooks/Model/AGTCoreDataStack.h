@@ -12,26 +12,26 @@
 
 @interface AGTCoreDataStack : NSObject
 
-@property (strong, nonatomic, readonly) NSManagedObjectContext *context;
+@property (strong, nonatomic, readonly)NSManagedObjectContext *context;
 
-+(NSString *) persistentStoreCoordinatorErrorNotificationName;
++ (NSString *)persistentStoreCoordinatorErrorNotificationName;
 
-+(AGTCoreDataStack *) coreDataStackWithModelName:(NSString *)aModelName
-                               databaseFilename:(NSString*) aDBName;
++ (AGTCoreDataStack *)coreDataStackWithModelName:(NSString *)aModelName
+                                databaseFilename:(NSString*) aDBName;
 
-+(AGTCoreDataStack *) coreDataStackWithModelName:(NSString *)aModelName;
++ (AGTCoreDataStack *)coreDataStackWithModelName:(NSString *)aModelName;
 
-+(AGTCoreDataStack *) coreDataStackWithModelName:(NSString *)aModelName
-                                    databaseURL:(NSURL*) aDBURL;
++ (AGTCoreDataStack *)coreDataStackWithModelName:(NSString *)aModelName
+                                     databaseURL:(NSURL*) aDBURL;
 
--(id) initWithModelName:(NSString *)aModelName
+- (id)initWithModelName:(NSString *)aModelName
             databaseURL:(NSURL*) aDBURL;
 
--(void) zapAllData;
+- (void)zapAllData;
 
--(void) saveWithErrorBlock: (void(^)(NSError *error))errorBlock;
+- (void)saveWithErrorBlock:(void(^)(NSError *error))errorBlock;
 
--(NSArray *) executeFetchRequest:(NSFetchRequest *)req
+- (NSArray *)executeFetchRequest:(NSFetchRequest *)req
                       errorBlock:(void(^)(NSError *error)) errorBlock;
 
 
