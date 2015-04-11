@@ -60,48 +60,35 @@
 #pragma mark - Util
 - (void)syncWithModel
 {
-    //Dowload PDF
-    if ([self.book.pdf_url isFileURL])
+    //Replace With current cachesDirectory
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSURL *folderFileUrl = [[fileManager URLsForDirectory:NSCachesDirectory
+                                          inDomains:NSUserDomainMask] lastObject];
+    NSURL *pdfFileUrl = [folderFileUrl URLByAppendingPathComponent:[self.book.pdf_url.absoluteString lastPathComponent]];
+    
+    NSData *data;
+    BOOL pdfLoaded = NO;
+    if ([fileManager fileExistsAtPath:pdfFileUrl.path])
     {
-        //Replace With current cachesDirectory
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSURL *fileUrl = [[fileManager URLsForDirectory:NSCachesDirectory
-                                              inDomains:NSUserDomainMask] lastObject];
-        self.book.pdf_url = [fileUrl URLByAppendingPathComponent:[self.book.pdf_url.absoluteString lastPathComponent]];
+        //Load file
+        data = [NSData dataWithContentsOfURL:pdfFileUrl];
+        pdfLoaded = YES;
     }
     
-    NSData *data = [NSData dataWithContentsOfURL:self.book.pdf_url];
     //Save image if it's necessary
-    if (![self.book.pdf_url isFileURL] || (data==nil)){
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSURL *fileUrl = [[fileManager URLsForDirectory:NSCachesDirectory
-                                              inDomains:NSUserDomainMask] lastObject];
-        fileUrl = [fileUrl URLByAppendingPathComponent:[self.book.pdf_url.absoluteString lastPathComponent]];
-        BOOL pdfSaved = [data writeToURL:fileUrl atomically:YES];
-        if (pdfSaved){
-            //Change Json File
-            NSURL *jsonFileUrl = [[fileManager URLsForDirectory:NSDocumentDirectory
-                                                      inDomains:NSUserDomainMask] lastObject];
-            jsonFileUrl = [jsonFileUrl URLByAppendingPathComponent:JSON_FILE_NAME];
-            NSError *error;
-            NSString *stringData = [NSString stringWithContentsOfURL:jsonFileUrl encoding:NSUTF8StringEncoding error:&error];
-            if (stringData){
-                //Replace url
-                stringData = [stringData stringByReplacingOccurrencesOfString:self.book.pdf_url.absoluteString withString:fileUrl.absoluteString];
-                //save file
-                BOOL result = [stringData writeToURL:jsonFileUrl atomically:YES encoding:NSUTF8StringEncoding error:&error];
-                if (!result)
-                {
-                    NSLog(@"Error saving json file: %@", error.userInfo);
-                }else{
-                    self.book.pdf_url = fileUrl;
-                }
-                
-            }
-            
-        }
+    if (data==nil){
+        data = [NSData dataWithContentsOfURL:self.book.pdf_url];
+        if ([data writeToURL:pdfFileUrl atomically:YES])
+            pdfLoaded = YES;
+        
     }
-    [self.webView loadData:data MIMEType:@"application/pdf" textEncodingName:@"utf-8" baseURL:nil];
+    if (pdfLoaded)
+        [self.webView loadData:data MIMEType:@"application/pdf" textEncodingName:@"utf-8" baseURL:nil];
+    else{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Pdf Error" message:@"BOOK file not found" delegate:nil cancelButtonTitle:@"Accept" otherButtonTitles:nil];
+        [alert show];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 
