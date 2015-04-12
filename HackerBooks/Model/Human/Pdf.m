@@ -16,11 +16,19 @@
     return p;
 }
 
-/*
- [self.webView loadData:self.pdfData
- MIMEType:@"application/pdf"
- textEncodingName:@"UTF-8"
- baseURL:nil];
- */
+- (void)loadPdfCompletion:(void(^)(NSData *pdf))completionBlock{
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0), ^{
+        if (!self.pdfData){
+            NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.pdfUrl]];
+            self.pdfData = data;
+        }
+        if (completionBlock){
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completionBlock(self.pdfData);
+            });
+        }
+    });
+}
+
 
 @end

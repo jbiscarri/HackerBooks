@@ -16,14 +16,21 @@
     return p;
 }
 
-- (void)setImage:(UIImage *)image{
-    
-    self.photoData = UIImageJPEGRepresentation(image, 0.9);
+- (void)loadImageCompletion:(void(^)(UIImage *image))completionBlock{
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0), ^{
+        if (!self.photoData){
+            
+            NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.photoUrl]];
+            self.photoData = data;
+        }
+        if (completionBlock){
+            UIImage *image = [UIImage imageWithData:self.photoData];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completionBlock(image);
+            });
+        }
+    });
 }
 
-- (UIImage *)image{
-    
-    return [UIImage imageWithData:self.photoData];
-}
 
 @end

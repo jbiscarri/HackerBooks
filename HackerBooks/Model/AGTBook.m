@@ -48,7 +48,6 @@
         return [[favorites objectForKey:[self.pdf_url.absoluteString lastPathComponent]] boolValue];
     }
     return NO;
- 
 }
 
 @end

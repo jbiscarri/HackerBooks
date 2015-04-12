@@ -29,6 +29,7 @@
 		B867CB411AD926C900441869 /* _Pdf.m in Sources */ = {isa = PBXBuildFile; fileRef = B867CB331AD926C900441869 /* _Pdf.m */; };
 		B867CB421AD926C900441869 /* _Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = B867CB351AD926C900441869 /* _Photo.m */; };
 		B867CB431AD926C900441869 /* _Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = B867CB371AD926C900441869 /* _Tag.m */; };
+		B867CB461ADACC1000441869 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B867CB451ADACC1000441869 /* AGTCoreDataTableViewController.m */; };
 		B8B842381AC6AE4E0076A0D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842371AC6AE4E0076A0D1 /* main.m */; };
 		B8B8423B1AC6AE4E0076A0D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B8423A1AC6AE4E0076A0D1 /* AppDelegate.m */; };
 		B8B842431AC6AE4E0076A0D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B842421AC6AE4E0076A0D1 /* Images.xcassets */; };
@@ -89,6 +90,8 @@
 		B867CB351AD926C900441869 /* _Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Photo.m; sourceTree = "<group>"; };
 		B867CB361AD926C900441869 /* _Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Tag.h; sourceTree = "<group>"; };
 		B867CB371AD926C900441869 /* _Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Tag.m; sourceTree = "<group>"; };
+		B867CB441ADACC1000441869 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataTableViewController.h; path = Controllers/AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
+		B867CB451ADACC1000441869 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataTableViewController.m; path = Controllers/AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
 		B8B842321AC6AE4E0076A0D1 /* HackerBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B842361AC6AE4E0076A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B842371AC6AE4E0076A0D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 		B8B842631AC6CB050076A0D1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B867CB441ADACC1000441869 /* AGTCoreDataTableViewController.h */,
+				B867CB451ADACC1000441869 /* AGTCoreDataTableViewController.m */,
 				B8B842641AC6CB500076A0D1 /* AGTTableViewController.h */,
 				B8B842651AC6CB500076A0D1 /* AGTableViewController.m */,
 				B8B842661AC6CB500076A0D1 /* AGTTableViewController.xib */,
@@ -388,6 +393,7 @@
 				B8B8423B1AC6AE4E0076A0D1 /* AppDelegate.m in Sources */,
 				B8B842671AC6CB500076A0D1 /* AGTableViewController.m in Sources */,
 				B867CB171AD91E4200441869 /* AGTCoreDataStack.m in Sources */,
+				B867CB461ADACC1000441869 /* AGTCoreDataTableViewController.m in Sources */,
 				B867CB411AD926C900441869 /* _Pdf.m in Sources */,
 				B867CB381AD926C900441869 /* Annotation.m in Sources */,
 				B8B8425D1AC6B10C0076A0D1 /* AGTBook.m in Sources */,

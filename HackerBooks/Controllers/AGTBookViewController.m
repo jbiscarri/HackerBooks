@@ -7,10 +7,11 @@
 //
 
 #import "AGTBookViewController.h"
-#import "AGTBook.h"
+#import "Book.h"
 #import "Settings.h"
 #import "AGTSimplePDFViewController.h"
 #import "AGTTableViewController.h"
+#import "Photo.h"
 
 @interface AGTBookViewController ()
 
@@ -18,7 +19,7 @@
 
 @implementation AGTBookViewController
 
-- (instancetype)initWithBook:(AGTBook*)book
+- (instancetype)initWithBook:(Book*)book
 {
     if (self = [super initWithNibName:nil bundle:nil])
     {
@@ -45,52 +46,12 @@
 {
     self.bookTitle.text = self.book.title;
     self.bookAuthors.text = self.book.authors;
-    self.bookTags.text = self.book.tags;
+    self.bookTags.text = [self.book tagsString];
     self.switchFavorite.on = self.book.isFavorite;
     
-    //Dowload Image
-    if ([self.book.image_url isFileURL])
-    {
-        //Replace With current cachesDirectory
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSURL *fileUrl = [[fileManager URLsForDirectory:NSCachesDirectory
-                                              inDomains:NSUserDomainMask] lastObject];
-        self.book.image_url = [fileUrl URLByAppendingPathComponent:[self.book.image_url.absoluteString lastPathComponent]];
-    }
-    
-    NSData *data = [NSData dataWithContentsOfURL:self.book.image_url];
-    //Save image if it's necessary
-    if (![self.book.image_url isFileURL] || (data==nil)){
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSURL *fileUrl = [[fileManager URLsForDirectory:NSCachesDirectory
-                                              inDomains:NSUserDomainMask] lastObject];
-        fileUrl = [fileUrl URLByAppendingPathComponent:[self.book.image_url.absoluteString lastPathComponent]];
-        BOOL imageSaved = [data writeToURL:fileUrl atomically:YES];
-        if (imageSaved){
-            //Change Json File
-            NSURL *jsonFileUrl = [[fileManager URLsForDirectory:NSDocumentDirectory
-                                                      inDomains:NSUserDomainMask] lastObject];
-            jsonFileUrl = [jsonFileUrl URLByAppendingPathComponent:JSON_FILE_NAME];
-            NSError *error;
-            NSString *stringData = [NSString stringWithContentsOfURL:jsonFileUrl encoding:NSUTF8StringEncoding error:&error];
-            if (stringData){
-                //Replace url
-                stringData = [stringData stringByReplacingOccurrencesOfString:self.book.image_url.absoluteString withString:fileUrl.absoluteString];
-                //save file
-                BOOL result = [stringData writeToURL:jsonFileUrl atomically:YES encoding:NSUTF8StringEncoding error:&error];
-                if (!result)
-                {
-                    NSLog(@"Error saving json file: %@", error.userInfo);
-                }else{
-                    self.book.image_url = fileUrl;
-                }
-                
-            }
-            
-        }
-    }
-    UIImage *image = [UIImage imageWithData:data];
-    self.bookImageView.image = image;
+    [self.book.photo loadImageCompletion:^(UIImage *image) {
+        self.bookImageView.image = image;
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -110,7 +71,7 @@
 
 #pragma mark - AGTTableViewControllerDelegate
 
-- (void)tableViewController:(AGTTableViewController*)tVC didSelectBook:(AGTBook*)book{
+- (void)tableViewController:(AGTTableViewController*)tVC didSelectBook:(Book*)book{
     self.book = book;
     [self syncWithModel];
 }

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class AGTBook;
+@class Book;
 
 @interface AGTTableViewCell : UITableViewCell
 
@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *cellTags;
 @property (weak, nonatomic) IBOutlet UIImageView *favoriteImage;
 
-- (void)configureCellWithBook:(AGTBook*)book;
+- (void)configureCellWithBook:(Book*)book;
 
 
 @end

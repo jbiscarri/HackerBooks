@@ -12,7 +12,10 @@
 #import "AGTBookViewController.h"
 #import "AGTTableViewController.h"
 #import "AGTCoreDataStack.h"
+#import "Tag.h"
 #import "Book.h"
+
+
 
 @interface AppDelegate ()
 @property (nonatomic, strong) AGTCoreDataStack *stack;
@@ -77,18 +80,16 @@
             }
         }       
     }
-//    AGTLibrary *library = [[AGTLibrary alloc] initWithJSONData:jsonData];
     return nil;
 }
 
 - (void)configureForPadWithModel:(AGTLibrary*)library
 {
-    AGTTableViewController *tableViewController = [[AGTTableViewController alloc] initWithLibrary:library style:UITableViewStylePlain];
-    AGTBook *firstBook = [library bookForTag:library.tags[0] atIndex:0];
-    if (!firstBook) //First tag is Favorites. It can be empty
-        firstBook = [library bookForTag:library.tags[1] atIndex:0];
     
-    AGTBookViewController *bookViewController = [[AGTBookViewController alloc] initWithBook:firstBook];
+    AGTTableViewController *tableViewController = [[AGTTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self configureFetchersForTableViewController:tableViewController];
+    
+    AGTBookViewController *bookViewController = [[AGTBookViewController alloc] initWithBook:nil];
     tableViewController.delegate = bookViewController;
     
     UINavigationController *navigationControllerTable = [[UINavigationController alloc] initWithRootViewController:tableViewController];
@@ -100,15 +101,49 @@
     splitViewController.delegate = bookViewController;
     
     self.window.rootViewController = splitViewController;
+    
 }
 
 - (void)configureForPhoneWithModel:(AGTLibrary*)library
 {
-    AGTTableViewController *tableViewController = [[AGTTableViewController alloc] initWithLibrary:library style:UITableViewStylePlain];
-    tableViewController.delegate = tableViewController;
+    AGTTableViewController *tableViewController = [[AGTTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self configureFetchersForTableViewController:tableViewController];
+    
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
     
     self.window.rootViewController = navigationController;
+}
+
+#pragma mark - 
+
+- (void)configureFetchersForTableViewController:(AGTTableViewController*)tableViewController
+{
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[Tag entityName]];
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:TagAttributes.tag
+                                                          ascending:YES
+                                                           selector:@selector(caseInsensitiveCompare:)]];
+    req.fetchBatchSize = 20;
+    
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                                                         managedObjectContext:self.stack.context
+                                                                           sectionNameKeyPath:nil
+                                                                                    cacheName:nil];
+    tableViewController.tagsFetchedResultsController = fc;
+    
+    req = [NSFetchRequest fetchRequestWithEntityName:[Book entityName]];
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:BookAttributes.title
+                                                          ascending:YES
+                                                           selector:@selector(caseInsensitiveCompare:)]];
+    req.fetchBatchSize = 20;
+    
+    fc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                             managedObjectContext:self.stack.context
+                                               sectionNameKeyPath:nil
+                                                        cacheName:nil];
+    tableViewController.alphabeticFetchedResultsController = fc;
+    
+    
+    tableViewController.delegate = tableViewController;
 }
 
 @end

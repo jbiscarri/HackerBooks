@@ -7,7 +7,8 @@
 //
 
 #import "AGTSimplePDFViewController.h"
-#import "AGTBook.h"
+#import "Book.h"
+#import "Pdf.h"
 #import "Settings.h"
 
 @interface AGTSimplePDFViewController ()
@@ -16,7 +17,7 @@
 
 @implementation AGTSimplePDFViewController
 
-- (instancetype)initWithBook:(AGTBook*)book
+- (instancetype)initWithBook:(Book*)book
 {
     if (self = [super initWithNibName:nil bundle:nil])
     {
@@ -50,6 +51,7 @@
 #pragma mark - UIWebViewDelegate
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     [self.activityIndicator stopAnimating];
+    self.webView.hidden = NO;
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
@@ -60,35 +62,21 @@
 #pragma mark - Util
 - (void)syncWithModel
 {
-    //Replace With current cachesDirectory
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *folderFileUrl = [[fileManager URLsForDirectory:NSCachesDirectory
-                                          inDomains:NSUserDomainMask] lastObject];
-    NSURL *pdfFileUrl = [folderFileUrl URLByAppendingPathComponent:[self.book.pdf_url.absoluteString lastPathComponent]];
-    
-    NSData *data;
-    BOOL pdfLoaded = NO;
-    if ([fileManager fileExistsAtPath:pdfFileUrl.path])
-    {
-        //Load file
-        data = [NSData dataWithContentsOfURL:pdfFileUrl];
-        pdfLoaded = YES;
-    }
-    
-    //Save image if it's necessary
-    if (data==nil){
-        data = [NSData dataWithContentsOfURL:self.book.pdf_url];
-        if ([data writeToURL:pdfFileUrl atomically:YES])
-            pdfLoaded = YES;
-        
-    }
-    if (pdfLoaded)
-        [self.webView loadData:data MIMEType:@"application/pdf" textEncodingName:@"utf-8" baseURL:nil];
-    else{
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Pdf Error" message:@"BOOK file not found" delegate:nil cancelButtonTitle:@"Accept" otherButtonTitles:nil];
-        [alert show];
-        [self.navigationController popViewControllerAnimated:YES];
-    }
+    [self.activityIndicator startAnimating];
+    self.webView.hidden = YES;
+
+    [self.book.pdf loadPdfCompletion:^(NSData *pdf) {
+        if (!pdf){
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Pdf Error" message:@"BOOK file not found" delegate:nil cancelButtonTitle:@"Accept" otherButtonTitles:nil];
+            [alert show];
+            [self.navigationController popViewControllerAnimated:YES];
+        }else{
+            [self.webView loadData:pdf
+                          MIMEType:@"application/pdf"
+                  textEncodingName:@"UTF-8"
+                           baseURL:nil];
+        }
+    }];
 }
 
 
@@ -97,7 +85,7 @@
 //NOTIFICATION_SELECTED_BOOK_CHANGED
 - (void)notifiedBookHasBeenChanged:(NSNotification*)notification
 {
-    AGTBook *book = notification.userInfo[NOT_BOOK_KEY];
+    Book *book = notification.userInfo[NOT_BOOK_KEY];
     self.book = book;
     [self syncWithModel];
 }

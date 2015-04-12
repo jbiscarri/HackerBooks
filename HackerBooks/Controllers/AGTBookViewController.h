@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Biscarri. All rights reserved.
 //
 
-@class AGTBook;
+@class Book;
 @class AGTBookViewController;
 
 #import <UIKit/UIKit.h>
@@ -18,10 +18,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *bookTitle;
 @property (weak, nonatomic) IBOutlet UILabel *bookAuthors;
 @property (weak, nonatomic) IBOutlet UILabel *bookTags;
-@property (strong, nonatomic) AGTBook *book;
+@property (strong, nonatomic) Book *book;
 
 
-- (instancetype)initWithBook:(AGTBook*)book;
+- (instancetype)initWithBook:(Book*)book;
 - (IBAction)switchValueChanged:(id)sender;
 - (IBAction)showPDF:(id)sender;
 

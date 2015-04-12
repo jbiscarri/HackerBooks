@@ -7,7 +7,9 @@
 //
 
 #import "AGTTableViewCell.h"
-#import "AGTBook.h"
+#import "Book.h"
+#import "Tag.h"
+//#import "AGTBook.h"
 
 @implementation AGTTableViewCell
 
@@ -18,11 +20,12 @@
     [super setSelected:selected animated:animated];
 }
 
-- (void)configureCellWithBook:(AGTBook*)book
+- (void)configureCellWithBook:(Book*)book
 {
     self.cellTitle.text = book.title;
     self.cellAuthors.text = book.authors;
-    self.cellTags.text = book.tags;
+    
+    self.cellTags.text = [book tagsString];
     self.favoriteImage.hidden = !book.isFavorite;
 }
 

@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class AGTBook;
+@class Book;
 
 @interface AGTSimplePDFViewController : UIViewController<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (strong, nonatomic) AGTBook *book;
+@property (strong, nonatomic) Book *book;
 
-- (instancetype)initWithBook:(AGTBook*)book;
+- (instancetype)initWithBook:(Book*)book;
 
 @end
