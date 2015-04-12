@@ -51,7 +51,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     if (self.currentOrder == TAGS){
-        return self.tagsFetchedResultsController.fetchedObjects.count + 1;
+        return self.tagsFetchedResultsController.fetchedObjects.count;
     }else{
         return 1;
     }
@@ -60,12 +60,8 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     if (self.currentOrder == TAGS){
-        if (section == 0)
-            return @"FAVORITES";
-        else{
-            Tag *tag = self.tagsFetchedResultsController.fetchedObjects[section-1];
-            return [tag.tag uppercaseString];
-        }
+        Tag *tag = self.tagsFetchedResultsController.fetchedObjects[section];
+        return [tag.tag uppercaseString];
     }else{
         return @"All";
     }
@@ -74,19 +70,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (self.currentOrder == TAGS){
-        if (section == 0)
-        {
-            int favoritesCounter = 0;
-            for (Book *b in self.alphabeticFetchedResultsController.fetchedObjects)
-            {
-                if (b.isFavorite)
-                    favoritesCounter ++;
-            }
-            return favoritesCounter;
-        }else{
-            Tag *tag = self.tagsFetchedResultsController.fetchedObjects[section-1];
-            return tag.books.count;
-        }
+        Tag *tag = self.tagsFetchedResultsController.fetchedObjects[section];
+        return tag.books.count;
     }else{
         return self.alphabeticFetchedResultsController.fetchedObjects.count;
     }
@@ -136,23 +121,13 @@
 - (NSArray*)getBooksWithTagsAtIndexPath:(NSIndexPath*)indexPath
 {
     NSArray *books;
-    if (indexPath.section == 0)
-    {
-        NSMutableArray *favBooks = [NSMutableArray array];
-        for (Book *b in self.alphabeticFetchedResultsController.fetchedObjects)
-        {
-            if (b.isFavorite)
-                [favBooks addObject:b];
-        }
-        books = favBooks;
-    }else{
-        Tag *tag = self.tagsFetchedResultsController.fetchedObjects[indexPath.section-1];
-        NSArray *tempBooks = [tag.books allObjects];
-        books = [tempBooks sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-            Book *b1 = obj1; Book *b2 = obj2;
-            return [b1.title localizedCaseInsensitiveCompare:b2.title];
-        }];
-    }
+    Tag *tag = self.tagsFetchedResultsController.fetchedObjects[indexPath.section];
+    NSArray *tempBooks = [tag.books allObjects];
+    books = [tempBooks sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        Book *b1 = obj1; Book *b2 = obj2;
+        return [b1.title localizedCaseInsensitiveCompare:b2.title];
+    }];
+
     return books;
 }
 
@@ -160,8 +135,7 @@
 
 - (void)tableViewController:(AGTTableViewController*)tVC didSelectBook:(Book*)book{
     AGTBookViewController * bookViewController = [[AGTBookViewController alloc] initWithBook:book];
-    [self.navigationController pushViewController:bookViewController animated:YES];
-    
+    [self.navigationController pushViewController:bookViewController animated:YES];    
 }
 
 #pragma mark - NOTIFICATIONS
@@ -255,37 +229,6 @@
 
 #pragma mark - NSFetchedResultsControllerDelegate
 
-- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
-{
-    if (!self.suspendAutomaticTrackingOfChangesInManagedObjectContext) {
-        [self.tableView beginUpdates];
-        self.beganUpdates = YES;
-    }
-}
-
-- (void)controller:(NSFetchedResultsController *)controller
-  didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
-           atIndex:(NSUInteger)sectionIndex
-     forChangeType:(NSFetchedResultsChangeType)type
-{
-    if (!self.suspendAutomaticTrackingOfChangesInManagedObjectContext)
-    {
-        switch(type)
-        {
-            case NSFetchedResultsChangeInsert:
-                [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
-                break;
-                
-            case NSFetchedResultsChangeDelete:
-                [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
-                break;
-            default:
-                break;
-        }
-    }
-}
-
-
 - (void)controller:(NSFetchedResultsController *)controller
    didChangeObject:(id)anObject
        atIndexPath:(NSIndexPath *)indexPath
@@ -294,44 +237,7 @@
 {
     if (!self.suspendAutomaticTrackingOfChangesInManagedObjectContext)
     {
-        switch(type)
-        {
-            case NSFetchedResultsChangeInsert:
-                [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-                break;
-                
-            case NSFetchedResultsChangeDelete:
-                [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-                break;
-                
-            case NSFetchedResultsChangeUpdate:
-                [self.tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-                break;
-                
-            case NSFetchedResultsChangeMove:
-                [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-                [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-                break;
-        }
-    }
-}
-
-- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    if (self.beganUpdates) [self.tableView endUpdates];
-}
-
-- (void)endSuspensionOfUpdatesDueToContextChanges
-{
-    _suspendAutomaticTrackingOfChangesInManagedObjectContext = NO;
-}
-
-- (void)setSuspendAutomaticTrackingOfChangesInManagedObjectContext:(BOOL)suspend
-{
-    if (suspend) {
-        _suspendAutomaticTrackingOfChangesInManagedObjectContext = YES;
-    } else {
-        [self performSelector:@selector(endSuspensionOfUpdatesDueToContextChanges) withObject:0 afterDelay:0];
+        [self.tableView reloadData];
     }
 }
 

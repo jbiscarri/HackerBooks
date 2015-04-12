@@ -9,6 +9,7 @@
 @implementation Tag
 
 + (instancetype)TagWithName:(NSString*)tag
+                  favorites:(BOOL)favorite
                     context:(NSManagedObjectContext*)context
 {
     NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[Tag entityName]];
@@ -18,6 +19,7 @@
     if (!t){
         t = [self insertInManagedObjectContext:context];
         t.tag = tag;
+        t.order = favorite?@(0):@(1);
     }
     return t;
 }

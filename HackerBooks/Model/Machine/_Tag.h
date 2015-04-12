@@ -4,6 +4,7 @@
 @import CoreData;
 
 extern const struct TagAttributes {
+	__unsafe_unretained NSString *order;
 	__unsafe_unretained NSString *tag;
 } TagAttributes;
 
@@ -21,6 +22,14 @@ extern const struct TagRelationships {
 + (NSString*)entityName;
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_;
 @property (nonatomic, readonly, strong) TagID* objectID;
+
+@property (nonatomic, strong) NSNumber* order;
+
+@property (atomic) int32_t orderValue;
+- (int32_t)orderValue;
+- (void)setOrderValue:(int32_t)value_;
+
+//- (BOOL)validateOrder:(id*)value_ error:(NSError**)error_;
 
 @property (nonatomic, strong) NSString* tag;
 
@@ -41,6 +50,12 @@ extern const struct TagRelationships {
 @end
 
 @interface _Tag (CoreDataGeneratedPrimitiveAccessors)
+
+- (NSNumber*)primitiveOrder;
+- (void)setPrimitiveOrder:(NSNumber*)value;
+
+- (int32_t)primitiveOrderValue;
+- (void)setPrimitiveOrderValue:(int32_t)value_;
 
 - (NSString*)primitiveTag;
 - (void)setPrimitiveTag:(NSString*)value;

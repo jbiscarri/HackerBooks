@@ -26,34 +26,31 @@
         NSArray *tags = [((NSString*)book[@"tags"]) componentsSeparatedByString:@","];
         for (NSString *tag in tags)
         {
-            [b addTagsObject:[Tag TagWithName:[tag stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] context:context]];
+            [b addTagsObject:[Tag TagWithName:[tag stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+                                    favorites:NO
+                                      context:context]];
         }
     }
 }
 
 - (void)setIsFavorite:(BOOL)isFavorite
 {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableDictionary *favorites = [[userDefaults objectForKey:USER_DEFAULTS_FAVORITES] mutableCopy];
-    favorites[[self.pdf.pdfUrl lastPathComponent]] = @(isFavorite);
-    [userDefaults setObject:favorites forKey:USER_DEFAULTS_FAVORITES];
-    [userDefaults synchronize];
     
-    //Send notification to update
-    NSDictionary *userInfo = @{NOT_BOOK_KEY:self};
-    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_FAVORITE_FOR_BOOK_CHANGED object:self userInfo:userInfo];
-    
+    Tag *favoriteTag = [Tag TagWithName:@"Favorites"
+                              favorites:NO
+                                context:self.managedObjectContext];
+    if (isFavorite)
+        [self addTagsObject:favoriteTag];
+    else
+        [self removeTagsObject:favoriteTag];
 }
 
 - (BOOL)isFavorite
 {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableDictionary *favorites = [[userDefaults objectForKey:USER_DEFAULTS_FAVORITES] mutableCopy];
-    if ([favorites objectForKey:[self.pdf.pdfUrl lastPathComponent]])
-    {
-        return [[favorites objectForKey:[self.pdf.pdfUrl lastPathComponent]] boolValue];
-    }
-    return NO;
+    Tag *favoriteTag = [Tag TagWithName:@"Favorites"
+                              favorites:NO
+                                context:self.managedObjectContext];
+    return ([self.tags.allObjects containsObject:favoriteTag]);
 }
 
 - (NSString*)tagsString

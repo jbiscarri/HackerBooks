@@ -4,6 +4,7 @@
 #import "_Tag.h"
 
 const struct TagAttributes TagAttributes = {
+	.order = @"order",
 	.tag = @"tag",
 };
 
@@ -37,7 +38,33 @@ const struct TagRelationships TagRelationships = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 
+	if ([key isEqualToString:@"orderValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"order"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+
 	return keyPaths;
+}
+
+@dynamic order;
+
+- (int32_t)orderValue {
+	NSNumber *result = [self order];
+	return [result intValue];
+}
+
+- (void)setOrderValue:(int32_t)value_ {
+	[self setOrder:@(value_)];
+}
+
+- (int32_t)primitiveOrderValue {
+	NSNumber *result = [self primitiveOrder];
+	return [result intValue];
+}
+
+- (void)setPrimitiveOrderValue:(int32_t)value_ {
+	[self setPrimitiveOrder:@(value_)];
 }
 
 @dynamic tag;
