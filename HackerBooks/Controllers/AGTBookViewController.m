@@ -48,9 +48,11 @@
     self.bookAuthors.text = self.book.authors;
     self.bookTags.text = [self.book tagsString];
     self.switchFavorite.on = self.book.isFavorite;
-    
+    self.bookImageView.image = nil;
+    self.activityIndicator.hidden = NO;
     [self.book.photo loadImageCompletion:^(UIImage *image) {
         self.bookImageView.image = image;
+        self.activityIndicator.hidden = YES;
     }];
 }
 

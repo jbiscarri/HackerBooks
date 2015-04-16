@@ -16,5 +16,6 @@
 @property (strong, nonatomic) Book *book;
 
 - (instancetype)initWithBook:(Book*)book;
+- (IBAction)addAnnotation:(id)sender;
 
 @end

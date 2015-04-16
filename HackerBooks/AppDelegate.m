@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "Settings.h"
-#import "AGTLibrary.h"
 #import "AGTBookViewController.h"
 #import "AGTTableViewController.h"
 #import "AGTCoreDataStack.h"
@@ -76,8 +75,7 @@
                         
                         //Mark json as downloaded
                         [userDefaults setObject:@(1) forKey:USER_DEFAULTS_JSON_DONWLOADED];
-                        //Store a NSDictionary to manage favorites
-                        [userDefaults setObject:[NSDictionary dictionary] forKey:USER_DEFAULTS_FAVORITES];
+                        
                         [userDefaults synchronize];
                     });
                 }else{
@@ -91,10 +89,6 @@
 
 - (void)configureForPadWithModel:(AGTLibrary*)library
 {
-    
-    AGTTableViewController *tableViewController = [[AGTTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    [self configureFetchersForTableViewController:tableViewController];
-    
     //Get first book
     NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[Tag entityName]];
     req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:TagAttributes.order
@@ -103,26 +97,44 @@
                                                           ascending:YES
                                                            selector:@selector(caseInsensitiveCompare:)]];
     
-    //NO books last book stored
-    NSArray *tags = [self.stack executeFetchRequest:req errorBlock:^(NSError *error){ }];
-    Tag *tag = tags[0];
-    
-    NSArray *books;
-    if (tag.books.count>0){
-        books = tag.books.allObjects;
-    }else{
-       tag = tags[1];
-        books = tag.books.allObjects;
+
+    Book *b;
+    //I'll try to recover my las opened book from User details
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSData *lastBookData = [userDefaults objectForKey:USER_DEFAULTS_LAST_BOOK];
+    if (lastBookData != nil)
+         b = [Book objectWithArchivedURIRepresentation:lastBookData context:self.stack.context];
+    if (b == nil)
+    {
+        //There is no book stored as last opened book so I'll search first book
+        NSArray *tags = [self.stack executeFetchRequest:req errorBlock:^(NSError *error){ }];
+        if (tags.count > 0){
+            Tag *tag = tags[0];
+            
+            NSArray *books;
+            if (tag.books.count>0){
+                books = tag.books.allObjects;
+            }else{
+               tag = tags[1];
+                books = tag.books.allObjects;
+            }
+
+            books = [books sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+                Book *b1 = obj1; Book *b2 = obj2;
+                return [b1.title localizedCaseInsensitiveCompare:b2.title];
+            }];
+            b = books[0];
+        }
     }
 
-    books = [books sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        Book *b1 = obj1; Book *b2 = obj2;
-        return [b1.title localizedCaseInsensitiveCompare:b2.title];
-    }];
-
-
-    AGTBookViewController *bookViewController = [[AGTBookViewController alloc] initWithBook:books[0]];
+    AGTBookViewController *bookViewController = [[AGTBookViewController alloc] initWithBook:b];
+    
+    AGTTableViewController *tableViewController = [[AGTTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    if (b == nil)
+        tableViewController.shouldSelectFirstBook = YES;
     tableViewController.delegate = bookViewController;
+    
+    [self configureFetchersForTableViewController:tableViewController];
     
     UINavigationController *navigationControllerTable = [[UINavigationController alloc] initWithRootViewController:tableViewController];
     
@@ -140,13 +152,14 @@
 {
     AGTTableViewController *tableViewController = [[AGTTableViewController alloc] initWithStyle:UITableViewStylePlain];
     [self configureFetchersForTableViewController:tableViewController];
-    
+    tableViewController.delegate = tableViewController;
+
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
     
     self.window.rootViewController = navigationController;
 }
 
-#pragma mark - 
+#pragma mark - Fetchers
 
 - (void)configureFetchersForTableViewController:(AGTTableViewController*)tableViewController
 {
@@ -177,7 +190,6 @@
     tableViewController.alphabeticFetchedResultsController = fc;
     
     
-    tableViewController.delegate = tableViewController;
 }
 
 @end

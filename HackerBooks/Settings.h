@@ -11,7 +11,7 @@
 
 
 #define USER_DEFAULTS_JSON_DONWLOADED @"jsonDownloaded"
-#define USER_DEFAULTS_FAVORITES @"favoriteBooks"
+#define USER_DEFAULTS_LAST_BOOK @"lastBook"
 
 //Auxiliar
 #define FAVORITE_KEY @"My Favorites"

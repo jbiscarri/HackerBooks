@@ -64,4 +64,36 @@
     return tagsString;
 }
 
+#pragma mark - serialize and deserialize
+
+- (NSData*)archiveURIRepresentation{
+    NSURL *uri = self.objectID.URIRepresentation;
+    return [NSKeyedArchiver archivedDataWithRootObject:uri];
+}
+
++ (instancetype)objectWithArchivedURIRepresentation:(NSData*)archivedURI
+                                            context:(NSManagedObjectContext*)context
+{
+    NSURL *uri = [NSKeyedUnarchiver unarchiveObjectWithData:archivedURI];
+    if (uri == nil)
+        return nil;
+    NSManagedObjectID *nid = [context.persistentStoreCoordinator managedObjectIDForURIRepresentation:uri];
+    if (nid == nil)
+        return nil;
+    NSManagedObject *ob = [context objectWithID:nid];
+    if (ob.isFault)
+        return (Book*)ob;
+    else{
+        NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[Book entityName]];
+        req.predicate = [NSPredicate predicateWithFormat:@"SELF = %@", ob];
+        NSError *error;
+        NSArray *res = [context executeFetchRequest:req error:&error];
+        if (res == nil)
+            return nil;
+        else
+            return [res lastObject];
+    }
+}
+
+
 @end

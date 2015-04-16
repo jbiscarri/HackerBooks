@@ -26,6 +26,9 @@
     return self;
 }
 
+- (IBAction)addAnnotation:(id)sender {
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }

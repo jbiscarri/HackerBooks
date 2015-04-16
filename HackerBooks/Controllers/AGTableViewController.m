@@ -16,13 +16,18 @@
 @interface AGTTableViewController ()
 @property (nonatomic) BOOL beganUpdates;
 @property (nonatomic, assign) BOOL suspendAutomaticTrackingOfChangesInManagedObjectContext;
-
+@property (nonatomic, strong) UISearchBar* searchBar;
 @end
 
 @implementation AGTTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UISearchBar *tempSearchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 0)];
+    self.searchBar = tempSearchBar;
+    self.searchBar.delegate = self;
+    [self.searchBar sizeToFit];
+    self.tableView.tableHeaderView = self.searchBar;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -109,6 +114,10 @@
     }else{
         b = [self.alphabeticFetchedResultsController objectAtIndexPath:indexPath];
     }
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:[b archiveURIRepresentation] forKey:USER_DEFAULTS_LAST_BOOK];
+    [userDefaults synchronize];
     
     [self.delegate tableViewController:self didSelectBook:b];
     
@@ -238,9 +247,61 @@
     if (!self.suspendAutomaticTrackingOfChangesInManagedObjectContext)
     {
         [self.tableView reloadData];
+        if (self.shouldSelectFirstBook)
+        {
+            //[self performSelector:@selector(selectFirstBook) withObject:nil afterDelay:.1];
+            [self selectFirstBook];
+            
+        }
+            
     }
 }
 
+#pragma mark - select first book in none selected before
+- (void)selectFirstBook
+{
+    [self tableView:self.tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
+    self.shouldSelectFirstBook = NO;
+}
+
+
+#pragma mark - UISearchBarDelegate
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [self changePredicatesWithSearch:searchBar.text];
+}
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
+ if ([searchBar.text isEqualToString:@""])
+     [self changePredicatesWithSearch:@""];
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    [self changePredicatesWithSearch:@""];
+}
+
+#pragma mark - Change predicates
+
+- (void)changePredicatesWithSearch:(NSString*)search
+{
+    NSPredicate *predicateTags;
+    NSPredicate *predicateAlph;
+    if (![search isEqualToString:@""])
+    {
+        
+        predicateTags = [NSPredicate predicateWithFormat:@"(tag CONTAINS[cd] %@) OR (books.authors CONTAINS[cd] %@) or (books.title CONTAINS[cd] %@)", search, search, search];
+        
+        predicateAlph = [NSPredicate predicateWithFormat:@"(authors CONTAINS[cd] %@) or (title CONTAINS[cd] %@) or (tags.tag CONTAINS[cd] %@)", search, search, search];
+    }
+    
+    self.tagsFetchedResultsController.fetchRequest.predicate = predicateTags;
+    self.alphabeticFetchedResultsController.fetchRequest.predicate = predicateAlph;
+    [self performTagsFetch];
+    [self performAlphabeticFetch];
+    
+    [self.tableView reloadData];
+    [self.view endEditing:YES];
+    
+}
 
 
 

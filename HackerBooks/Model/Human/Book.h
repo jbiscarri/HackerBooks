@@ -7,5 +7,7 @@
 
 + (void)fillGroupsWithInitialData:(NSArray*)data context:(NSManagedObjectContext*)context;
 - (NSString*)tagsString;
-
+- (NSData*)archiveURIRepresentation;
++ (instancetype)objectWithArchivedURIRepresentation:(NSData*)archivedURI
+                                            context:(NSManagedObjectContext*)context;
 @end

@@ -21,13 +21,14 @@
 @end
 
 
-@interface AGTTableViewController : UITableViewController <AGTTableViewControllerDelegate>
+@interface AGTTableViewController : UITableViewController <AGTTableViewControllerDelegate, UISearchBarDelegate>
 @property (strong, nonatomic) NSFetchedResultsController *tagsFetchedResultsController;
 @property (strong, nonatomic) NSFetchedResultsController *alphabeticFetchedResultsController;
 
 @property (nonatomic, weak) id<AGTTableViewControllerDelegate> delegate;
 @property (nonatomic, assign) BOOL currentOrder;
 @property (nonatomic, strong) UIBarButtonItem *rightBarButtonItem;
+@property (nonatomic, assign) BOOL shouldSelectFirstBook;
 
 
 @end

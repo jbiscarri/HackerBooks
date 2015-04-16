@@ -35,10 +35,10 @@
 		B8B842431AC6AE4E0076A0D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B842421AC6AE4E0076A0D1 /* Images.xcassets */; };
 		B8B842461AC6AE4E0076A0D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B842441AC6AE4E0076A0D1 /* LaunchScreen.xib */; };
 		B8B842521AC6AE4E0076A0D1 /* HackerBooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842511AC6AE4E0076A0D1 /* HackerBooksTests.m */; };
-		B8B8425D1AC6B10C0076A0D1 /* AGTBook.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B8425C1AC6B10C0076A0D1 /* AGTBook.m */; };
-		B8B842611AC6B49D0076A0D1 /* AGTLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842601AC6B49D0076A0D1 /* AGTLibrary.m */; };
 		B8B842671AC6CB500076A0D1 /* AGTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842651AC6CB500076A0D1 /* AGTableViewController.m */; };
 		B8B842681AC6CB500076A0D1 /* AGTTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B842661AC6CB500076A0D1 /* AGTTableViewController.xib */; };
+		B8D5BA5F1AE06E9A00490011 /* CreateAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D5BA5D1AE06E9A00490011 /* CreateAnnotationViewController.m */; };
+		B8D5BA601AE06E9A00490011 /* CreateAnnotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8D5BA5E1AE06E9A00490011 /* CreateAnnotationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,14 +102,13 @@
 		B8B8424B1AC6AE4E0076A0D1 /* HackerBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B842501AC6AE4E0076A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B842511AC6AE4E0076A0D1 /* HackerBooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerBooksTests.m; sourceTree = "<group>"; };
-		B8B8425B1AC6B10C0076A0D1 /* AGTBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTBook.h; path = Model/AGTBook.h; sourceTree = "<group>"; };
-		B8B8425C1AC6B10C0076A0D1 /* AGTBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTBook.m; path = Model/AGTBook.m; sourceTree = "<group>"; };
-		B8B8425F1AC6B49D0076A0D1 /* AGTLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTLibrary.h; path = Model/AGTLibrary.h; sourceTree = "<group>"; };
-		B8B842601AC6B49D0076A0D1 /* AGTLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTLibrary.m; path = Model/AGTLibrary.m; sourceTree = "<group>"; };
 		B8B842621AC6B6510076A0D1 /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		B8B842641AC6CB500076A0D1 /* AGTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTTableViewController.h; path = Controllers/AGTTableViewController.h; sourceTree = "<group>"; };
 		B8B842651AC6CB500076A0D1 /* AGTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTableViewController.m; path = Controllers/AGTableViewController.m; sourceTree = "<group>"; };
 		B8B842661AC6CB500076A0D1 /* AGTTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AGTTableViewController.xib; path = Controllers/AGTTableViewController.xib; sourceTree = "<group>"; };
+		B8D5BA5C1AE06E9A00490011 /* CreateAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateAnnotationViewController.h; path = Controllers/CreateAnnotationViewController.h; sourceTree = "<group>"; };
+		B8D5BA5D1AE06E9A00490011 /* CreateAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateAnnotationViewController.m; path = Controllers/CreateAnnotationViewController.m; sourceTree = "<group>"; };
+		B8D5BA5E1AE06E9A00490011 /* CreateAnnotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateAnnotationViewController.xib; path = Controllers/CreateAnnotationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,10 +245,6 @@
 				B867CB2B1AD926C900441869 /* Machine */,
 				B867CB151AD91E4200441869 /* AGTCoreDataStack.h */,
 				B867CB161AD91E4200441869 /* AGTCoreDataStack.m */,
-				B8B8425B1AC6B10C0076A0D1 /* AGTBook.h */,
-				B8B8425C1AC6B10C0076A0D1 /* AGTBook.m */,
-				B8B8425F1AC6B49D0076A0D1 /* AGTLibrary.h */,
-				B8B842601AC6B49D0076A0D1 /* AGTLibrary.m */,
 				B867CB121AD91C5300441869 /* Books.xcdatamodeld */,
 			);
 			name = Model;
@@ -272,6 +267,9 @@
 				B82C04A81AC76FEC00E3D07F /* AGTSimplePDFViewController.h */,
 				B82C04A91AC76FEC00E3D07F /* AGTSimplePDFViewController.m */,
 				B82C04AA1AC76FEC00E3D07F /* AGTSimplePDFViewController.xib */,
+				B8D5BA5C1AE06E9A00490011 /* CreateAnnotationViewController.h */,
+				B8D5BA5D1AE06E9A00490011 /* CreateAnnotationViewController.m */,
+				B8D5BA5E1AE06E9A00490011 /* CreateAnnotationViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -325,6 +323,7 @@
 				TargetAttributes = {
 					B8B842311AC6AE4E0076A0D1 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 4W666F8ZL6;
 					};
 					B8B8424A1AC6AE4E0076A0D1 = {
 						CreatedOnToolsVersion = 6.2;
@@ -360,6 +359,7 @@
 				B82C049F1AC747E600E3D07F /* AGTTableViewCell.xib in Resources */,
 				B867CB1B1AD91EB800441869 /* mogenerator.sh in Resources */,
 				B8B842461AC6AE4E0076A0D1 /* LaunchScreen.xib in Resources */,
+				B8D5BA601AE06E9A00490011 /* CreateAnnotationViewController.xib in Resources */,
 				B82C04A71AC7508A00E3D07F /* AGTBookViewController.xib in Resources */,
 				B8B842681AC6CB500076A0D1 /* AGTTableViewController.xib in Resources */,
 				B82C04A21AC749E800E3D07F /* blue_ball.png in Resources */,
@@ -387,7 +387,6 @@
 				B82C04A61AC7508A00E3D07F /* AGTBookViewController.m in Sources */,
 				B867CB431AD926C900441869 /* _Tag.m in Sources */,
 				B867CB3C1AD926C900441869 /* Photo.m in Sources */,
-				B8B842611AC6B49D0076A0D1 /* AGTLibrary.m in Sources */,
 				B867CB421AD926C900441869 /* _Photo.m in Sources */,
 				B867CB391AD926C900441869 /* Book.m in Sources */,
 				B8B8423B1AC6AE4E0076A0D1 /* AppDelegate.m in Sources */,
@@ -396,11 +395,11 @@
 				B867CB461ADACC1000441869 /* AGTCoreDataTableViewController.m in Sources */,
 				B867CB411AD926C900441869 /* _Pdf.m in Sources */,
 				B867CB381AD926C900441869 /* Annotation.m in Sources */,
-				B8B8425D1AC6B10C0076A0D1 /* AGTBook.m in Sources */,
 				B867CB3F1AD926C900441869 /* _Book.m in Sources */,
 				B82C04AB1AC76FEC00E3D07F /* AGTSimplePDFViewController.m in Sources */,
 				B867CB3D1AD926C900441869 /* Tag.m in Sources */,
 				B867CB401AD926C900441869 /* _Localization.m in Sources */,
+				B8D5BA5F1AE06E9A00490011 /* CreateAnnotationViewController.m in Sources */,
 				B8B842381AC6AE4E0076A0D1 /* main.m in Sources */,
 				B867CB3B1AD926C900441869 /* Pdf.m in Sources */,
 				B867CB3A1AD926C900441869 /* Localization.m in Sources */,
@@ -519,8 +518,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HackerBooks/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,8 +531,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HackerBooks/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
