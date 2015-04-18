@@ -1,18 +1,18 @@
 //
-//  CreateAnnotationViewController.m
+//  MapViewController.m
 //  HackerBooks
 //
-//  Created by Joan on 17/04/15.
+//  Created by Joan on 18/04/15.
 //  Copyright (c) 2015 Biscarri. All rights reserved.
 //
 
-#import "CreateAnnotationViewController.h"
+#import "MapViewController.h"
 
-@interface CreateAnnotationViewController ()
+@interface MapViewController ()
 
 @end
 
-@implementation CreateAnnotationViewController
+@implementation MapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

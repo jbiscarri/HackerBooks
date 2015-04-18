@@ -43,6 +43,8 @@
 
 - (AGTLibrary*)setupApp
 {
+    [self autoSave];
+
     //Getting file URL
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSURL *fileUrl = [[fileManager URLsForDirectory:NSDocumentDirectory
@@ -190,6 +192,23 @@
     tableViewController.alphabeticFetchedResultsController = fc;
     
     
+}
+
+#pragma mark - Autosave
+- (void)autoSave
+{
+    NSLog(@"Autosave");
+    
+    if (AUTO_SAVE)
+    {
+        [self.stack saveWithErrorBlock:^(NSError *error) {
+            NSLog(@"Error al guardar (automáticamente): %@", error);
+        }];
+        
+        [self performSelector:@selector(autoSave)
+                   withObject:nil
+                   afterDelay:AUTO_SAVE_DELAY];
+    }
 }
 
 @end

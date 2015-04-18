@@ -22,6 +22,10 @@
 #define NOTIFICATION_SELECTED_BOOK_CHANGED @"selectedBookChanged"
 #define NOTIFICATION_FAVORITE_FOR_BOOK_CHANGED @"favoriteChanged"
 
+#define AUTO_SAVE YES
+#define AUTO_SAVE_DELAY 15
+
+
 
 
 

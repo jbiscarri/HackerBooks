@@ -30,15 +30,26 @@
 		B867CB421AD926C900441869 /* _Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = B867CB351AD926C900441869 /* _Photo.m */; };
 		B867CB431AD926C900441869 /* _Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = B867CB371AD926C900441869 /* _Tag.m */; };
 		B867CB461ADACC1000441869 /* AGTCoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B867CB451ADACC1000441869 /* AGTCoreDataTableViewController.m */; };
+		B8818CAE1AE2AA98006D5682 /* AnnotationsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8818CAC1AE2AA98006D5682 /* AnnotationsViewCell.m */; };
+		B8818CAF1AE2AA98006D5682 /* AnnotationsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8818CAD1AE2AA98006D5682 /* AnnotationsViewCell.xib */; };
+		B88BB6B41AE277AC00839509 /* AnnotationsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B88BB6B31AE277AC00839509 /* AnnotationsCollectionViewController.m */; };
+		B88BB6BC1AE2851C00839509 /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = B88BB6BA1AE2851C00839509 /* Folder.png */; };
+		B88BB6BD1AE2851C00839509 /* Scanner.png in Resources */ = {isa = PBXBuildFile; fileRef = B88BB6BB1AE2851C00839509 /* Scanner.png */; };
+		B88BB6C01AE2859600839509 /* Folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B88BB6BE1AE2859600839509 /* Folder@2x.png */; };
+		B88BB6C11AE2859600839509 /* Scanner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B88BB6BF1AE2859600839509 /* Scanner@2x.png */; };
+		B88BB6C31AE2A40A00839509 /* AnnotationsCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B88BB6C21AE2A40A00839509 /* AnnotationsCollectionViewController.xib */; };
 		B8B842381AC6AE4E0076A0D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842371AC6AE4E0076A0D1 /* main.m */; };
 		B8B8423B1AC6AE4E0076A0D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B8423A1AC6AE4E0076A0D1 /* AppDelegate.m */; };
 		B8B842431AC6AE4E0076A0D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B842421AC6AE4E0076A0D1 /* Images.xcassets */; };
 		B8B842461AC6AE4E0076A0D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B842441AC6AE4E0076A0D1 /* LaunchScreen.xib */; };
 		B8B842521AC6AE4E0076A0D1 /* HackerBooksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842511AC6AE4E0076A0D1 /* HackerBooksTests.m */; };
-		B8B842671AC6CB500076A0D1 /* AGTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842651AC6CB500076A0D1 /* AGTableViewController.m */; };
+		B8B842671AC6CB500076A0D1 /* AGTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842651AC6CB500076A0D1 /* AGTTableViewController.m */; };
 		B8B842681AC6CB500076A0D1 /* AGTTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B842661AC6CB500076A0D1 /* AGTTableViewController.xib */; };
-		B8D5BA5F1AE06E9A00490011 /* CreateAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D5BA5D1AE06E9A00490011 /* CreateAnnotationViewController.m */; };
-		B8D5BA601AE06E9A00490011 /* CreateAnnotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8D5BA5E1AE06E9A00490011 /* CreateAnnotationViewController.xib */; };
+		B8D5BA5F1AE06E9A00490011 /* AnnotationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D5BA5D1AE06E9A00490011 /* AnnotationDetailViewController.m */; };
+		B8D5BA601AE06E9A00490011 /* AnnotationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8D5BA5E1AE06E9A00490011 /* AnnotationDetailViewController.xib */; };
+		B8E270D91AE2B036009F1975 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E270D71AE2B036009F1975 /* MapViewController.m */; };
+		B8E270DA1AE2B036009F1975 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8E270D81AE2B036009F1975 /* MapViewController.xib */; };
+		B8E270DC1AE2B0FF009F1975 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E270DB1AE2B0FF009F1975 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +103,16 @@
 		B867CB371AD926C900441869 /* _Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Tag.m; sourceTree = "<group>"; };
 		B867CB441ADACC1000441869 /* AGTCoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataTableViewController.h; path = Controllers/AGTCoreDataTableViewController.h; sourceTree = "<group>"; };
 		B867CB451ADACC1000441869 /* AGTCoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataTableViewController.m; path = Controllers/AGTCoreDataTableViewController.m; sourceTree = "<group>"; };
+		B8818CAB1AE2AA98006D5682 /* AnnotationsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnnotationsViewCell.h; path = Controllers/AnnotationsViewCell.h; sourceTree = "<group>"; };
+		B8818CAC1AE2AA98006D5682 /* AnnotationsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnnotationsViewCell.m; path = Controllers/AnnotationsViewCell.m; sourceTree = "<group>"; };
+		B8818CAD1AE2AA98006D5682 /* AnnotationsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnnotationsViewCell.xib; path = Controllers/AnnotationsViewCell.xib; sourceTree = "<group>"; };
+		B88BB6B21AE277AC00839509 /* AnnotationsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnnotationsCollectionViewController.h; path = Controllers/AnnotationsCollectionViewController.h; sourceTree = "<group>"; };
+		B88BB6B31AE277AC00839509 /* AnnotationsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnnotationsCollectionViewController.m; path = Controllers/AnnotationsCollectionViewController.m; sourceTree = "<group>"; };
+		B88BB6BA1AE2851C00839509 /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
+		B88BB6BB1AE2851C00839509 /* Scanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scanner.png; sourceTree = "<group>"; };
+		B88BB6BE1AE2859600839509 /* Folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Folder@2x.png"; sourceTree = "<group>"; };
+		B88BB6BF1AE2859600839509 /* Scanner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scanner@2x.png"; sourceTree = "<group>"; };
+		B88BB6C21AE2A40A00839509 /* AnnotationsCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnnotationsCollectionViewController.xib; path = Controllers/AnnotationsCollectionViewController.xib; sourceTree = "<group>"; };
 		B8B842321AC6AE4E0076A0D1 /* HackerBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B842361AC6AE4E0076A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B842371AC6AE4E0076A0D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,11 +125,15 @@
 		B8B842511AC6AE4E0076A0D1 /* HackerBooksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HackerBooksTests.m; sourceTree = "<group>"; };
 		B8B842621AC6B6510076A0D1 /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		B8B842641AC6CB500076A0D1 /* AGTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTTableViewController.h; path = Controllers/AGTTableViewController.h; sourceTree = "<group>"; };
-		B8B842651AC6CB500076A0D1 /* AGTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTableViewController.m; path = Controllers/AGTableViewController.m; sourceTree = "<group>"; };
+		B8B842651AC6CB500076A0D1 /* AGTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTTableViewController.m; path = Controllers/AGTTableViewController.m; sourceTree = "<group>"; };
 		B8B842661AC6CB500076A0D1 /* AGTTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AGTTableViewController.xib; path = Controllers/AGTTableViewController.xib; sourceTree = "<group>"; };
-		B8D5BA5C1AE06E9A00490011 /* CreateAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateAnnotationViewController.h; path = Controllers/CreateAnnotationViewController.h; sourceTree = "<group>"; };
-		B8D5BA5D1AE06E9A00490011 /* CreateAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateAnnotationViewController.m; path = Controllers/CreateAnnotationViewController.m; sourceTree = "<group>"; };
-		B8D5BA5E1AE06E9A00490011 /* CreateAnnotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreateAnnotationViewController.xib; path = Controllers/CreateAnnotationViewController.xib; sourceTree = "<group>"; };
+		B8D5BA5C1AE06E9A00490011 /* AnnotationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnnotationDetailViewController.h; path = Controllers/AnnotationDetailViewController.h; sourceTree = "<group>"; };
+		B8D5BA5D1AE06E9A00490011 /* AnnotationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnnotationDetailViewController.m; path = Controllers/AnnotationDetailViewController.m; sourceTree = "<group>"; };
+		B8D5BA5E1AE06E9A00490011 /* AnnotationDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnnotationDetailViewController.xib; path = Controllers/AnnotationDetailViewController.xib; sourceTree = "<group>"; };
+		B8E270D61AE2B036009F1975 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = Controllers/MapViewController.h; sourceTree = "<group>"; };
+		B8E270D71AE2B036009F1975 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = Controllers/MapViewController.m; sourceTree = "<group>"; };
+		B8E270D81AE2B036009F1975 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapViewController.xib; path = Controllers/MapViewController.xib; sourceTree = "<group>"; };
+		B8E270DB1AE2B0FF009F1975 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E270DC1AE2B0FF009F1975 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +158,10 @@
 		B82C04A01AC749E800E3D07F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B88BB6BA1AE2851C00839509 /* Folder.png */,
+				B88BB6BE1AE2859600839509 /* Folder@2x.png */,
+				B88BB6BF1AE2859600839509 /* Scanner@2x.png */,
+				B88BB6BB1AE2851C00839509 /* Scanner.png */,
 				B82C04A11AC749E800E3D07F /* blue_ball.png */,
 			);
 			path = Resources;
@@ -180,6 +210,7 @@
 		B8B842291AC6AE4E0076A0D1 = {
 			isa = PBXGroup;
 			children = (
+				B8E270DB1AE2B0FF009F1975 /* MapKit.framework */,
 				B8B842341AC6AE4E0076A0D1 /* HackerBooks */,
 				B8B8424E1AC6AE4E0076A0D1 /* HackerBooksTests */,
 				B8B842331AC6AE4E0076A0D1 /* Products */,
@@ -256,7 +287,7 @@
 				B867CB441ADACC1000441869 /* AGTCoreDataTableViewController.h */,
 				B867CB451ADACC1000441869 /* AGTCoreDataTableViewController.m */,
 				B8B842641AC6CB500076A0D1 /* AGTTableViewController.h */,
-				B8B842651AC6CB500076A0D1 /* AGTableViewController.m */,
+				B8B842651AC6CB500076A0D1 /* AGTTableViewController.m */,
 				B8B842661AC6CB500076A0D1 /* AGTTableViewController.xib */,
 				B82C049B1AC747E600E3D07F /* AGTTableViewCell.h */,
 				B82C049C1AC747E600E3D07F /* AGTTableViewCell.m */,
@@ -267,9 +298,18 @@
 				B82C04A81AC76FEC00E3D07F /* AGTSimplePDFViewController.h */,
 				B82C04A91AC76FEC00E3D07F /* AGTSimplePDFViewController.m */,
 				B82C04AA1AC76FEC00E3D07F /* AGTSimplePDFViewController.xib */,
-				B8D5BA5C1AE06E9A00490011 /* CreateAnnotationViewController.h */,
-				B8D5BA5D1AE06E9A00490011 /* CreateAnnotationViewController.m */,
-				B8D5BA5E1AE06E9A00490011 /* CreateAnnotationViewController.xib */,
+				B8D5BA5C1AE06E9A00490011 /* AnnotationDetailViewController.h */,
+				B8D5BA5D1AE06E9A00490011 /* AnnotationDetailViewController.m */,
+				B8D5BA5E1AE06E9A00490011 /* AnnotationDetailViewController.xib */,
+				B88BB6B21AE277AC00839509 /* AnnotationsCollectionViewController.h */,
+				B88BB6B31AE277AC00839509 /* AnnotationsCollectionViewController.m */,
+				B88BB6C21AE2A40A00839509 /* AnnotationsCollectionViewController.xib */,
+				B8818CAB1AE2AA98006D5682 /* AnnotationsViewCell.h */,
+				B8818CAC1AE2AA98006D5682 /* AnnotationsViewCell.m */,
+				B8818CAD1AE2AA98006D5682 /* AnnotationsViewCell.xib */,
+				B8E270D61AE2B036009F1975 /* MapViewController.h */,
+				B8E270D71AE2B036009F1975 /* MapViewController.m */,
+				B8E270D81AE2B036009F1975 /* MapViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -355,13 +395,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88BB6BD1AE2851C00839509 /* Scanner.png in Resources */,
+				B8818CAF1AE2AA98006D5682 /* AnnotationsViewCell.xib in Resources */,
 				B82C04AC1AC76FEC00E3D07F /* AGTSimplePDFViewController.xib in Resources */,
+				B8E270DA1AE2B036009F1975 /* MapViewController.xib in Resources */,
 				B82C049F1AC747E600E3D07F /* AGTTableViewCell.xib in Resources */,
 				B867CB1B1AD91EB800441869 /* mogenerator.sh in Resources */,
 				B8B842461AC6AE4E0076A0D1 /* LaunchScreen.xib in Resources */,
-				B8D5BA601AE06E9A00490011 /* CreateAnnotationViewController.xib in Resources */,
+				B8D5BA601AE06E9A00490011 /* AnnotationDetailViewController.xib in Resources */,
+				B88BB6C11AE2859600839509 /* Scanner@2x.png in Resources */,
+				B88BB6C31AE2A40A00839509 /* AnnotationsCollectionViewController.xib in Resources */,
 				B82C04A71AC7508A00E3D07F /* AGTBookViewController.xib in Resources */,
 				B8B842681AC6CB500076A0D1 /* AGTTableViewController.xib in Resources */,
+				B88BB6BC1AE2851C00839509 /* Folder.png in Resources */,
+				B88BB6C01AE2859600839509 /* Folder@2x.png in Resources */,
 				B82C04A21AC749E800E3D07F /* blue_ball.png in Resources */,
 				B8B842431AC6AE4E0076A0D1 /* Images.xcassets in Resources */,
 			);
@@ -381,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B88BB6B41AE277AC00839509 /* AnnotationsCollectionViewController.m in Sources */,
 				B82C049E1AC747E600E3D07F /* AGTTableViewCell.m in Sources */,
 				B867CB3E1AD926C900441869 /* _Annotation.m in Sources */,
 				B867CB141AD91C5300441869 /* Books.xcdatamodeld in Sources */,
@@ -390,7 +438,7 @@
 				B867CB421AD926C900441869 /* _Photo.m in Sources */,
 				B867CB391AD926C900441869 /* Book.m in Sources */,
 				B8B8423B1AC6AE4E0076A0D1 /* AppDelegate.m in Sources */,
-				B8B842671AC6CB500076A0D1 /* AGTableViewController.m in Sources */,
+				B8B842671AC6CB500076A0D1 /* AGTTableViewController.m in Sources */,
 				B867CB171AD91E4200441869 /* AGTCoreDataStack.m in Sources */,
 				B867CB461ADACC1000441869 /* AGTCoreDataTableViewController.m in Sources */,
 				B867CB411AD926C900441869 /* _Pdf.m in Sources */,
@@ -399,8 +447,10 @@
 				B82C04AB1AC76FEC00E3D07F /* AGTSimplePDFViewController.m in Sources */,
 				B867CB3D1AD926C900441869 /* Tag.m in Sources */,
 				B867CB401AD926C900441869 /* _Localization.m in Sources */,
-				B8D5BA5F1AE06E9A00490011 /* CreateAnnotationViewController.m in Sources */,
+				B8D5BA5F1AE06E9A00490011 /* AnnotationDetailViewController.m in Sources */,
+				B8818CAE1AE2AA98006D5682 /* AnnotationsViewCell.m in Sources */,
 				B8B842381AC6AE4E0076A0D1 /* main.m in Sources */,
+				B8E270D91AE2B036009F1975 /* MapViewController.m in Sources */,
 				B867CB3B1AD926C900441869 /* Pdf.m in Sources */,
 				B867CB3A1AD926C900441869 /* Localization.m in Sources */,
 			);

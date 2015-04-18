@@ -9,29 +9,31 @@
 @implementation Annotation
 
 #pragma mark - Class methods
-+(NSArray*)observableKeys{
+
+
++ (NSArray*)observableKeys{
     
     return @[AnnotationAttributes.text, AnnotationRelationships.photo, AnnotationRelationships.book, AnnotationRelationships.localization];
 }
 
 #pragma mark - Life cycle
--(void) awakeFromInsert{
+- (void)awakeFromInsert{
     [super awakeFromInsert];
     [self setupKVO];
 }
 
--(void) awakeFromFetch{
+- (void)awakeFromFetch{
     [super awakeFromFetch];
     [self setupKVO];
 }
 
--(void) willTurnIntoFault{
+- (void)willTurnIntoFault{
     [super willTurnIntoFault];
     [self tearDownKVO];
 }
 
 #pragma mark - KVO
--(void) setupKVO{
+- (void)setupKVO{
     for (NSString *key in [[self class] observableKeys]) {
         [self addObserver:self
                forKeyPath:key
@@ -41,7 +43,7 @@
     }
 }
 
--(void) tearDownKVO{
+- (void)tearDownKVO{
     // me doy de baja de todas las notificaciones
     for (NSString *key in [[self class] observableKeys]) {
         [self removeObserver:self
@@ -52,7 +54,7 @@
 #pragma mark - modification date
 
 #pragma mark - KVO
--(void) observeValueForKeyPath:(NSString *)keyPath
+- (void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
                         change:(NSDictionary *)change
                        context:(void *)context{

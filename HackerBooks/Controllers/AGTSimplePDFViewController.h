@@ -15,7 +15,9 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic) Book *book;
 
+@property (weak, nonatomic) IBOutlet UIButton *AnnotationsButton;
+
 - (instancetype)initWithBook:(Book*)book;
-- (IBAction)addAnnotation:(id)sender;
+- (IBAction)goToAnnotations:(id)sender;
 
 @end

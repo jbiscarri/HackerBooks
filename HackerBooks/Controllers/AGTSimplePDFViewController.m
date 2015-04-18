@@ -10,6 +10,10 @@
 #import "Book.h"
 #import "Pdf.h"
 #import "Settings.h"
+#import "Annotation.h"
+#import "AnnotationsCollectionViewController.h"
+#import "AnnotationDetailViewController.h"
+#import "MapViewController.h"
 
 @interface AGTSimplePDFViewController ()
 
@@ -26,17 +30,19 @@
     return self;
 }
 
-- (IBAction)addAnnotation:(id)sender {
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self syncWithModel];
+    [self updateRightButton];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self syncWithModel];
+
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedBookHasBeenChanged:) name:NOTIFICATION_SELECTED_BOOK_CHANGED object:nil];
 }
 
@@ -83,6 +89,22 @@
 }
 
 
+#pragma mark - Right Button
+- (void)updateRightButton
+{
+    //Add right button to navigator to change Book Order
+    if (!self.navigationItem.rightBarButtonItem){
+        UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@""
+                                                                   style:UIBarButtonItemStylePlain
+                                                                  target:self
+                                                                  action:@selector(goToAnnotations:)];
+        self.navigationItem.rightBarButtonItem = button;
+    }
+    [self.navigationItem.rightBarButtonItem setTitle:@"Annotations"];
+    
+}
+
+
 #pragma mark - NOTIFICATIONS
 
 //NOTIFICATION_SELECTED_BOOK_CHANGED
@@ -93,4 +115,54 @@
     [self syncWithModel];
 }
 
+- (IBAction)goToAnnotations:(id)sender {
+    UITabBarController *tabBarController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
+    
+    UICollectionViewFlowLayout* flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    flowLayout.itemSize = CGSizeMake(160, 160);
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
+    
+    AnnotationsCollectionViewController *annotationsCollectionViewController = [[AnnotationsCollectionViewController alloc] initWithBook:self.book];
+    annotationsCollectionViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"List" image:[UIImage imageNamed:@"Folder.png"] selectedImage:nil];
+
+    
+    MapViewController *mapVC =[[MapViewController alloc] init];
+    
+    mapVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Map" image:[UIImage imageNamed:@"Scanner.png"] selectedImage:nil];
+    
+    
+    NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[Annotation entityName]];
+    req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:AnnotationAttributes.modificationDate
+                                                          ascending:YES]];
+    req.fetchBatchSize = 20;
+    
+    req.predicate = [NSPredicate predicateWithFormat:@"book = %@", self.book];
+    
+    NSFetchedResultsController *fc = [[NSFetchedResultsController alloc] initWithFetchRequest:req
+                                                                         managedObjectContext:self.book.managedObjectContext
+                                                                           sectionNameKeyPath:nil
+                                                                                    cacheName:nil];
+    annotationsCollectionViewController.fetchedResultsController = fc;
+
+    
+    [tabBarController setViewControllers:@[annotationsCollectionViewController, mapVC]];
+    
+    //Add right button to tab bar
+    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Add New"
+                                                               style:UIBarButtonItemStylePlain
+                                                              target:self
+                                                              action:@selector(addNewAnnotation:)];
+
+    tabBarController.navigationItem.rightBarButtonItem = button;
+    [self.navigationController pushViewController:tabBarController animated:YES];
+    
+}
+
+- (void)addNewAnnotation:(id)sender
+{
+    Annotation *annotation = [Annotation insertInManagedObjectContext:self.book.managedObjectContext];
+    annotation.book = self.book;
+    AnnotationDetailViewController *annotationVC = [[AnnotationDetailViewController alloc] initWithAnnotation:annotation];
+    [self.navigationController pushViewController:annotationVC animated:YES];
+}
 @end

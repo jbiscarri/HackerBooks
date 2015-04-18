@@ -31,24 +31,13 @@
                     </constraints>
                     <color key="color" red="0.94901960780000005" green="0.58039215690000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </activityIndicatorView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORS-4P-Bsy">
-                    <rect key="frame" x="248" y="8" width="105" height="30"/>
-                    <state key="normal" title="Add annotation">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="addAnnotation:" destination="-1" eventType="touchUpInside" id="dG3-7i-9nZ"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="IGW-Rd-ive" secondAttribute="bottom" id="6xf-aE-Ikj"/>
-                <constraint firstItem="ORS-4P-Bsy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="755-KY-kU3"/>
                 <constraint firstItem="IGW-Rd-ive" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jbq-te-ayt"/>
                 <constraint firstAttribute="centerY" secondItem="kgO-35-5bj" secondAttribute="centerY" id="Pgp-FX-IcD"/>
                 <constraint firstItem="IGW-Rd-ive" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ccS-rw-dSd"/>
-                <constraint firstAttribute="centerX" secondItem="ORS-4P-Bsy" secondAttribute="centerX" id="lHs-KC-RDP"/>
                 <constraint firstAttribute="trailing" secondItem="IGW-Rd-ive" secondAttribute="trailing" id="v6l-6K-40x"/>
                 <constraint firstAttribute="centerX" secondItem="kgO-35-5bj" secondAttribute="centerX" id="xDC-aT-NZt"/>
             </constraints>
