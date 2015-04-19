@@ -43,7 +43,7 @@
 
 - (AGTLibrary*)setupApp
 {
-    [self autoSave];
+    [self performSelector:@selector(autoSave) withObject:nil afterDelay:AUTO_SAVE_DELAY];
 
     //Getting file URL
     NSFileManager *fileManager = [NSFileManager defaultManager];

@@ -16,6 +16,7 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *currentLocation;
 @property (strong, nonatomic) NSString *currentAddress;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @property (weak, nonatomic) IBOutlet UITextView *comment;
 @property (weak, nonatomic) IBOutlet UIImageView *picture;
@@ -23,5 +24,9 @@
 - (IBAction)addPicture:(id)sender;
 - (instancetype)initWithAnnotation:(Annotation*)annotation;
 
+- (IBAction)deletePicture:(id)sender;
+- (IBAction)share:(id)sender;
+
+- (IBAction)removeAnnotation:(id)sender;
 
 @end

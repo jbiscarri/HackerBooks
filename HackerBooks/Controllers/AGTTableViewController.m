@@ -17,6 +17,7 @@
 @property (nonatomic) BOOL beganUpdates;
 @property (nonatomic, assign) BOOL suspendAutomaticTrackingOfChangesInManagedObjectContext;
 @property (nonatomic, strong) UISearchBar* searchBar;
+@property (nonatomic, strong) UIButton *overlayButton;
 @end
 
 @implementation AGTTableViewController
@@ -27,6 +28,7 @@
     self.searchBar = tempSearchBar;
     self.searchBar.delegate = self;
     [self.searchBar sizeToFit];
+
     self.tableView.tableHeaderView = self.searchBar;
 }
 
@@ -45,6 +47,7 @@
 {
     [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self hideKeyboard];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -268,16 +271,55 @@
 #pragma mark - UISearchBarDelegate
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     [self changePredicatesWithSearch:searchBar.text];
+    [self hideKeyboard];
 }
 
 - (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
  if ([searchBar.text isEqualToString:@""])
-     [self changePredicatesWithSearch:@""];
+    [self changePredicatesWithSearch:@""];
+    [self hideKeyboard];
 }
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
     [self changePredicatesWithSearch:@""];
+    [self hideKeyboard];
 }
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+{
+    //Hack for dismiss Bar purposes
+    [self.overlayButton removeFromSuperview];
+    // add the button to the main view
+    self.overlayButton = [[UIButton alloc] initWithFrame:self.view.frame];
+    // set the background to black and have some transparency
+    self.overlayButton.backgroundColor = [UIColor colorWithWhite:0 alpha:0.3];
+    // add an event listener to the button
+    [self.overlayButton addTarget:self action:@selector(hideKeyboard) forControlEvents:UIControlEventTouchUpInside];
+    // add to main view
+    [self.view.superview addSubview:self.overlayButton];
+    
+    self.overlayButton.translatesAutoresizingMaskIntoConstraints = NO;
+
+    int offset = self.navigationController.navigationBar.frame.size.height + self.searchBar.frame.size.height + 20;
+    
+    NSArray *constraints = @[
+                             [NSLayoutConstraint constraintWithItem:self.overlayButton attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view.superview attribute:NSLayoutAttributeLeading multiplier:1.0 constant:0.0],
+                             [NSLayoutConstraint constraintWithItem:self.overlayButton attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view.superview attribute:NSLayoutAttributeTrailing multiplier:1.0 constant:0.0],
+                             [NSLayoutConstraint constraintWithItem:self.overlayButton attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view.superview attribute:NSLayoutAttributeTop multiplier:1.0 constant:offset],
+                             [NSLayoutConstraint constraintWithItem:self.overlayButton attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view.superview attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0.0]
+                             ];
+    [self.view.superview addConstraints:constraints];
+    [self.view.superview setNeedsLayout];
+}
+
+- (void)hideKeyboard
+{
+    // hide the keyboard
+    [self.searchBar resignFirstResponder];
+    // remove the overlay button
+    [self.overlayButton removeFromSuperview];
+}
+
 
 #pragma mark - Change predicates
 
@@ -302,7 +344,6 @@
     [self.view endEditing:YES];
     
 }
-
 
 
 @end

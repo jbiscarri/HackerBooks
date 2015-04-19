@@ -65,18 +65,18 @@
     
     AnnotationsViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
     Annotation *annotation = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    [annotation.photo loadImageCompletion:^(UIImage *image) {
-        cell.colImage.image = image;
+    cell.colImage.image = nil;
+    
+    [annotation.photo loadImageCompletion:^(UIImage *image, Photo *photo) {
+        if (annotation.photo == photo)
+            cell.colImage.image = image;
     }];
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"dd/MM/yyyy HH:mm:ss"];
     
     cell.colText.text = [formatter stringFromDate:annotation.modificationDate];    
-        
-    cell.backgroundColor = [UIColor redColor];
-    return cell;
-     
+    
     return cell;
 }
 

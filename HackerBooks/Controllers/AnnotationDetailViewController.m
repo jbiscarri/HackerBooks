@@ -13,7 +13,7 @@
 
 
 @interface AnnotationDetailViewController ()
-
+@property (strong, nonatomic) UIView *activeField;
 @end
 
 @implementation AnnotationDetailViewController
@@ -35,9 +35,13 @@
     return self;
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyBoard:)];
+    [self.scrollView addGestureRecognizer:gestureRecognizer];
 
 }
 
@@ -45,6 +49,7 @@
 {
     [super viewWillAppear:animated];
     [self syncModel];
+    [self registerForKeyboardNotifications];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -58,7 +63,8 @@
     self.annotation.localization.latitude = @(self.currentLocation.coordinate.latitude);
     self.annotation.localization.longitude = @(self.currentLocation.coordinate.longitude);
     self.annotation.localization.address = self.currentAddress;
-
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [self.annotation.managedObjectContext save:nil];
 
 }
 
@@ -98,7 +104,7 @@
 - (void)showActionSheet
 {
     NSString *actionSheetTitle = @"Select image source"; //Action Sheet Title
-    NSString *destructiveTitle = @"Delete image"; //Action Sheet Button Titles
+    //NSString *destructiveTitle = @"Delete image"; //Action Sheet Button Titles
     NSString *other1 = @"Camera roll";
     NSString *other2 = @"Photo Library";
     NSString *other3 = @"My Albums";
@@ -107,7 +113,8 @@
                                   initWithTitle:actionSheetTitle
                                   delegate:self
                                   cancelButtonTitle:cancelTitle
-                                  destructiveButtonTitle:destructiveTitle
+//                                destructiveButtonTitle:destructiveTitle
+                                  destructiveButtonTitle:nil
                                   otherButtonTitles:other1, other2, other3, nil];
     [actionSheet showInView:self.view];
 }
@@ -116,18 +123,15 @@
     
             switch (buttonIndex) {
                 case 0:
-                    [self deletePhoto:nil];
-                    break;
-                case 1:
                     [self showCamera:UIImagePickerControllerSourceTypeCamera];
                     break;
-                case 2:
+                case 1:
                     [self showCamera:UIImagePickerControllerSourceTypePhotoLibrary];
                     break;
-                case 3:
+                case 2:
                     [self showCamera:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
                     break;
-                case 4:
+                case 3:
                     //[self rateAppYes];
                     break;
                 default:
@@ -153,23 +157,44 @@
 }
 
 - (IBAction)deletePhoto:(id)sender {
-    if (self.annotation.photo == nil){
+    if (self.annotation.photo != nil){
 
         self.annotation.photo.image = nil;
         CGRect oldRect = self.picture.bounds;
-        [UIView animateWithDuration:.5
+        [UIView animateWithDuration:.3
                          animations:^{
                              self.picture.alpha = 0;
                              self.picture.bounds = CGRectZero;
-                             //self.picture.transform = CGAffineTransformMakeRotation(M_PI);
                          } completion:^(BOOL finished) {
                              self.picture.image = nil;
                              self.picture.alpha = 1;
                              self.picture.bounds = oldRect;
-                             //self.picture.transform = CGAffineTransformIdentity;
                          }];
     }
     
+}
+
+- (IBAction)deletePicture:(id)sender {
+    [self deletePhoto:nil];
+}
+
+- (IBAction)share:(id)sender {
+    if (self.annotation.text != nil){
+        NSString * message = self.annotation.text;
+        NSMutableArray *shareItems = [NSMutableArray arrayWithObject:message];
+        UIImage * image = self.annotation.photo.image;
+        if (image)
+            [shareItems addObject:image];
+            
+        UIActivityViewController * avc = [[UIActivityViewController alloc] initWithActivityItems:shareItems applicationActivities:nil];
+        
+        [self presentViewController:avc animated:YES completion:nil];
+    }
+}
+
+- (IBAction)removeAnnotation:(id)sender {
+    [self.annotation.managedObjectContext deleteObject:self.annotation];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - CLLocation
@@ -197,6 +222,62 @@
                        }
                       
                    }];
+}
+
+#pragma mark - Keyboard management
+- (void)registerForKeyboardNotifications
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWasShown:)
+                                                 name:UIKeyboardDidShowNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillBeHidden:)
+                                                 name:UIKeyboardWillHideNotification object:nil];
+    
+}
+
+// Called when the UIKeyboardDidShowNotification is sent.
+- (void)keyboardWasShown:(NSNotification*)aNotification
+{
+    NSDictionary* info = [aNotification userInfo];
+    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    
+    UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
+    self.scrollView.contentInset = contentInsets;
+    self.scrollView.scrollIndicatorInsets = contentInsets;
+    
+    // If active text field is hidden by keyboard, scroll it so it's visible
+    // Your app might not need or want this behavior.
+    CGRect aRect = self.view.frame;
+    aRect.size.height -= kbSize.height;
+    if (!CGRectContainsPoint(aRect, self.activeField.frame.origin) ) {
+        [self.scrollView scrollRectToVisible:self.activeField.frame animated:YES];
+    }
+}
+
+// Called when the UIKeyboardWillHideNotification is sent
+- (void)keyboardWillBeHidden:(NSNotification*)aNotification
+{
+    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+    self.scrollView.contentInset = contentInsets;
+    self.scrollView.scrollIndicatorInsets = contentInsets;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    self.activeField = textField;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    self.activeField = nil;
+}
+
+#pragma mark - Dismiss keyboard
+- (void)hideKeyBoard:(UITapGestureRecognizer*)recognizer
+{
+    [self.view endEditing:YES];
 }
 
 @end

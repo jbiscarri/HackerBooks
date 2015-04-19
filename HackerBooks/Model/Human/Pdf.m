@@ -7,6 +7,7 @@
 @end
 
 @implementation Pdf
+@synthesize cancelDownload;
 
 + (instancetype)pdfWithPdfUrl:(NSString*)pdfUrl
                       context:(NSManagedObjectContext*)context
@@ -20,11 +21,17 @@
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0), ^{
         if (!self.pdfData){
             NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.pdfUrl]];
-            self.pdfData = data;
+            if (data){
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    if (!self.cancelDownload)
+                        self.pdfData = data;
+                });
+            }
         }
         if (completionBlock){
             dispatch_async(dispatch_get_main_queue(), ^{
-                completionBlock(self.pdfData);
+                if (!self.cancelDownload)
+                    completionBlock(self.pdfData);
             });
         }
     });

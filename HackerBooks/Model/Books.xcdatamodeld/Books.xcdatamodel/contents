@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Annotation" representedClassName="Annotation" syncable="YES">
         <attribute name="creationDate" attributeType="Date" indexed="YES" syncable="YES"/>
         <attribute name="modificationDate" attributeType="Date" indexed="YES" syncable="YES"/>
@@ -23,7 +23,7 @@
         <relationship name="annotation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Annotation" inverseName="localization" inverseEntity="Annotation" syncable="YES"/>
     </entity>
     <entity name="Pdf" representedClassName="Pdf" syncable="YES">
-        <attribute name="pdfData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="pdfData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="pdfUrl" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="pdf" inverseEntity="Book" syncable="YES"/>
     </entity>
@@ -42,7 +42,7 @@
         <element name="Annotation" positionX="18" positionY="81" width="128" height="135"/>
         <element name="Book" positionX="-63" positionY="-18" width="128" height="133"/>
         <element name="Localization" positionX="0" positionY="45" width="128" height="103"/>
-        <element name="Pdf" positionX="-54" positionY="9" width="128" height="88"/>
+        <element name="Pdf" positionX="-54" positionY="9" width="128" height="90"/>
         <element name="Photo" positionX="-18" positionY="36" width="128" height="103"/>
         <element name="Tag" positionX="-36" positionY="27" width="128" height="90"/>
     </elements>

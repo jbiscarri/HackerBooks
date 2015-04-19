@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <objects>
@@ -50,11 +49,7 @@
                             <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frU-Fa-y3b">
-                            <rect key="frame" x="39" y="81" width="522" height="325"/>
-                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                        </view>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V3L-Sh-yv2">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="V3L-Sh-yv2">
                             <rect key="frame" x="40" y="82" width="520" height="323"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="323" id="ody-Bc-U1f"/>
@@ -107,14 +102,11 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="V3L-Sh-yv2" secondAttribute="trailing" constant="40" id="1n2-qP-Ige"/>
-                        <constraint firstItem="frU-Fa-y3b" firstAttribute="centerY" secondItem="V3L-Sh-yv2" secondAttribute="centerY" id="7N0-6f-cPR"/>
                         <constraint firstItem="V3L-Sh-yv2" firstAttribute="top" secondItem="9DN-d3-thr" secondAttribute="bottom" constant="20" id="9HI-TW-YuX"/>
-                        <constraint firstItem="frU-Fa-y3b" firstAttribute="width" secondItem="V3L-Sh-yv2" secondAttribute="width" constant="2" id="9kt-Up-O1K"/>
                         <constraint firstItem="V3L-Sh-yv2" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" constant="40" id="CZ2-8h-QOq"/>
                         <constraint firstAttribute="trailing" secondItem="ppQ-zN-k9M" secondAttribute="trailing" constant="40" id="EE5-aX-NAt"/>
                         <constraint firstItem="Ta4-g6-4oi" firstAttribute="top" secondItem="jv4-pi-g4G" secondAttribute="top" constant="36" id="Gkf-kt-GQW"/>
                         <constraint firstAttribute="trailing" secondItem="VEF-HV-gcz" secondAttribute="trailing" constant="40" id="INz-Jo-Eeo"/>
-                        <constraint firstItem="frU-Fa-y3b" firstAttribute="height" secondItem="V3L-Sh-yv2" secondAttribute="height" constant="2" id="LyT-yz-cad"/>
                         <constraint firstAttribute="trailing" secondItem="3Ee-Tl-0Ma" secondAttribute="trailing" constant="40" id="MCZ-hZ-qxx"/>
                         <constraint firstItem="d3I-ob-T9S" firstAttribute="centerY" secondItem="V3L-Sh-yv2" secondAttribute="centerY" constant="0.5" id="Ocl-2v-oY5"/>
                         <constraint firstItem="3tt-Ie-txw" firstAttribute="top" secondItem="3Ee-Tl-0Ma" secondAttribute="bottom" constant="40" id="PVU-Y3-ZUx"/>
@@ -135,7 +127,6 @@
                         <constraint firstAttribute="trailing" secondItem="Ta4-g6-4oi" secondAttribute="trailing" constant="41" id="pdY-lJ-hZd"/>
                         <constraint firstAttribute="bottom" secondItem="3tt-Ie-txw" secondAttribute="bottom" constant="20" id="tCn-jo-pxn"/>
                         <constraint firstItem="ppQ-zN-k9M" firstAttribute="leading" secondItem="jv4-pi-g4G" secondAttribute="leading" constant="40" id="vhM-e2-Rgq"/>
-                        <constraint firstItem="frU-Fa-y3b" firstAttribute="centerX" secondItem="V3L-Sh-yv2" secondAttribute="centerX" id="wP1-kR-C5L"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
@@ -173,4 +164,7 @@
             </variation>
         </view>
     </objects>
+    <resources>
+        <image name="no_image.jpg" width="592" height="444"/>
+    </resources>
 </document>

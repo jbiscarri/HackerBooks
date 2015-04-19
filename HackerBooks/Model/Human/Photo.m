@@ -16,17 +16,19 @@
     return p;
 }
 
-- (void)loadImageCompletion:(void(^)(UIImage *image))completionBlock{
+- (void)loadImageCompletion:(void(^)(UIImage *image, Photo *photo))completionBlock{
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0), ^{
         if (!self.photoData){
-            
             NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.photoUrl]];
-            self.photoData = data;
+            //dispatch_async(dispatch_get_main_queue(), ^{
+                self.photoData = data;
+            //});
+
         }
         if (completionBlock){
             UIImage *image = [UIImage imageWithData:self.photoData];
             dispatch_async(dispatch_get_main_queue(), ^{
-                completionBlock(image);
+                completionBlock(image, self);
             });
         }
     });

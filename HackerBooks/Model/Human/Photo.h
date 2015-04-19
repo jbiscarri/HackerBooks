@@ -8,6 +8,6 @@
 + (instancetype)photoWithImageUrl:(NSString*)imageUrl
                           context:(NSManagedObjectContext*)context;
 
-- (void)loadImageCompletion:(void(^)(UIImage *image))completionBlock;
+- (void)loadImageCompletion:(void(^)(UIImage *image, Photo* photo))completionBlock;
 
 @end

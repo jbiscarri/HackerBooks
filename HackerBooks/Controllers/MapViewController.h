@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 @import MapKit;
+@import CoreData;
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController<NSFetchedResultsControllerDelegate>
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+
 
 @end

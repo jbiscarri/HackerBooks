@@ -48,11 +48,15 @@
     self.bookAuthors.text = self.book.authors;
     self.bookTags.text = [self.book tagsString];
     self.switchFavorite.on = self.book.isFavorite;
-    self.bookImageView.image = nil;
+    self.bookImageView.image = [UIImage imageNamed:@"no_image.jpg"];
+    self.bookImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.activityIndicator.hidden = NO;
-    [self.book.photo loadImageCompletion:^(UIImage *image) {
-        self.bookImageView.image = image;
-        self.activityIndicator.hidden = YES;
+    [self.book.photo loadImageCompletion:^(UIImage *image, Photo *photo) {
+        if (self.book.photo == photo){
+            self.bookImageView.contentMode = UIViewContentModeScaleAspectFit;
+            self.bookImageView.image = image;
+            self.activityIndicator.hidden = YES;
+        }
     }];
 }
 

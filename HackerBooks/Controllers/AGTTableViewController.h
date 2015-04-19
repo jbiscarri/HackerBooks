@@ -16,7 +16,7 @@
 @class AGTTableViewController;
 @class Book;
 
-@protocol AGTTableViewControllerDelegate <NSFetchedResultsControllerDelegate>
+@protocol AGTTableViewControllerDelegate <NSFetchedResultsControllerDelegate, UIGestureRecognizerDelegate>
 - (void)tableViewController:(AGTTableViewController*)tVC didSelectBook:(Book*)book;
 @end
 

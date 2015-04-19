@@ -42,14 +42,15 @@
     [super viewWillAppear:animated];
 
     self.edgesForExtendedLayout = UIRectEdgeNone;
-
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedBookHasBeenChanged:) name:NOTIFICATION_SELECTED_BOOK_CHANGED object:nil];
+    self.book.pdf.cancelDownload = NO;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+        self.book.pdf.cancelDownload = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -133,7 +134,7 @@
     
     NSFetchRequest *req = [NSFetchRequest fetchRequestWithEntityName:[Annotation entityName]];
     req.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:AnnotationAttributes.modificationDate
-                                                          ascending:YES]];
+                                                          ascending:NO]];
     req.fetchBatchSize = 20;
     
     req.predicate = [NSPredicate predicateWithFormat:@"book = %@", self.book];
@@ -143,6 +144,8 @@
                                                                            sectionNameKeyPath:nil
                                                                                     cacheName:nil];
     annotationsCollectionViewController.fetchedResultsController = fc;
+    mapVC.fetchedResultsController = fc;
+    
 
     
     [tabBarController setViewControllers:@[annotationsCollectionViewController, mapVC]];
@@ -161,6 +164,7 @@
 - (void)addNewAnnotation:(id)sender
 {
     Annotation *annotation = [Annotation insertInManagedObjectContext:self.book.managedObjectContext];
+    annotation.creationDate = [NSDate date];
     annotation.book = self.book;
     AnnotationDetailViewController *annotationVC = [[AnnotationDetailViewController alloc] initWithAnnotation:annotation];
     [self.navigationController pushViewController:annotationVC animated:YES];
