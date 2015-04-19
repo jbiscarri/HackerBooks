@@ -14,6 +14,7 @@
 #import "AnnotationsCollectionViewController.h"
 #import "AnnotationDetailViewController.h"
 #import "MapViewController.h"
+@import CoreGraphics;
 
 @interface AGTSimplePDFViewController ()
 
@@ -26,6 +27,7 @@
     if (self = [super initWithNibName:nil bundle:nil])
     {
         _book = book;
+
     }
     return self;
 }
@@ -34,7 +36,10 @@
     [super viewDidLoad];
     [self syncWithModel];
     [self updateRightButton];
-
+    self.webView.scrollView.delegate = self;
+    self.currentPage = 0;
+    self.numberOfPages = 0;
+    self.pdfPageHeight = -1;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -50,7 +55,11 @@
 {
     [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-        self.book.pdf.cancelDownload = YES;
+    self.book.pdf.cancelDownload = YES;
+    if ((self.currentPage > 0) && (self.currentPage > self.book.lastReadPageValue))
+    {
+        self.book.lastReadPageValue = self.currentPage;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,12 +88,13 @@
         if (!pdf){
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Pdf Error" message:@"BOOK file not found" delegate:nil cancelButtonTitle:@"Accept" otherButtonTitles:nil];
             [alert show];
-            [self.navigationController popViewControllerAnimated:YES];
+            //[self.navigationController popViewControllerAnimated:YES];
         }else{
             [self.webView loadData:pdf
                           MIMEType:@"application/pdf"
                   textEncodingName:@"UTF-8"
                            baseURL:nil];
+            self.numberOfPages = (int)[self getTotalPDFPages:pdf];
         }
     }];
 }
@@ -103,6 +113,15 @@
     }
     [self.navigationItem.rightBarButtonItem setTitle:@"Annotations"];
     
+}
+
+#pragma mark - PDF Management
+
+- (NSInteger)getTotalPDFPages:(NSData *)PDFData
+{
+    CGPDFDocumentRef document = CGPDFDocumentCreateWithProvider(CGDataProviderCreateWithCFData((CFDataRef)PDFData));
+    size_t pageCount = CGPDFDocumentGetNumberOfPages(document);
+    return pageCount;
 }
 
 
@@ -169,4 +188,26 @@
     AnnotationDetailViewController *annotationVC = [[AnnotationDetailViewController alloc] initWithAnnotation:annotation];
     [self.navigationController pushViewController:annotationVC animated:YES];
 }
+
+#pragma mark - UIScrollView
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    // if pdfPageHeight is -1 it needs to be calculated
+    if(self.pdfPageHeight == -1)
+    {
+        // the page height is calculated by taking the overall size of the UIWebView scrollView content size
+        // then dividing it by the number of pages Core Graphics reported for the PDF file being shown
+        CGFloat contentHeight = self.webView.scrollView.contentSize.height;
+        self.pdfPageHeight = contentHeight / self.numberOfPages;
+        
+        // also calculate what half the screen height is. no sense in doing this multiple times.
+        self.halfScreenHeight = (self.webView.frame.size.height / 2);
+    }
+    
+    // to calculate the page number, first get how far the user has scrolled
+    float verticalContentOffset = self.webView.scrollView.contentOffset.y;
+    
+    // next add the halfScreenHeight then divide the result by the guesstimated pdfPageHeight
+    self.currentPage = ceilf((verticalContentOffset + self.halfScreenHeight) / self.pdfPageHeight);
+}
+
 @end

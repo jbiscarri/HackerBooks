@@ -5,6 +5,7 @@
 
 const struct BookAttributes BookAttributes = {
 	.authors = @"authors",
+	.lastReadPage = @"lastReadPage",
 	.title = @"title",
 };
 
@@ -41,10 +42,36 @@ const struct BookRelationships BookRelationships = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 
+	if ([key isEqualToString:@"lastReadPageValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"lastReadPage"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+
 	return keyPaths;
 }
 
 @dynamic authors;
+
+@dynamic lastReadPage;
+
+- (int32_t)lastReadPageValue {
+	NSNumber *result = [self lastReadPage];
+	return [result intValue];
+}
+
+- (void)setLastReadPageValue:(int32_t)value_ {
+	[self setLastReadPage:@(value_)];
+}
+
+- (int32_t)primitiveLastReadPageValue {
+	NSNumber *result = [self primitiveLastReadPage];
+	return [result intValue];
+}
+
+- (void)setPrimitiveLastReadPageValue:(int32_t)value_ {
+	[self setPrimitiveLastReadPage:@(value_)];
+}
 
 @dynamic title;
 

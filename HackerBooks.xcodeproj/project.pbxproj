@@ -16,7 +16,6 @@
 		B82C04AC1AC76FEC00E3D07F /* AGTSimplePDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B82C04AA1AC76FEC00E3D07F /* AGTSimplePDFViewController.xib */; };
 		B867CB141AD91C5300441869 /* Books.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B867CB121AD91C5300441869 /* Books.xcdatamodeld */; };
 		B867CB171AD91E4200441869 /* AGTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B867CB161AD91E4200441869 /* AGTCoreDataStack.m */; };
-		B867CB1B1AD91EB800441869 /* mogenerator.sh in Resources */ = {isa = PBXBuildFile; fileRef = B867CB1A1AD91EB800441869 /* mogenerator.sh */; };
 		B867CB381AD926C900441869 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B867CB201AD926C900441869 /* Annotation.m */; };
 		B867CB391AD926C900441869 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = B867CB221AD926C900441869 /* Book.m */; };
 		B867CB3A1AD926C900441869 /* Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = B867CB241AD926C900441869 /* Localization.m */; };
@@ -38,6 +37,7 @@
 		B88BB6C01AE2859600839509 /* Folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B88BB6BE1AE2859600839509 /* Folder@2x.png */; };
 		B88BB6C11AE2859600839509 /* Scanner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B88BB6BF1AE2859600839509 /* Scanner@2x.png */; };
 		B88BB6C31AE2A40A00839509 /* AnnotationsCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B88BB6C21AE2A40A00839509 /* AnnotationsCollectionViewController.xib */; };
+		B8B6DAF31AE3BADC009970CD /* mogenerator.sh in Resources */ = {isa = PBXBuildFile; fileRef = B8B6DAF21AE3BADC009970CD /* mogenerator.sh */; };
 		B8B842381AC6AE4E0076A0D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B842371AC6AE4E0076A0D1 /* main.m */; };
 		B8B8423B1AC6AE4E0076A0D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B8423A1AC6AE4E0076A0D1 /* AppDelegate.m */; };
 		B8B842431AC6AE4E0076A0D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B842421AC6AE4E0076A0D1 /* Images.xcassets */; };
@@ -100,7 +100,6 @@
 		B867CB131AD91C5300441869 /* Books.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Books.xcdatamodel; sourceTree = "<group>"; };
 		B867CB151AD91E4200441869 /* AGTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGTCoreDataStack.h; path = Model/AGTCoreDataStack.h; sourceTree = "<group>"; };
 		B867CB161AD91E4200441869 /* AGTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGTCoreDataStack.m; path = Model/AGTCoreDataStack.m; sourceTree = "<group>"; };
-		B867CB1A1AD91EB800441869 /* mogenerator.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mogenerator.sh; sourceTree = "<group>"; };
 		B867CB1F1AD926C900441869 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		B867CB201AD926C900441869 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		B867CB211AD926C900441869 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
@@ -137,6 +136,8 @@
 		B88BB6BE1AE2859600839509 /* Folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Folder@2x.png"; sourceTree = "<group>"; };
 		B88BB6BF1AE2859600839509 /* Scanner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scanner@2x.png"; sourceTree = "<group>"; };
 		B88BB6C21AE2A40A00839509 /* AnnotationsCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AnnotationsCollectionViewController.xib; path = Controllers/AnnotationsCollectionViewController.xib; sourceTree = "<group>"; };
+		B8B6DAF11AE3B9CD009970CD /* Books2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Books2.xcdatamodel; sourceTree = "<group>"; };
+		B8B6DAF21AE3BADC009970CD /* mogenerator.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mogenerator.sh; sourceTree = SOURCE_ROOT; };
 		B8B842321AC6AE4E0076A0D1 /* HackerBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B842361AC6AE4E0076A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B842371AC6AE4E0076A0D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -317,7 +318,6 @@
 		B8B842351AC6AE4E0076A0D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B867CB1A1AD91EB800441869 /* mogenerator.sh */,
 				B8B842361AC6AE4E0076A0D1 /* Info.plist */,
 				B8B842371AC6AE4E0076A0D1 /* main.m */,
 			);
@@ -344,6 +344,7 @@
 		B8B8425E1AC6B1110076A0D1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B8B6DAF21AE3BADC009970CD /* mogenerator.sh */,
 				B867CB1E1AD926C900441869 /* Human */,
 				B867CB2B1AD926C900441869 /* Machine */,
 				B867CB151AD91E4200441869 /* AGTCoreDataStack.h */,
@@ -483,10 +484,10 @@
 				B8E270FB1AE32545009F1975 /* Icon-60.png in Resources */,
 				B8E270DA1AE2B036009F1975 /* MapViewController.xib in Resources */,
 				B82C049F1AC747E600E3D07F /* AGTTableViewCell.xib in Resources */,
-				B867CB1B1AD91EB800441869 /* mogenerator.sh in Resources */,
 				B8B842461AC6AE4E0076A0D1 /* LaunchScreen.xib in Resources */,
 				B8E270F61AE32545009F1975 /* Icon-29.png in Resources */,
 				B8E271031AE32545009F1975 /* Icon-152.png in Resources */,
+				B8B6DAF31AE3BADC009970CD /* mogenerator.sh in Resources */,
 				B8E271071AE32545009F1975 /* ipad_land@2x.png in Resources */,
 				B8E271051AE32545009F1975 /* icon1024.png in Resources */,
 				B8E270F71AE32545009F1975 /* Icon-40.png in Resources */,
@@ -760,9 +761,10 @@
 		B867CB121AD91C5300441869 /* Books.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				B8B6DAF11AE3B9CD009970CD /* Books2.xcdatamodel */,
 				B867CB131AD91C5300441869 /* Books.xcdatamodel */,
 			);
-			currentVersion = B867CB131AD91C5300441869 /* Books.xcdatamodel */;
+			currentVersion = B8B6DAF11AE3B9CD009970CD /* Books2.xcdatamodel */;
 			name = Books.xcdatamodeld;
 			path = Model/Books.xcdatamodeld;
 			sourceTree = "<group>";

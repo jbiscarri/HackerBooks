@@ -5,6 +5,7 @@
 
 extern const struct BookAttributes {
 	__unsafe_unretained NSString *authors;
+	__unsafe_unretained NSString *lastReadPage;
 	__unsafe_unretained NSString *title;
 } BookAttributes;
 
@@ -32,6 +33,14 @@ extern const struct BookRelationships {
 @property (nonatomic, strong) NSString* authors;
 
 //- (BOOL)validateAuthors:(id*)value_ error:(NSError**)error_;
+
+@property (nonatomic, strong) NSNumber* lastReadPage;
+
+@property (atomic) int32_t lastReadPageValue;
+- (int32_t)lastReadPageValue;
+- (void)setLastReadPageValue:(int32_t)value_;
+
+//- (BOOL)validateLastReadPage:(id*)value_ error:(NSError**)error_;
 
 @property (nonatomic, strong) NSString* title;
 
@@ -75,6 +84,12 @@ extern const struct BookRelationships {
 
 - (NSString*)primitiveAuthors;
 - (void)setPrimitiveAuthors:(NSString*)value;
+
+- (NSNumber*)primitiveLastReadPage;
+- (void)setPrimitiveLastReadPage:(NSNumber*)value;
+
+- (int32_t)primitiveLastReadPageValue;
+- (void)setPrimitiveLastReadPageValue:(int32_t)value_;
 
 - (NSString*)primitiveTitle;
 - (void)setPrimitiveTitle:(NSString*)value;

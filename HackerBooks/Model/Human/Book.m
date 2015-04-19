@@ -19,7 +19,7 @@
         Book *b = [self insertInManagedObjectContext:context];
         b.title =  book[@"title"];
         b.authors = book[@"authors"];
-        
+        b.lastReadPageValue = 0;
         b.photo = [Photo photoWithImageUrl:book[@"image_url"] context:context];
         b.pdf = [Pdf pdfWithPdfUrl:book[@"pdf_url"] context:context];
         

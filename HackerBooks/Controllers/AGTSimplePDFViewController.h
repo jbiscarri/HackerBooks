@@ -10,10 +10,18 @@
 
 @class Book;
 
-@interface AGTSimplePDFViewController : UIViewController<UIWebViewDelegate>
+@interface AGTSimplePDFViewController : UIViewController<UIWebViewDelegate, UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic) Book *book;
+@property (assign, nonatomic) int currentPage;
+@property (assign, nonatomic) int pdfPageHeight;
+@property (assign, nonatomic) int numberOfPages;
+@property (assign, nonatomic) CGFloat halfScreenHeight;
+
+
+
+
 
 @property (weak, nonatomic) IBOutlet UIButton *AnnotationsButton;
 

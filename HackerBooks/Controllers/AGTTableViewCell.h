@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *cellAuthors;
 @property (weak, nonatomic) IBOutlet UILabel *cellTags;
 @property (weak, nonatomic) IBOutlet UIImageView *favoriteImage;
+@property (weak, nonatomic) IBOutlet UILabel *currentPageLabel;
 
 - (void)configureCellWithBook:(Book*)book;
 

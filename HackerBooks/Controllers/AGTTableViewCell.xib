@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -16,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="702" placeholderIntrinsicHeight="21" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7i-TC-gaC">
-                        <rect key="frame" x="20" y="7" width="702" height="21"/>
+                        <rect key="frame" x="20" y="7" width="670" height="21"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="4Oc-Hw-vd6"/>
@@ -46,19 +45,28 @@
                             <constraint firstAttribute="height" constant="30" id="lny-mg-h65"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nq1-oQ-VAR">
+                        <rect key="frame" x="698" y="7" width="62" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="3h3-Nz-QTo" firstAttribute="top" secondItem="N7i-TC-gaC" secondAttribute="bottom" id="Asy-L9-0by"/>
                     <constraint firstItem="3h3-Nz-QTo" firstAttribute="width" secondItem="giO-X4-gzC" secondAttribute="width" id="Bqe-cx-Jo4"/>
                     <constraint firstItem="N7i-TC-gaC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="CXW-dX-TJo"/>
                     <constraint firstItem="giO-X4-gzC" firstAttribute="top" secondItem="3h3-Nz-QTo" secondAttribute="bottom" id="DLW-jF-ieS"/>
-                    <constraint firstItem="ybi-Bu-xBa" firstAttribute="leading" secondItem="N7i-TC-gaC" secondAttribute="trailing" constant="8" id="G4J-kf-za8"/>
+                    <constraint firstItem="ybi-Bu-xBa" firstAttribute="leading" secondItem="N7i-TC-gaC" secondAttribute="trailing" constant="40" id="G4J-kf-za8"/>
                     <constraint firstItem="3h3-Nz-QTo" firstAttribute="leading" secondItem="giO-X4-gzC" secondAttribute="leading" id="Kor-fS-xNH"/>
                     <constraint firstItem="N7i-TC-gaC" firstAttribute="height" secondItem="3h3-Nz-QTo" secondAttribute="height" id="L1o-n7-eeE"/>
                     <constraint firstItem="ybi-Bu-xBa" firstAttribute="leading" secondItem="giO-X4-gzC" secondAttribute="trailing" constant="8" id="LpN-J0-pc4"/>
                     <constraint firstItem="3h3-Nz-QTo" firstAttribute="height" secondItem="giO-X4-gzC" secondAttribute="height" id="Nj5-2I-pdN"/>
+                    <constraint firstItem="Nq1-oQ-VAR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="P2e-8K-3l6"/>
                     <constraint firstItem="ybi-Bu-xBa" firstAttribute="leading" secondItem="3h3-Nz-QTo" secondAttribute="trailing" constant="8" id="QBO-Ox-ww2"/>
+                    <constraint firstAttribute="trailing" secondItem="Nq1-oQ-VAR" secondAttribute="trailing" constant="8" id="Rf8-BL-nTc"/>
                     <constraint firstItem="ybi-Bu-xBa" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="aHq-QK-XdT"/>
+                    <constraint firstItem="Nq1-oQ-VAR" firstAttribute="leading" secondItem="N7i-TC-gaC" secondAttribute="trailing" constant="8" id="h3p-zF-vRR"/>
                     <constraint firstAttribute="centerY" secondItem="ybi-Bu-xBa" secondAttribute="centerY" id="neu-c5-qSy"/>
                     <constraint firstItem="N7i-TC-gaC" firstAttribute="width" secondItem="3h3-Nz-QTo" secondAttribute="width" id="o27-rY-wXk"/>
                     <constraint firstItem="N7i-TC-gaC" firstAttribute="leading" secondItem="3h3-Nz-QTo" secondAttribute="leading" id="o58-sH-ihJ"/>
@@ -75,6 +83,7 @@
                 <outlet property="cellAuthors" destination="3h3-Nz-QTo" id="adF-S3-gAE"/>
                 <outlet property="cellTags" destination="giO-X4-gzC" id="lPV-dK-G5D"/>
                 <outlet property="cellTitle" destination="N7i-TC-gaC" id="MoX-Xf-s8O"/>
+                <outlet property="currentPageLabel" destination="Nq1-oQ-VAR" id="CSM-8B-49n"/>
                 <outlet property="favoriteImage" destination="ybi-Bu-xBa" id="IB0-Wz-LJB"/>
             </connections>
             <point key="canvasLocation" x="530" y="211"/>

@@ -24,9 +24,13 @@
 {
     self.cellTitle.text = book.title;
     self.cellAuthors.text = book.authors;
-    
     self.cellTags.text = [book tagsString];
     self.favoriteImage.hidden = !book.isFavorite;
+    
+    if (book.lastReadPageValue > 0)
+        self.currentPageLabel.text = [NSString stringWithFormat:@"Page: %d", book.lastReadPageValue];
+    else
+        self.currentPageLabel.text = @"";
 }
 
 @end
