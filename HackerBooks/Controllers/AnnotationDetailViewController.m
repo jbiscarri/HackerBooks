@@ -10,6 +10,7 @@
 #import "Annotation.h"
 #import "Photo.h"
 #import "Localization.h"
+#import "Settings.h"
 
 
 @interface AnnotationDetailViewController ()
@@ -50,11 +51,13 @@
     [super viewWillAppear:animated];
     [self syncModel];
     [self registerForKeyboardNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedBookHasBeenChanged:) name:NOTIFICATION_SELECTED_BOOK_CHANGED object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+      [[NSNotificationCenter defaultCenter] removeObserver:self];
     self.annotation.text = self.comment.text;
     if (self.annotation.localization == nil){
         Localization *localization = [Localization insertInManagedObjectContext:self.annotation.managedObjectContext];
@@ -150,12 +153,17 @@
      picker.delegate = self;
      
      picker.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-     
-    [self presentViewController:picker
-                       animated:YES
-                     completion:^{ }];
+    [self performSelector: @selector(presentVC:) withObject:picker afterDelay: .1];
 }
 
+- (void)presentVC:(UIImagePickerController*)picker
+{
+    [self presentViewController:picker
+                    animated:YES
+                  completion:^{ }];
+
+
+}
 - (IBAction)deletePhoto:(id)sender {
     if (self.annotation.photo != nil){
 
@@ -182,13 +190,15 @@
     if (self.annotation.text != nil){
         NSString * message = self.annotation.text;
         NSMutableArray *shareItems = [NSMutableArray arrayWithObject:message];
-        UIImage * image = self.annotation.photo.image;
+        /*
+        UIImage * image = [self.annotation.photo.image copy];
         if (image)
             [shareItems addObject:image];
+         */
             
         UIActivityViewController * avc = [[UIActivityViewController alloc] initWithActivityItems:shareItems applicationActivities:nil];
-        
-        [self presentViewController:avc animated:YES completion:nil];
+        avc.popoverPresentationController.barButtonItem = self.shareButton;
+        [self performSelector: @selector(presentVC:) withObject:avc afterDelay: .1];
     }
 }
 
@@ -278,6 +288,14 @@
 - (void)hideKeyBoard:(UITapGestureRecognizer*)recognizer
 {
     [self.view endEditing:YES];
+}
+
+#pragma mark - NOTIFICATIONS
+
+//NOTIFICATION_SELECTED_BOOK_CHANGED
+- (void)notifiedBookHasBeenChanged:(NSNotification*)notification
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

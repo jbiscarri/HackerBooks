@@ -12,6 +12,7 @@
 #import "Photo.h"
 #import "Book.h"
 #import "AnnotationDetailViewController.h"
+#import "Settings.h"
 
 @interface AnnotationsCollectionViewController ()
 
@@ -41,6 +42,13 @@
     
     [self performFetch];
     [self.collectionView reloadData];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifiedBookHasBeenChanged:) name:NOTIFICATION_SELECTED_BOOK_CHANGED object:nil];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -109,6 +117,14 @@
       newIndexPath:(NSIndexPath *)newIndexPath
 {
         [self.collectionView reloadData];
+}
+
+#pragma mark - NOTIFICATIONS
+
+//NOTIFICATION_SELECTED_BOOK_CHANGED
+- (void)notifiedBookHasBeenChanged:(NSNotification*)notification
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 

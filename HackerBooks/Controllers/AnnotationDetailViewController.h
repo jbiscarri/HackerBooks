@@ -17,6 +17,7 @@
 @property (strong, nonatomic) CLLocation *currentLocation;
 @property (strong, nonatomic) NSString *currentAddress;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *shareButton;
 
 @property (weak, nonatomic) IBOutlet UITextView *comment;
 @property (weak, nonatomic) IBOutlet UIImageView *picture;

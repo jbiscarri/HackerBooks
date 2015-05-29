@@ -11,6 +11,7 @@
                 <outlet property="comment" destination="HgB-YG-TMi" id="sfQ-0R-bNq"/>
                 <outlet property="picture" destination="br4-rT-Uv6" id="Gqv-IR-4q0"/>
                 <outlet property="scrollView" destination="8BJ-7P-CHK" id="mXT-bI-kXg"/>
+                <outlet property="shareButton" destination="pHZ-3l-lgS" id="09u-Ft-YwO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
