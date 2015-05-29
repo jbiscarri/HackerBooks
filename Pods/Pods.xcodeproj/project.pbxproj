@@ -7,363 +7,380 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		066C5DA346246FF5C94CEB8D /* CGPDFDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A0BA7D21932B87AB1D207E1D /* CGPDFDocument.h */; };
-		0700E35C61D7596CE220D5EA /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F38D6D05F24DBBC7567C668 /* CGPDFDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1DCC031BD664DDEF7030D55E /* ReaderDocumentOutline.m in Sources */ = {isa = PBXBuildFile; fileRef = 045F4D7D800663CAD3209A99 /* ReaderDocumentOutline.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		1E7EE8C05629E9577BA51BF7 /* ReaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6006CD31CF9998856984523A /* ReaderViewController.h */; };
-		1EF4B70ED8D2194FC6D55F96 /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5349E8A6F73D0273EE9C2476 /* ReaderConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2736A87A5EC8ED3CC25845CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9830ACD187025560156CC43C /* UIKit.framework */; };
-		2D061427B8ABDB10E6079675 /* ReaderContentPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B700CE23FF71F95AA13081E /* ReaderContentPage.h */; };
-		319CAAA0D5F74019967BFBEE /* ThumbsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 01F4EB0288891F0076BD95D7 /* ThumbsViewController.h */; };
-		3355FF269983365EA2E80414 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A10407E54B830B2006DBC0F /* ReaderViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		38A4593B5001DDD03DC94CD5 /* ReaderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 824552DDB2302CEE7D167A0F /* ReaderThumbView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		39076AD77E70C7FC68D93E9E /* ReaderContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 113B1169D20EAF5F009B5265 /* ReaderContentView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3C1076AF74DBF4DDCB1F9B6E /* ReaderThumbFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3825E44D30AF076B81AC7 /* ReaderThumbFetch.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		458C21A1B938ED02854B8C91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB612B54FBB7A1FEE57236C9 /* CoreGraphics.framework */; };
-		49FDC594F64369C913A95B2C /* ReaderThumbQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7BC11A14CF3ABAB1A8BA64 /* ReaderThumbQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4DAB8B0266F63F6AF7CCD9F3 /* UIXToolbarView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD8BFDCC22F613328219A4E1 /* UIXToolbarView.h */; };
-		565A43CCE0CCA5B7B5308FF2 /* Pods-vfrReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB629FEC6570807DF8638A8 /* Pods-vfrReader-dummy.m */; };
-		591EBAB2EC469FC6600F65AD /* ReaderDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EBA94E099159E76F363C7D /* ReaderDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5C3D8D67A716B2AE48A6B0C6 /* ReaderMainPagebar.h in Headers */ = {isa = PBXBuildFile; fileRef = F97A34A9417B2398E0CF06B2 /* ReaderMainPagebar.h */; };
-		5E9C2B68AACD7C16BCF8DACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022CC83BD7E17035A87BF645 /* Foundation.framework */; };
-		5F48FC2B0116C25F04F5D26D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2594271C3860AB09E2B09FFB /* MessageUI.framework */; };
-		603867D0C1751D7A5BA28F27 /* ReaderThumbQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B82A681BA4006A67A708067 /* ReaderThumbQueue.h */; };
-		625600053D924D71C6A5CB91 /* ReaderThumbsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9140D420BD4A5B5BCB134D39 /* ReaderThumbsView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		637243D29101228C4C5C2B43 /* ReaderDocumentOutline.h in Headers */ = {isa = PBXBuildFile; fileRef = 792AAE7AE6DD5CF9418AE6CE /* ReaderDocumentOutline.h */; };
-		691E8DC9865518F8EE9F9B42 /* ReaderMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = CD10707AD492E6B5F90FC77C /* ReaderMainToolbar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6C665E334A9C822AE831CF36 /* ReaderThumbRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BEA4452BA60D225B68348F /* ReaderThumbRender.h */; };
-		75076700346F524A8178EF7D /* ReaderContentTile.h in Headers */ = {isa = PBXBuildFile; fileRef = 10FBD762D78A3BFB7D475CC5 /* ReaderContentTile.h */; };
-		7676C7973A6D870573BAA97A /* ReaderContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7C49D6AD091299D3A05BE3 /* ReaderContentView.h */; };
-		7A57CAF68734988582E2E506 /* ReaderConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE2824AC539F939C3252321 /* ReaderConstants.h */; };
-		82B9B1930AB4265D338285AF /* ReaderThumbsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D284866B0FBE83F59EFFFD1 /* ReaderThumbsView.h */; };
-		88B0619B5FD68897DCDBCC04 /* ReaderThumbFetch.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E95DE211140D3E4C280559 /* ReaderThumbFetch.h */; };
-		8A2967223DAA395AA0A2AC87 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 380982C4DF32609BC1E6D771 /* Pods-dummy.m */; };
-		8B3C226DDAE88B29E79EF3DC /* ReaderThumbRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 712B0542586B33A5C7C7B659 /* ReaderThumbRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8B4DA9478C5BFA1ECC5918E8 /* ReaderMainPagebar.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D3C4DD8C6C2B1B75D1360C /* ReaderMainPagebar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A4568AF63975D0C09D29E41B /* ReaderThumbCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C5EFDB2F8B0E29EB6B4E40 /* ReaderThumbCache.h */; };
-		ABF445AA601334D8A5C6058E /* ReaderContentTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE5CD48CADADA3164FBEB36 /* ReaderContentTile.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BA1F5C03490A8A2233A4CE97 /* ThumbsMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CEB91E81B7267DD33F391E /* ThumbsMainToolbar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BC03C672C5966A49DFA995DC /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BA6AA7BB48730A3F0C1143 /* ThumbsViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BC652BE5B8AB98BB002EAD74 /* ReaderThumbCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6C727B148FC997E2E715E4 /* ReaderThumbCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C162AA266968F24EAD8A2142 /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2725CB85F647786C44503DB1 /* UIXToolbarView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C82BEC487B0FCC7296235527 /* ReaderThumbRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDF1D32E906F5045F9D7963 /* ReaderThumbRender.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		CEC263B12A1095C1E3C3AB36 /* ReaderMainToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 504338DC84429F6D04CBC9B3 /* ReaderMainToolbar.h */; };
-		D23CE12B8BEC5A22E35733C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F694F4605D5B947A400F15 /* QuartzCore.framework */; };
-		D4A339245C306B8C76795CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022CC83BD7E17035A87BF645 /* Foundation.framework */; };
-		D6AAD1F0B1C51127C45748BC /* ThumbsMainToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A578C53134BB1BDEF855DFFE /* ThumbsMainToolbar.h */; };
-		D805A2A7A82C049B14B70F5A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A41E8A9212303FAF241076 /* ImageIO.framework */; };
-		DFEADC32C7F9468ACA94D5C1 /* ReaderThumbRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A212E75819FF62459B97FC /* ReaderThumbRequest.h */; };
-		EC18DE9A29DD77AFF236B448 /* ReaderDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B325C183ECE09A6D99C573 /* ReaderDocument.h */; };
-		EF89DD1E493343DC349BD619 /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC8E2A792D524E94C20B2CC /* ReaderContentPage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FE788ED3889264FC4EE9C964 /* ReaderThumbView.h in Headers */ = {isa = PBXBuildFile; fileRef = DCE019232E2044BA2D66A64C /* ReaderThumbView.h */; };
+		087BCDC68366BAAEA696F9F2 /* ReaderContentTile.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EA4CA730176551ACFA9E59 /* ReaderContentTile.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0AF910294221CED073433112 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18247A4B96F3D602BD1889 /* Foundation.framework */; };
+		0EC70543D5FB61FD197D16E6 /* ReaderContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E784B451982CFB2272DA2E /* ReaderContentPage.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1033E1A34BAB6232E96F8C76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAD5EF0D1FAFBF1EA98CCBF /* UIKit.framework */; };
+		13C3A73EE6867578AF07E893 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBB452104FE21531AD00712 /* ImageIO.framework */; };
+		1E5EEC8CE3630F0001B96F4E /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA28528A8CAABB44FB6C5CB /* ThumbsViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1F22F2B046326EE7295A1AAF /* ReaderDocumentOutline.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F071130623254560D714BCC /* ReaderDocumentOutline.h */; };
+		22048CB3458DA36F7FFEA423 /* ReaderThumbFetch.h in Headers */ = {isa = PBXBuildFile; fileRef = A35847969313C8AA63E81B97 /* ReaderThumbFetch.h */; };
+		2813D77DFDBC4F21F9C91871 /* ReaderDocumentOutline.m in Sources */ = {isa = PBXBuildFile; fileRef = D4369B3065BC0E79BC2224A6 /* ReaderDocumentOutline.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2A7F38635BAB04C76B93F96E /* ReaderMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA10B56B15F98FFFC8A6B7E /* ReaderMainToolbar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2F45DFF39E5ABF4C532DB06B /* ReaderThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A532D4235C5E80FB135BF8 /* ReaderThumbView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		346AB13646C707EF34BFC8F9 /* ReaderConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A418DD3B61A35F0F52720DD /* ReaderConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3492A7F1365976E8D125110A /* ReaderThumbRender.m in Sources */ = {isa = PBXBuildFile; fileRef = F600CA0AB828B633C8F9FD87 /* ReaderThumbRender.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		382C631EF1D2ADEE3D21D83D /* ReaderThumbCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 020F1CD4FB88E779FE563F1A /* ReaderThumbCache.h */; };
+		38DA495DEF35DF8BEBAD457F /* ReaderThumbFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB453FA5160D1BCA7083F98 /* ReaderThumbFetch.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3B8FE195A5F1321C5029A040 /* CGPDFDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 3675D4233CA63756AAF0AE7D /* CGPDFDocument.h */; };
+		3DF59EF3C1CA94EB61626ACD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58068F47805F6D7649409E86 /* CoreGraphics.framework */; };
+		3E984E05FA523F695AAE972D /* ReaderThumbRender.h in Headers */ = {isa = PBXBuildFile; fileRef = F0590F71B87559381BA819F0 /* ReaderThumbRender.h */; };
+		3F413E9978CF21D9AF2DAE7E /* ReaderThumbQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9CC5A011FF44897C6A57F7 /* ReaderThumbQueue.h */; };
+		41A37FE2DC547803D7AB9373 /* ReaderMainToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F4C2590C63EBE415554FF04 /* ReaderMainToolbar.h */; };
+		44EA0CE0868A0D7CB586FA02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18247A4B96F3D602BD1889 /* Foundation.framework */; };
+		4A198D7F27214424D037367F /* ThumbsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E31929CBDC011D9EA2B4B8 /* ThumbsViewController.h */; };
+		50650178793CDBE828BB6909 /* ReaderMainPagebar.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A2C67850E4B5D67CDABDF6F /* ReaderMainPagebar.h */; };
+		51B35C375B6009EF176EA337 /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5B040FAA30009B4F112625 /* CGPDFDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		557AE83017DEB2F70855B373 /* UIXToolbarView.h in Headers */ = {isa = PBXBuildFile; fileRef = D9729F794E2AD7CA3F215D14 /* UIXToolbarView.h */; };
+		5D2B45AF1CA3B69F9130847C /* ReaderThumbRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 279751CB9D599DD320E44BEA /* ReaderThumbRequest.h */; };
+		69AEECF89E28C5ADA31580C5 /* ReaderConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D82F7C46454A3D6A2B2DD3 /* ReaderConstants.h */; };
+		7C8B3C9F58A8BDFDF0008A37 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4BAB097CCDA8B73562F1E4 /* MessageUI.framework */; };
+		8445BE20CC88474062D409BC /* Pods-vfrReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D3BDAF992AE6679DAA5ED /* Pods-vfrReader-dummy.m */; };
+		8777DA12C060580AFA385E0C /* ReaderThumbView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9307F56F0A1C466BB35ADE3C /* ReaderThumbView.h */; };
+		8D3CE7CBBFCCDEAFCCE64DDA /* ReaderDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA512EAF7CD2D629DB9138F /* ReaderDocument.h */; };
+		8EAA9E772F653D7C18DD5EEC /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78550212139C229C21A1D5B6 /* ReaderViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9A5B68E67D630C83961D890D /* ReaderThumbsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B283849AA97E6B05446F2066 /* ReaderThumbsView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9C00B789CDC6A41C1720E32B /* ReaderThumbRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B35A72D6C7F4E83322014C /* ReaderThumbRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9DEE03B889967A7AE4E54FCF /* ThumbsMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DC73D02BBA5F8086E29FD /* ThumbsMainToolbar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B288A5E3802E6AB37176D662 /* ReaderThumbsView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8032E3F34A9CE2E6A5A2C8F9 /* ReaderThumbsView.h */; };
+		B4A9C0C58DB6AF2C9C4F8702 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE44B00BFFC29E7858913BB /* Pods-dummy.m */; };
+		BF1609EECA7793432D9B6B4F /* ReaderContentPage.h in Headers */ = {isa = PBXBuildFile; fileRef = A32AAB1ED8712CB8118FC742 /* ReaderContentPage.h */; };
+		C7276230832F073D08F37503 /* ReaderMainPagebar.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E24A72E6F4441F18D5198D /* ReaderMainPagebar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CB111BB4C9037619C254ACBB /* ReaderThumbCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 915F5B0B12303C2AA452EAF6 /* ReaderThumbCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CF931BA5A1594B1167EA1712 /* ReaderThumbQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEFA9BEDEB65A2904EF8E08 /* ReaderThumbQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D03103FC904436136B86B30F /* ReaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BD78EBDE3480F3A1DAEEB3F4 /* ReaderViewController.h */; };
+		D7F84D8E0A38536B2FBB5369 /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 915AE5FA3417CCD83C459B13 /* UIXToolbarView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E4BA129A70C86E0CD646ED46 /* ThumbsMainToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EDBEC88E718EAF313B6A2CC /* ThumbsMainToolbar.h */; };
+		EB4C9616DC491BE0B2E39B60 /* ReaderContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D72705FB96D39B096DBA0 /* ReaderContentView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EBAE1A347736AB20492004C9 /* ReaderContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D8DAE9B48F859922971AD5 /* ReaderContentView.h */; };
+		EC00016735E7D8EAC700D4BB /* ReaderContentTile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1954AF820672BE762F5541D1 /* ReaderContentTile.h */; };
+		FADCEBB07188C8B54BD593BD /* ReaderDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F1038BCE808C5F716B89CDBF /* ReaderDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FCC0FBAC9D88A3AF0458E225 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2DE0A0730DFF88763E4BE8 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		448E9EB2C292DEFDA049D094 /* PBXContainerItemProxy */ = {
+		EF224B5FFA946A8A0FDEE956 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F4581CA119B72CDEFA98A81A /* Project object */;
+			containerPortal = 232F7CCFB9B8293903A68E47 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4F591A31FB9D76E381965E8A;
+			remoteGlobalIDString = DE0E9A7647BA75C70A89B458;
 			remoteInfo = "Pods-vfrReader";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00B0289463799444FAD00DA1 /* Reader-Print.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Print.png"; path = "Graphics/Reader-Print.png"; sourceTree = "<group>"; };
-		01F4EB0288891F0076BD95D7 /* ThumbsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ThumbsViewController.h; path = Sources/ThumbsViewController.h; sourceTree = "<group>"; };
-		022CC83BD7E17035A87BF645 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		045F4D7D800663CAD3209A99 /* ReaderDocumentOutline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderDocumentOutline.m; path = Sources/ReaderDocumentOutline.m; sourceTree = "<group>"; };
-		10FBD762D78A3BFB7D475CC5 /* ReaderContentTile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderContentTile.h; path = Sources/ReaderContentTile.h; sourceTree = "<group>"; };
-		113B1169D20EAF5F009B5265 /* ReaderContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderContentView.m; path = Sources/ReaderContentView.m; sourceTree = "<group>"; };
-		13B325C183ECE09A6D99C573 /* ReaderDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderDocument.h; path = Sources/ReaderDocument.h; sourceTree = "<group>"; };
-		13E1E7529D1369DA11574822 /* Reader-Button-N@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-N@2x.png"; path = "Graphics/Reader-Button-N@2x.png"; sourceTree = "<group>"; };
-		1EDA7075D8A379276B1807D0 /* Reader-Mark-Y.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-Y.png"; path = "Graphics/Reader-Mark-Y.png"; sourceTree = "<group>"; };
-		20CA95DBA3DD43F207A07C8B /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		2199CE38F46761A853500EA5 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		2594271C3860AB09E2B09FFB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
-		2725CB85F647786C44503DB1 /* UIXToolbarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIXToolbarView.m; path = Sources/UIXToolbarView.m; sourceTree = "<group>"; };
-		27A41E8A9212303FAF241076 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		2B700CE23FF71F95AA13081E /* ReaderContentPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderContentPage.h; path = Sources/ReaderContentPage.h; sourceTree = "<group>"; };
-		2FC8E2A792D524E94C20B2CC /* ReaderContentPage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderContentPage.m; path = Sources/ReaderContentPage.m; sourceTree = "<group>"; };
-		380982C4DF32609BC1E6D771 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		3BF894945E19ACCD9B97DE16 /* Reader-Button-H.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-H.png"; path = "Graphics/Reader-Button-H.png"; sourceTree = "<group>"; };
-		4047BC0B1C1C7AD654C92438 /* Reader-Button-N.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-N.png"; path = "Graphics/Reader-Button-N.png"; sourceTree = "<group>"; };
-		44C43D160AE017F403529AB3 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		504338DC84429F6D04CBC9B3 /* ReaderMainToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderMainToolbar.h; path = Sources/ReaderMainToolbar.h; sourceTree = "<group>"; };
-		52410B7FE03E2927233B91E7 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		5349E8A6F73D0273EE9C2476 /* ReaderConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderConstants.m; path = Sources/ReaderConstants.m; sourceTree = "<group>"; };
-		59E95DE211140D3E4C280559 /* ReaderThumbFetch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbFetch.h; path = Sources/ReaderThumbFetch.h; sourceTree = "<group>"; };
-		5F2B2325663636ED3C36F883 /* Reader-Thumbs.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Thumbs.png"; path = "Graphics/Reader-Thumbs.png"; sourceTree = "<group>"; };
-		6006CD31CF9998856984523A /* ReaderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderViewController.h; path = Sources/ReaderViewController.h; sourceTree = "<group>"; };
-		712B0542586B33A5C7C7B659 /* ReaderThumbRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbRequest.m; path = Sources/ReaderThumbRequest.m; sourceTree = "<group>"; };
-		72E3D0DF2C8BF4D4A5ABB8B5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		778D56608567F94C22934552 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		77A26FF9AA46223FA1AE3A22 /* Reader-Thumbs@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Thumbs@2x.png"; path = "Graphics/Reader-Thumbs@2x.png"; sourceTree = "<group>"; };
-		78168CF14375C9CB1C2D5D82 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		78C5EFDB2F8B0E29EB6B4E40 /* ReaderThumbCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbCache.h; path = Sources/ReaderThumbCache.h; sourceTree = "<group>"; };
-		792AAE7AE6DD5CF9418AE6CE /* ReaderDocumentOutline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderDocumentOutline.h; path = Sources/ReaderDocumentOutline.h; sourceTree = "<group>"; };
-		7A10407E54B830B2006DBC0F /* ReaderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderViewController.m; path = Sources/ReaderViewController.m; sourceTree = "<group>"; };
-		824552DDB2302CEE7D167A0F /* ReaderThumbView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbView.m; path = Sources/ReaderThumbView.m; sourceTree = "<group>"; };
-		84F3825E44D30AF076B81AC7 /* ReaderThumbFetch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbFetch.m; path = Sources/ReaderThumbFetch.m; sourceTree = "<group>"; };
-		87BA6AA7BB48730A3F0C1143 /* ThumbsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ThumbsViewController.m; path = Sources/ThumbsViewController.m; sourceTree = "<group>"; };
-		8AE2824AC539F939C3252321 /* ReaderConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderConstants.h; path = Sources/ReaderConstants.h; sourceTree = "<group>"; };
-		8BD453B0BD15549B11170A18 /* Pods-vfrReader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-vfrReader-prefix.pch"; sourceTree = "<group>"; };
-		8D284866B0FBE83F59EFFFD1 /* ReaderThumbsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbsView.h; path = Sources/ReaderThumbsView.h; sourceTree = "<group>"; };
-		8EE5CD48CADADA3164FBEB36 /* ReaderContentTile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderContentTile.m; path = Sources/ReaderContentTile.m; sourceTree = "<group>"; };
-		8F38D6D05F24DBBC7567C668 /* CGPDFDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGPDFDocument.m; path = Sources/CGPDFDocument.m; sourceTree = "<group>"; };
-		9140D420BD4A5B5BCB134D39 /* ReaderThumbsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbsView.m; path = Sources/ReaderThumbsView.m; sourceTree = "<group>"; };
-		95BEA4452BA60D225B68348F /* ReaderThumbRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRender.h; path = Sources/ReaderThumbRender.h; sourceTree = "<group>"; };
-		97F694F4605D5B947A400F15 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		9830ACD187025560156CC43C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		9B82A681BA4006A67A708067 /* ReaderThumbQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbQueue.h; path = Sources/ReaderThumbQueue.h; sourceTree = "<group>"; };
-		9CDF1D32E906F5045F9D7963 /* ReaderThumbRender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbRender.m; path = Sources/ReaderThumbRender.m; sourceTree = "<group>"; };
-		A0BA7D21932B87AB1D207E1D /* CGPDFDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGPDFDocument.h; path = Sources/CGPDFDocument.h; sourceTree = "<group>"; };
-		A1D083F118030D09A5D6C269 /* Pods-vfrReader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-vfrReader.xcconfig"; sourceTree = "<group>"; };
-		A2112EB90F5941CF4DE71CF5 /* Reader-Button-H@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-H@2x.png"; path = "Graphics/Reader-Button-H@2x.png"; sourceTree = "<group>"; };
-		A578C53134BB1BDEF855DFFE /* ThumbsMainToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ThumbsMainToolbar.h; path = Sources/ThumbsMainToolbar.h; sourceTree = "<group>"; };
-		A5A212E75819FF62459B97FC /* ReaderThumbRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRequest.h; path = Sources/ReaderThumbRequest.h; sourceTree = "<group>"; };
-		B649D323FC99AEE669F89909 /* Reader-Mark-N@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-N@2x.png"; path = "Graphics/Reader-Mark-N@2x.png"; sourceTree = "<group>"; };
-		BB893D10EEA8CFE4FE02F0E4 /* Reader-Email@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Email@2x.png"; path = "Graphics/Reader-Email@2x.png"; sourceTree = "<group>"; };
-		BBB629FEC6570807DF8638A8 /* Pods-vfrReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-vfrReader-dummy.m"; sourceTree = "<group>"; };
-		C01329F9D8E99B3553D5A284 /* Pods-vfrReader-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-vfrReader-Private.xcconfig"; sourceTree = "<group>"; };
-		C1EBA94E099159E76F363C7D /* ReaderDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderDocument.m; path = Sources/ReaderDocument.m; sourceTree = "<group>"; };
-		CA7BC11A14CF3ABAB1A8BA64 /* ReaderThumbQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbQueue.m; path = Sources/ReaderThumbQueue.m; sourceTree = "<group>"; };
-		CC6C727B148FC997E2E715E4 /* ReaderThumbCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbCache.m; path = Sources/ReaderThumbCache.m; sourceTree = "<group>"; };
-		CCBE4478A468021450F156F8 /* Reader-Email.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Email.png"; path = "Graphics/Reader-Email.png"; sourceTree = "<group>"; };
-		CD10707AD492E6B5F90FC77C /* ReaderMainToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderMainToolbar.m; path = Sources/ReaderMainToolbar.m; sourceTree = "<group>"; };
-		CD8BFDCC22F613328219A4E1 /* UIXToolbarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIXToolbarView.h; path = Sources/UIXToolbarView.h; sourceTree = "<group>"; };
-		CE7C49D6AD091299D3A05BE3 /* ReaderContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderContentView.h; path = Sources/ReaderContentView.h; sourceTree = "<group>"; };
-		D9F1EEF809619376FBDDEFFB /* Reader-Print@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Print@2x.png"; path = "Graphics/Reader-Print@2x.png"; sourceTree = "<group>"; };
-		DB612B54FBB7A1FEE57236C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		DCE019232E2044BA2D66A64C /* ReaderThumbView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbView.h; path = Sources/ReaderThumbView.h; sourceTree = "<group>"; };
-		E29D088088EC584F9E520AA9 /* libPods-vfrReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vfrReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF06D1C4FA2C6DE5D2A55D39 /* Reader-Mark-N.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-N.png"; path = "Graphics/Reader-Mark-N.png"; sourceTree = "<group>"; };
-		F029F638D4B6254D77D49158 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F0CEB91E81B7267DD33F391E /* ThumbsMainToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ThumbsMainToolbar.m; path = Sources/ThumbsMainToolbar.m; sourceTree = "<group>"; };
-		F0D3C4DD8C6C2B1B75D1360C /* ReaderMainPagebar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderMainPagebar.m; path = Sources/ReaderMainPagebar.m; sourceTree = "<group>"; };
-		F8CC9F084B6D13C6FAF6AD80 /* Reader-Mark-Y@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-Y@2x.png"; path = "Graphics/Reader-Mark-Y@2x.png"; sourceTree = "<group>"; };
-		F97A34A9417B2398E0CF06B2 /* ReaderMainPagebar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderMainPagebar.h; path = Sources/ReaderMainPagebar.h; sourceTree = "<group>"; };
+		020F1CD4FB88E779FE563F1A /* ReaderThumbCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbCache.h; path = Sources/ReaderThumbCache.h; sourceTree = "<group>"; };
+		03F4E56D363446F9C8C6E735 /* Reader-Print.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Print.png"; path = "Graphics/Reader-Print.png"; sourceTree = "<group>"; };
+		04A532D4235C5E80FB135BF8 /* ReaderThumbView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbView.m; path = Sources/ReaderThumbView.m; sourceTree = "<group>"; };
+		06D82F7C46454A3D6A2B2DD3 /* ReaderConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderConstants.h; path = Sources/ReaderConstants.h; sourceTree = "<group>"; };
+		0B5B040FAA30009B4F112625 /* CGPDFDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGPDFDocument.m; path = Sources/CGPDFDocument.m; sourceTree = "<group>"; };
+		0B5F6A7310199A34A8A63E41 /* Reader-Button-H.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-H.png"; path = "Graphics/Reader-Button-H.png"; sourceTree = "<group>"; };
+		0E200628F5BBC33F214B6E0C /* Reader-Mark-Y.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-Y.png"; path = "Graphics/Reader-Mark-Y.png"; sourceTree = "<group>"; };
+		1954AF820672BE762F5541D1 /* ReaderContentTile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderContentTile.h; path = Sources/ReaderContentTile.h; sourceTree = "<group>"; };
+		279751CB9D599DD320E44BEA /* ReaderThumbRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRequest.h; path = Sources/ReaderThumbRequest.h; sourceTree = "<group>"; };
+		28783EF95739C5A8738E09E7 /* libPods-vfrReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vfrReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2C67850E4B5D67CDABDF6F /* ReaderMainPagebar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderMainPagebar.h; path = Sources/ReaderMainPagebar.h; sourceTree = "<group>"; };
+		2AAD5EF0D1FAFBF1EA98CCBF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2DD2340FDAB19BC1EC1D6CE6 /* Reader-Thumbs.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Thumbs.png"; path = "Graphics/Reader-Thumbs.png"; sourceTree = "<group>"; };
+		2DE44B00BFFC29E7858913BB /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		30D8DAE9B48F859922971AD5 /* ReaderContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderContentView.h; path = Sources/ReaderContentView.h; sourceTree = "<group>"; };
+		3675D4233CA63756AAF0AE7D /* CGPDFDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGPDFDocument.h; path = Sources/CGPDFDocument.h; sourceTree = "<group>"; };
+		3B2DE0A0730DFF88763E4BE8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3F0BFA91772E77D8DE439576 /* Reader-Button-N.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-N.png"; path = "Graphics/Reader-Button-N.png"; sourceTree = "<group>"; };
+		415D72705FB96D39B096DBA0 /* ReaderContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderContentView.m; path = Sources/ReaderContentView.m; sourceTree = "<group>"; };
+		4A418DD3B61A35F0F52720DD /* ReaderConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderConstants.m; path = Sources/ReaderConstants.m; sourceTree = "<group>"; };
+		4F071130623254560D714BCC /* ReaderDocumentOutline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderDocumentOutline.h; path = Sources/ReaderDocumentOutline.h; sourceTree = "<group>"; };
+		56CB6B5012004422B3DF9F87 /* Reader-Mark-Y@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-Y@2x.png"; path = "Graphics/Reader-Mark-Y@2x.png"; sourceTree = "<group>"; };
+		58068F47805F6D7649409E86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		59CA53642E5E9995992C04F9 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		65B35A72D6C7F4E83322014C /* ReaderThumbRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbRequest.m; path = Sources/ReaderThumbRequest.m; sourceTree = "<group>"; };
+		6DBB452104FE21531AD00712 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		73E31929CBDC011D9EA2B4B8 /* ThumbsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ThumbsViewController.h; path = Sources/ThumbsViewController.h; sourceTree = "<group>"; };
+		73E784B451982CFB2272DA2E /* ReaderContentPage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderContentPage.m; path = Sources/ReaderContentPage.m; sourceTree = "<group>"; };
+		78550212139C229C21A1D5B6 /* ReaderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderViewController.m; path = Sources/ReaderViewController.m; sourceTree = "<group>"; };
+		7EDBEC88E718EAF313B6A2CC /* ThumbsMainToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ThumbsMainToolbar.h; path = Sources/ThumbsMainToolbar.h; sourceTree = "<group>"; };
+		8032E3F34A9CE2E6A5A2C8F9 /* ReaderThumbsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbsView.h; path = Sources/ReaderThumbsView.h; sourceTree = "<group>"; };
+		82BA4F2E1B9A97BE9E94A769 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		8AEFA9BEDEB65A2904EF8E08 /* ReaderThumbQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbQueue.m; path = Sources/ReaderThumbQueue.m; sourceTree = "<group>"; };
+		915AE5FA3417CCD83C459B13 /* UIXToolbarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIXToolbarView.m; path = Sources/UIXToolbarView.m; sourceTree = "<group>"; };
+		915F5B0B12303C2AA452EAF6 /* ReaderThumbCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbCache.m; path = Sources/ReaderThumbCache.m; sourceTree = "<group>"; };
+		9307F56F0A1C466BB35ADE3C /* ReaderThumbView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbView.h; path = Sources/ReaderThumbView.h; sourceTree = "<group>"; };
+		94529F011341FB897C9F172C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CA28528A8CAABB44FB6C5CB /* ThumbsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ThumbsViewController.m; path = Sources/ThumbsViewController.m; sourceTree = "<group>"; };
+		9F4C2590C63EBE415554FF04 /* ReaderMainToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderMainToolbar.h; path = Sources/ReaderMainToolbar.h; sourceTree = "<group>"; };
+		A32AAB1ED8712CB8118FC742 /* ReaderContentPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderContentPage.h; path = Sources/ReaderContentPage.h; sourceTree = "<group>"; };
+		A35847969313C8AA63E81B97 /* ReaderThumbFetch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbFetch.h; path = Sources/ReaderThumbFetch.h; sourceTree = "<group>"; };
+		AD301913A146391ABFBDAFB3 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		AD9DE8462B70F1B889116DCE /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B283849AA97E6B05446F2066 /* ReaderThumbsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbsView.m; path = Sources/ReaderThumbsView.m; sourceTree = "<group>"; };
+		B79C4F50D56C114DF345994A /* Reader-Print@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Print@2x.png"; path = "Graphics/Reader-Print@2x.png"; sourceTree = "<group>"; };
+		BAA512EAF7CD2D629DB9138F /* ReaderDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderDocument.h; path = Sources/ReaderDocument.h; sourceTree = "<group>"; };
+		BD4BAB097CCDA8B73562F1E4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		BD78EBDE3480F3A1DAEEB3F4 /* ReaderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderViewController.h; path = Sources/ReaderViewController.h; sourceTree = "<group>"; };
+		BE1284853B7BA8F4593307AC /* Pods-vfrReader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-vfrReader-prefix.pch"; sourceTree = "<group>"; };
+		C0F2F8085759BF3C172DE216 /* Reader-Email@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Email@2x.png"; path = "Graphics/Reader-Email@2x.png"; sourceTree = "<group>"; };
+		C57D3BDAF992AE6679DAA5ED /* Pods-vfrReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-vfrReader-dummy.m"; sourceTree = "<group>"; };
+		C6538E7FC835FD2DD66DAB1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		C966E7C8D3CA3F4010F21D7F /* Reader-Button-H@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-H@2x.png"; path = "Graphics/Reader-Button-H@2x.png"; sourceTree = "<group>"; };
+		CC9CC5A011FF44897C6A57F7 /* ReaderThumbQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbQueue.h; path = Sources/ReaderThumbQueue.h; sourceTree = "<group>"; };
+		D4369B3065BC0E79BC2224A6 /* ReaderDocumentOutline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderDocumentOutline.m; path = Sources/ReaderDocumentOutline.m; sourceTree = "<group>"; };
+		D48E2E34E1990341C62D813F /* Reader-Button-N@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Button-N@2x.png"; path = "Graphics/Reader-Button-N@2x.png"; sourceTree = "<group>"; };
+		D4A14D5D955A7A57DABD04EA /* Pods-vfrReader-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-vfrReader-Private.xcconfig"; sourceTree = "<group>"; };
+		D7AA4F42ECF94E9F1BCCBC33 /* Reader-Email.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Email.png"; path = "Graphics/Reader-Email.png"; sourceTree = "<group>"; };
+		D9729F794E2AD7CA3F215D14 /* UIXToolbarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIXToolbarView.h; path = Sources/UIXToolbarView.h; sourceTree = "<group>"; };
+		DD64A2DC48BF7AE5318F12B1 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		DD8DC73D02BBA5F8086E29FD /* ThumbsMainToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ThumbsMainToolbar.m; path = Sources/ThumbsMainToolbar.m; sourceTree = "<group>"; };
+		E4DC8557A40779125DA6885A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E767AD1645A68132A064F271 /* Reader-Thumbs@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Thumbs@2x.png"; path = "Graphics/Reader-Thumbs@2x.png"; sourceTree = "<group>"; };
+		EED4367F27BAE1CE58C3DB65 /* Reader-Mark-N.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-N.png"; path = "Graphics/Reader-Mark-N.png"; sourceTree = "<group>"; };
+		F0590F71B87559381BA819F0 /* ReaderThumbRender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReaderThumbRender.h; path = Sources/ReaderThumbRender.h; sourceTree = "<group>"; };
+		F1038BCE808C5F716B89CDBF /* ReaderDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderDocument.m; path = Sources/ReaderDocument.m; sourceTree = "<group>"; };
+		F1EA4CA730176551ACFA9E59 /* ReaderContentTile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderContentTile.m; path = Sources/ReaderContentTile.m; sourceTree = "<group>"; };
+		F3E24A72E6F4441F18D5198D /* ReaderMainPagebar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderMainPagebar.m; path = Sources/ReaderMainPagebar.m; sourceTree = "<group>"; };
+		F51425976C1834BF1A938AD2 /* Pods-vfrReader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-vfrReader.xcconfig"; sourceTree = "<group>"; };
+		F600CA0AB828B633C8F9FD87 /* ReaderThumbRender.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbRender.m; path = Sources/ReaderThumbRender.m; sourceTree = "<group>"; };
+		FAB453FA5160D1BCA7083F98 /* ReaderThumbFetch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderThumbFetch.m; path = Sources/ReaderThumbFetch.m; sourceTree = "<group>"; };
+		FC8E71BD80A0A55A38443D58 /* Reader-Mark-N@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "Reader-Mark-N@2x.png"; path = "Graphics/Reader-Mark-N@2x.png"; sourceTree = "<group>"; };
+		FEA10B56B15F98FFFC8A6B7E /* ReaderMainToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReaderMainToolbar.m; path = Sources/ReaderMainToolbar.m; sourceTree = "<group>"; };
+		FF18247A4B96F3D602BD1889 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A2FBF9FC4CDED9D1D6133A81 /* Frameworks */ = {
+		49957BB5C5844E0F30BC863E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				458C21A1B938ED02854B8C91 /* CoreGraphics.framework in Frameworks */,
-				D4A339245C306B8C76795CE5 /* Foundation.framework in Frameworks */,
-				D805A2A7A82C049B14B70F5A /* ImageIO.framework in Frameworks */,
-				5F48FC2B0116C25F04F5D26D /* MessageUI.framework in Frameworks */,
-				D23CE12B8BEC5A22E35733C5 /* QuartzCore.framework in Frameworks */,
-				2736A87A5EC8ED3CC25845CF /* UIKit.framework in Frameworks */,
+				3DF59EF3C1CA94EB61626ACD /* CoreGraphics.framework in Frameworks */,
+				0AF910294221CED073433112 /* Foundation.framework in Frameworks */,
+				13C3A73EE6867578AF07E893 /* ImageIO.framework in Frameworks */,
+				7C8B3C9F58A8BDFDF0008A37 /* MessageUI.framework in Frameworks */,
+				FCC0FBAC9D88A3AF0458E225 /* QuartzCore.framework in Frameworks */,
+				1033E1A34BAB6232E96F8C76 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0D50AAD2BC4BBB32C277298 /* Frameworks */ = {
+		BFE65BD3BD91280BF724939C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E9C2B68AACD7C16BCF8DACC /* Foundation.framework in Frameworks */,
+				44EA0CE0868A0D7CB586FA02 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17A64A31B596C6B08D18A358 /* Pods */ = {
+		141CC7F9F9C1FB40EC6023D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				44C43D160AE017F403529AB3 /* Pods-acknowledgements.markdown */,
-				20CA95DBA3DD43F207A07C8B /* Pods-acknowledgements.plist */,
-				380982C4DF32609BC1E6D771 /* Pods-dummy.m */,
-				2199CE38F46761A853500EA5 /* Pods-environment.h */,
-				52410B7FE03E2927233B91E7 /* Pods-resources.sh */,
-				72E3D0DF2C8BF4D4A5ABB8B5 /* Pods.debug.xcconfig */,
-				778D56608567F94C22934552 /* Pods.release.xcconfig */,
+				E4DC8557A40779125DA6885A /* libPods.a */,
+				28783EF95739C5A8738E09E7 /* libPods-vfrReader.a */,
 			);
-			name = Pods;
-			path = "Target Support Files/Pods";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		1D55FA5F3C849F7683C1C6CD /* Targets Support Files */ = {
+		214880BC44C2E9DC0FEB6E16 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				17A64A31B596C6B08D18A358 /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		5CE28BDFAACB4D8EAE817601 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3BF894945E19ACCD9B97DE16 /* Reader-Button-H.png */,
-				A2112EB90F5941CF4DE71CF5 /* Reader-Button-H@2x.png */,
-				4047BC0B1C1C7AD654C92438 /* Reader-Button-N.png */,
-				13E1E7529D1369DA11574822 /* Reader-Button-N@2x.png */,
-				CCBE4478A468021450F156F8 /* Reader-Email.png */,
-				BB893D10EEA8CFE4FE02F0E4 /* Reader-Email@2x.png */,
-				EF06D1C4FA2C6DE5D2A55D39 /* Reader-Mark-N.png */,
-				B649D323FC99AEE669F89909 /* Reader-Mark-N@2x.png */,
-				1EDA7075D8A379276B1807D0 /* Reader-Mark-Y.png */,
-				F8CC9F084B6D13C6FAF6AD80 /* Reader-Mark-Y@2x.png */,
-				00B0289463799444FAD00DA1 /* Reader-Print.png */,
-				D9F1EEF809619376FBDDEFFB /* Reader-Print@2x.png */,
-				5F2B2325663636ED3C36F883 /* Reader-Thumbs.png */,
-				77A26FF9AA46223FA1AE3A22 /* Reader-Thumbs@2x.png */,
+				0B5F6A7310199A34A8A63E41 /* Reader-Button-H.png */,
+				C966E7C8D3CA3F4010F21D7F /* Reader-Button-H@2x.png */,
+				3F0BFA91772E77D8DE439576 /* Reader-Button-N.png */,
+				D48E2E34E1990341C62D813F /* Reader-Button-N@2x.png */,
+				D7AA4F42ECF94E9F1BCCBC33 /* Reader-Email.png */,
+				C0F2F8085759BF3C172DE216 /* Reader-Email@2x.png */,
+				EED4367F27BAE1CE58C3DB65 /* Reader-Mark-N.png */,
+				FC8E71BD80A0A55A38443D58 /* Reader-Mark-N@2x.png */,
+				0E200628F5BBC33F214B6E0C /* Reader-Mark-Y.png */,
+				56CB6B5012004422B3DF9F87 /* Reader-Mark-Y@2x.png */,
+				03F4E56D363446F9C8C6E735 /* Reader-Print.png */,
+				B79C4F50D56C114DF345994A /* Reader-Print@2x.png */,
+				2DD2340FDAB19BC1EC1D6CE6 /* Reader-Thumbs.png */,
+				E767AD1645A68132A064F271 /* Reader-Thumbs@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		6098511AC27926F34A791F91 /* Support Files */ = {
+		348FC0F426E179BF656226FD /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A1D083F118030D09A5D6C269 /* Pods-vfrReader.xcconfig */,
-				C01329F9D8E99B3553D5A284 /* Pods-vfrReader-Private.xcconfig */,
-				BBB629FEC6570807DF8638A8 /* Pods-vfrReader-dummy.m */,
-				8BD453B0BD15549B11170A18 /* Pods-vfrReader-prefix.pch */,
+				58068F47805F6D7649409E86 /* CoreGraphics.framework */,
+				FF18247A4B96F3D602BD1889 /* Foundation.framework */,
+				6DBB452104FE21531AD00712 /* ImageIO.framework */,
+				BD4BAB097CCDA8B73562F1E4 /* MessageUI.framework */,
+				3B2DE0A0730DFF88763E4BE8 /* QuartzCore.framework */,
+				2AAD5EF0D1FAFBF1EA98CCBF /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6999198AB4D51C0D1A01C957 /* vfrReader */ = {
+			isa = PBXGroup;
+			children = (
+				3675D4233CA63756AAF0AE7D /* CGPDFDocument.h */,
+				0B5B040FAA30009B4F112625 /* CGPDFDocument.m */,
+				06D82F7C46454A3D6A2B2DD3 /* ReaderConstants.h */,
+				4A418DD3B61A35F0F52720DD /* ReaderConstants.m */,
+				A32AAB1ED8712CB8118FC742 /* ReaderContentPage.h */,
+				73E784B451982CFB2272DA2E /* ReaderContentPage.m */,
+				1954AF820672BE762F5541D1 /* ReaderContentTile.h */,
+				F1EA4CA730176551ACFA9E59 /* ReaderContentTile.m */,
+				30D8DAE9B48F859922971AD5 /* ReaderContentView.h */,
+				415D72705FB96D39B096DBA0 /* ReaderContentView.m */,
+				BAA512EAF7CD2D629DB9138F /* ReaderDocument.h */,
+				F1038BCE808C5F716B89CDBF /* ReaderDocument.m */,
+				4F071130623254560D714BCC /* ReaderDocumentOutline.h */,
+				D4369B3065BC0E79BC2224A6 /* ReaderDocumentOutline.m */,
+				2A2C67850E4B5D67CDABDF6F /* ReaderMainPagebar.h */,
+				F3E24A72E6F4441F18D5198D /* ReaderMainPagebar.m */,
+				9F4C2590C63EBE415554FF04 /* ReaderMainToolbar.h */,
+				FEA10B56B15F98FFFC8A6B7E /* ReaderMainToolbar.m */,
+				020F1CD4FB88E779FE563F1A /* ReaderThumbCache.h */,
+				915F5B0B12303C2AA452EAF6 /* ReaderThumbCache.m */,
+				A35847969313C8AA63E81B97 /* ReaderThumbFetch.h */,
+				FAB453FA5160D1BCA7083F98 /* ReaderThumbFetch.m */,
+				CC9CC5A011FF44897C6A57F7 /* ReaderThumbQueue.h */,
+				8AEFA9BEDEB65A2904EF8E08 /* ReaderThumbQueue.m */,
+				F0590F71B87559381BA819F0 /* ReaderThumbRender.h */,
+				F600CA0AB828B633C8F9FD87 /* ReaderThumbRender.m */,
+				279751CB9D599DD320E44BEA /* ReaderThumbRequest.h */,
+				65B35A72D6C7F4E83322014C /* ReaderThumbRequest.m */,
+				9307F56F0A1C466BB35ADE3C /* ReaderThumbView.h */,
+				04A532D4235C5E80FB135BF8 /* ReaderThumbView.m */,
+				8032E3F34A9CE2E6A5A2C8F9 /* ReaderThumbsView.h */,
+				B283849AA97E6B05446F2066 /* ReaderThumbsView.m */,
+				BD78EBDE3480F3A1DAEEB3F4 /* ReaderViewController.h */,
+				78550212139C229C21A1D5B6 /* ReaderViewController.m */,
+				7EDBEC88E718EAF313B6A2CC /* ThumbsMainToolbar.h */,
+				DD8DC73D02BBA5F8086E29FD /* ThumbsMainToolbar.m */,
+				73E31929CBDC011D9EA2B4B8 /* ThumbsViewController.h */,
+				9CA28528A8CAABB44FB6C5CB /* ThumbsViewController.m */,
+				D9729F794E2AD7CA3F215D14 /* UIXToolbarView.h */,
+				915AE5FA3417CCD83C459B13 /* UIXToolbarView.m */,
+				214880BC44C2E9DC0FEB6E16 /* Resources */,
+				74D19508657C851A2AFEB0C6 /* Support Files */,
+			);
+			path = vfrReader;
+			sourceTree = "<group>";
+		};
+		74D19508657C851A2AFEB0C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F51425976C1834BF1A938AD2 /* Pods-vfrReader.xcconfig */,
+				D4A14D5D955A7A57DABD04EA /* Pods-vfrReader-Private.xcconfig */,
+				C57D3BDAF992AE6679DAA5ED /* Pods-vfrReader-dummy.m */,
+				BE1284853B7BA8F4593307AC /* Pods-vfrReader-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-vfrReader";
 			sourceTree = "<group>";
 		};
-		69E5E861CC39AD6B48793610 = {
+		7C124AC0E88FEB4BA49FC36B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F029F638D4B6254D77D49158 /* Podfile */,
-				DE9658239BC04DF772073293 /* Frameworks */,
-				736EAB39C286A17F0AA02766 /* Pods */,
-				C5211FD2BEE52FA461E00D79 /* Products */,
-				1D55FA5F3C849F7683C1C6CD /* Targets Support Files */,
+				B4260B1EFBE9213836F78765 /* Pods */,
 			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		736EAB39C286A17F0AA02766 /* Pods */ = {
+		B4260B1EFBE9213836F78765 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B9CF4E93E57509C86C646D7E /* vfrReader */,
+				AD9DE8462B70F1B889116DCE /* Pods-acknowledgements.markdown */,
+				DD64A2DC48BF7AE5318F12B1 /* Pods-acknowledgements.plist */,
+				2DE44B00BFFC29E7858913BB /* Pods-dummy.m */,
+				59CA53642E5E9995992C04F9 /* Pods-environment.h */,
+				AD301913A146391ABFBDAFB3 /* Pods-resources.sh */,
+				C6538E7FC835FD2DD66DAB1F /* Pods.debug.xcconfig */,
+				82BA4F2E1B9A97BE9E94A769 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		AC33C384F5C493820EC22989 /* iOS */ = {
+		B7FE002FCFEAAB828E527547 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB612B54FBB7A1FEE57236C9 /* CoreGraphics.framework */,
-				022CC83BD7E17035A87BF645 /* Foundation.framework */,
-				27A41E8A9212303FAF241076 /* ImageIO.framework */,
-				2594271C3860AB09E2B09FFB /* MessageUI.framework */,
-				97F694F4605D5B947A400F15 /* QuartzCore.framework */,
-				9830ACD187025560156CC43C /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		B9CF4E93E57509C86C646D7E /* vfrReader */ = {
-			isa = PBXGroup;
-			children = (
-				A0BA7D21932B87AB1D207E1D /* CGPDFDocument.h */,
-				8F38D6D05F24DBBC7567C668 /* CGPDFDocument.m */,
-				8AE2824AC539F939C3252321 /* ReaderConstants.h */,
-				5349E8A6F73D0273EE9C2476 /* ReaderConstants.m */,
-				2B700CE23FF71F95AA13081E /* ReaderContentPage.h */,
-				2FC8E2A792D524E94C20B2CC /* ReaderContentPage.m */,
-				10FBD762D78A3BFB7D475CC5 /* ReaderContentTile.h */,
-				8EE5CD48CADADA3164FBEB36 /* ReaderContentTile.m */,
-				CE7C49D6AD091299D3A05BE3 /* ReaderContentView.h */,
-				113B1169D20EAF5F009B5265 /* ReaderContentView.m */,
-				13B325C183ECE09A6D99C573 /* ReaderDocument.h */,
-				C1EBA94E099159E76F363C7D /* ReaderDocument.m */,
-				792AAE7AE6DD5CF9418AE6CE /* ReaderDocumentOutline.h */,
-				045F4D7D800663CAD3209A99 /* ReaderDocumentOutline.m */,
-				F97A34A9417B2398E0CF06B2 /* ReaderMainPagebar.h */,
-				F0D3C4DD8C6C2B1B75D1360C /* ReaderMainPagebar.m */,
-				504338DC84429F6D04CBC9B3 /* ReaderMainToolbar.h */,
-				CD10707AD492E6B5F90FC77C /* ReaderMainToolbar.m */,
-				78C5EFDB2F8B0E29EB6B4E40 /* ReaderThumbCache.h */,
-				CC6C727B148FC997E2E715E4 /* ReaderThumbCache.m */,
-				59E95DE211140D3E4C280559 /* ReaderThumbFetch.h */,
-				84F3825E44D30AF076B81AC7 /* ReaderThumbFetch.m */,
-				9B82A681BA4006A67A708067 /* ReaderThumbQueue.h */,
-				CA7BC11A14CF3ABAB1A8BA64 /* ReaderThumbQueue.m */,
-				95BEA4452BA60D225B68348F /* ReaderThumbRender.h */,
-				9CDF1D32E906F5045F9D7963 /* ReaderThumbRender.m */,
-				A5A212E75819FF62459B97FC /* ReaderThumbRequest.h */,
-				712B0542586B33A5C7C7B659 /* ReaderThumbRequest.m */,
-				DCE019232E2044BA2D66A64C /* ReaderThumbView.h */,
-				824552DDB2302CEE7D167A0F /* ReaderThumbView.m */,
-				8D284866B0FBE83F59EFFFD1 /* ReaderThumbsView.h */,
-				9140D420BD4A5B5BCB134D39 /* ReaderThumbsView.m */,
-				6006CD31CF9998856984523A /* ReaderViewController.h */,
-				7A10407E54B830B2006DBC0F /* ReaderViewController.m */,
-				A578C53134BB1BDEF855DFFE /* ThumbsMainToolbar.h */,
-				F0CEB91E81B7267DD33F391E /* ThumbsMainToolbar.m */,
-				01F4EB0288891F0076BD95D7 /* ThumbsViewController.h */,
-				87BA6AA7BB48730A3F0C1143 /* ThumbsViewController.m */,
-				CD8BFDCC22F613328219A4E1 /* UIXToolbarView.h */,
-				2725CB85F647786C44503DB1 /* UIXToolbarView.m */,
-				5CE28BDFAACB4D8EAE817601 /* Resources */,
-				6098511AC27926F34A791F91 /* Support Files */,
-			);
-			path = vfrReader;
-			sourceTree = "<group>";
-		};
-		C5211FD2BEE52FA461E00D79 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				78168CF14375C9CB1C2D5D82 /* libPods.a */,
-				E29D088088EC584F9E520AA9 /* libPods-vfrReader.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DE9658239BC04DF772073293 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AC33C384F5C493820EC22989 /* iOS */,
+				348FC0F426E179BF656226FD /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D81EE266364ECD7BC554ACC8 = {
+			isa = PBXGroup;
+			children = (
+				94529F011341FB897C9F172C /* Podfile */,
+				B7FE002FCFEAAB828E527547 /* Frameworks */,
+				F8354241C5C83D4524F4DAA9 /* Pods */,
+				141CC7F9F9C1FB40EC6023D6 /* Products */,
+				7C124AC0E88FEB4BA49FC36B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F8354241C5C83D4524F4DAA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6999198AB4D51C0D1A01C957 /* vfrReader */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B25A2C7F19300AFD57BD58D8 /* Headers */ = {
+		2BE4598961765921C64E01C1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				066C5DA346246FF5C94CEB8D /* CGPDFDocument.h in Headers */,
-				7A57CAF68734988582E2E506 /* ReaderConstants.h in Headers */,
-				2D061427B8ABDB10E6079675 /* ReaderContentPage.h in Headers */,
-				75076700346F524A8178EF7D /* ReaderContentTile.h in Headers */,
-				7676C7973A6D870573BAA97A /* ReaderContentView.h in Headers */,
-				EC18DE9A29DD77AFF236B448 /* ReaderDocument.h in Headers */,
-				637243D29101228C4C5C2B43 /* ReaderDocumentOutline.h in Headers */,
-				5C3D8D67A716B2AE48A6B0C6 /* ReaderMainPagebar.h in Headers */,
-				CEC263B12A1095C1E3C3AB36 /* ReaderMainToolbar.h in Headers */,
-				A4568AF63975D0C09D29E41B /* ReaderThumbCache.h in Headers */,
-				88B0619B5FD68897DCDBCC04 /* ReaderThumbFetch.h in Headers */,
-				603867D0C1751D7A5BA28F27 /* ReaderThumbQueue.h in Headers */,
-				6C665E334A9C822AE831CF36 /* ReaderThumbRender.h in Headers */,
-				DFEADC32C7F9468ACA94D5C1 /* ReaderThumbRequest.h in Headers */,
-				FE788ED3889264FC4EE9C964 /* ReaderThumbView.h in Headers */,
-				82B9B1930AB4265D338285AF /* ReaderThumbsView.h in Headers */,
-				1E7EE8C05629E9577BA51BF7 /* ReaderViewController.h in Headers */,
-				D6AAD1F0B1C51127C45748BC /* ThumbsMainToolbar.h in Headers */,
-				319CAAA0D5F74019967BFBEE /* ThumbsViewController.h in Headers */,
-				4DAB8B0266F63F6AF7CCD9F3 /* UIXToolbarView.h in Headers */,
+				3B8FE195A5F1321C5029A040 /* CGPDFDocument.h in Headers */,
+				69AEECF89E28C5ADA31580C5 /* ReaderConstants.h in Headers */,
+				BF1609EECA7793432D9B6B4F /* ReaderContentPage.h in Headers */,
+				EC00016735E7D8EAC700D4BB /* ReaderContentTile.h in Headers */,
+				EBAE1A347736AB20492004C9 /* ReaderContentView.h in Headers */,
+				8D3CE7CBBFCCDEAFCCE64DDA /* ReaderDocument.h in Headers */,
+				1F22F2B046326EE7295A1AAF /* ReaderDocumentOutline.h in Headers */,
+				50650178793CDBE828BB6909 /* ReaderMainPagebar.h in Headers */,
+				41A37FE2DC547803D7AB9373 /* ReaderMainToolbar.h in Headers */,
+				382C631EF1D2ADEE3D21D83D /* ReaderThumbCache.h in Headers */,
+				22048CB3458DA36F7FFEA423 /* ReaderThumbFetch.h in Headers */,
+				3F413E9978CF21D9AF2DAE7E /* ReaderThumbQueue.h in Headers */,
+				3E984E05FA523F695AAE972D /* ReaderThumbRender.h in Headers */,
+				5D2B45AF1CA3B69F9130847C /* ReaderThumbRequest.h in Headers */,
+				8777DA12C060580AFA385E0C /* ReaderThumbView.h in Headers */,
+				B288A5E3802E6AB37176D662 /* ReaderThumbsView.h in Headers */,
+				D03103FC904436136B86B30F /* ReaderViewController.h in Headers */,
+				E4BA129A70C86E0CD646ED46 /* ThumbsMainToolbar.h in Headers */,
+				4A198D7F27214424D037367F /* ThumbsViewController.h in Headers */,
+				557AE83017DEB2F70855B373 /* UIXToolbarView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4F591A31FB9D76E381965E8A /* Pods-vfrReader */ = {
+		3C67A65808E6AD0941A2DCC7 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FCB0C90FF24E647C41419D9 /* Build configuration list for PBXNativeTarget "Pods-vfrReader" */;
+			buildConfigurationList = 3184EBB15DBDDE3C47C9B62D /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				A6B9552B2809FD7C909F779B /* Sources */,
-				A2FBF9FC4CDED9D1D6133A81 /* Frameworks */,
-				B25A2C7F19300AFD57BD58D8 /* Headers */,
+				0091AACDF7642B8AF5225620 /* Sources */,
+				BFE65BD3BD91280BF724939C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AB5A14CCA84C82B826EDF42 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = E4DC8557A40779125DA6885A /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DE0E9A7647BA75C70A89B458 /* Pods-vfrReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 248D0FD109F88CFF92F4D0B1 /* Build configuration list for PBXNativeTarget "Pods-vfrReader" */;
+			buildPhases = (
+				6D0ECBD964AB4F6B2C1D2EE2 /* Sources */,
+				49957BB5C5844E0F30BC863E /* Frameworks */,
+				2BE4598961765921C64E01C1 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -371,154 +388,87 @@
 			);
 			name = "Pods-vfrReader";
 			productName = "Pods-vfrReader";
-			productReference = E29D088088EC584F9E520AA9 /* libPods-vfrReader.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		73F50AF6937657CF09A4CB23 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4B4205D1315175FF19F7C78D /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				FED1D7D109732B2273AC5ADF /* Sources */,
-				F0D50AAD2BC4BBB32C277298 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				34EF681F62E1423B37A9D1E1 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 78168CF14375C9CB1C2D5D82 /* libPods.a */;
+			productReference = 28783EF95739C5A8738E09E7 /* libPods-vfrReader.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F4581CA119B72CDEFA98A81A /* Project object */ = {
+		232F7CCFB9B8293903A68E47 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 39064B9000A61B5729F36A39 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 825AA281F07CFEAAD9F47F33 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 69E5E861CC39AD6B48793610;
-			productRefGroup = C5211FD2BEE52FA461E00D79 /* Products */;
+			mainGroup = D81EE266364ECD7BC554ACC8;
+			productRefGroup = 141CC7F9F9C1FB40EC6023D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				73F50AF6937657CF09A4CB23 /* Pods */,
-				4F591A31FB9D76E381965E8A /* Pods-vfrReader */,
+				3C67A65808E6AD0941A2DCC7 /* Pods */,
+				DE0E9A7647BA75C70A89B458 /* Pods-vfrReader */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A6B9552B2809FD7C909F779B /* Sources */ = {
+		0091AACDF7642B8AF5225620 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0700E35C61D7596CE220D5EA /* CGPDFDocument.m in Sources */,
-				565A43CCE0CCA5B7B5308FF2 /* Pods-vfrReader-dummy.m in Sources */,
-				1EF4B70ED8D2194FC6D55F96 /* ReaderConstants.m in Sources */,
-				EF89DD1E493343DC349BD619 /* ReaderContentPage.m in Sources */,
-				ABF445AA601334D8A5C6058E /* ReaderContentTile.m in Sources */,
-				39076AD77E70C7FC68D93E9E /* ReaderContentView.m in Sources */,
-				591EBAB2EC469FC6600F65AD /* ReaderDocument.m in Sources */,
-				1DCC031BD664DDEF7030D55E /* ReaderDocumentOutline.m in Sources */,
-				8B4DA9478C5BFA1ECC5918E8 /* ReaderMainPagebar.m in Sources */,
-				691E8DC9865518F8EE9F9B42 /* ReaderMainToolbar.m in Sources */,
-				BC652BE5B8AB98BB002EAD74 /* ReaderThumbCache.m in Sources */,
-				3C1076AF74DBF4DDCB1F9B6E /* ReaderThumbFetch.m in Sources */,
-				49FDC594F64369C913A95B2C /* ReaderThumbQueue.m in Sources */,
-				C82BEC487B0FCC7296235527 /* ReaderThumbRender.m in Sources */,
-				8B3C226DDAE88B29E79EF3DC /* ReaderThumbRequest.m in Sources */,
-				38A4593B5001DDD03DC94CD5 /* ReaderThumbView.m in Sources */,
-				625600053D924D71C6A5CB91 /* ReaderThumbsView.m in Sources */,
-				3355FF269983365EA2E80414 /* ReaderViewController.m in Sources */,
-				BA1F5C03490A8A2233A4CE97 /* ThumbsMainToolbar.m in Sources */,
-				BC03C672C5966A49DFA995DC /* ThumbsViewController.m in Sources */,
-				C162AA266968F24EAD8A2142 /* UIXToolbarView.m in Sources */,
+				B4A9C0C58DB6AF2C9C4F8702 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FED1D7D109732B2273AC5ADF /* Sources */ = {
+		6D0ECBD964AB4F6B2C1D2EE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A2967223DAA395AA0A2AC87 /* Pods-dummy.m in Sources */,
+				51B35C375B6009EF176EA337 /* CGPDFDocument.m in Sources */,
+				8445BE20CC88474062D409BC /* Pods-vfrReader-dummy.m in Sources */,
+				346AB13646C707EF34BFC8F9 /* ReaderConstants.m in Sources */,
+				0EC70543D5FB61FD197D16E6 /* ReaderContentPage.m in Sources */,
+				087BCDC68366BAAEA696F9F2 /* ReaderContentTile.m in Sources */,
+				EB4C9616DC491BE0B2E39B60 /* ReaderContentView.m in Sources */,
+				FADCEBB07188C8B54BD593BD /* ReaderDocument.m in Sources */,
+				2813D77DFDBC4F21F9C91871 /* ReaderDocumentOutline.m in Sources */,
+				C7276230832F073D08F37503 /* ReaderMainPagebar.m in Sources */,
+				2A7F38635BAB04C76B93F96E /* ReaderMainToolbar.m in Sources */,
+				CB111BB4C9037619C254ACBB /* ReaderThumbCache.m in Sources */,
+				38DA495DEF35DF8BEBAD457F /* ReaderThumbFetch.m in Sources */,
+				CF931BA5A1594B1167EA1712 /* ReaderThumbQueue.m in Sources */,
+				3492A7F1365976E8D125110A /* ReaderThumbRender.m in Sources */,
+				9C00B789CDC6A41C1720E32B /* ReaderThumbRequest.m in Sources */,
+				2F45DFF39E5ABF4C532DB06B /* ReaderThumbView.m in Sources */,
+				9A5B68E67D630C83961D890D /* ReaderThumbsView.m in Sources */,
+				8EAA9E772F653D7C18DD5EEC /* ReaderViewController.m in Sources */,
+				9DEE03B889967A7AE4E54FCF /* ThumbsMainToolbar.m in Sources */,
+				1E5EEC8CE3630F0001B96F4E /* ThumbsViewController.m in Sources */,
+				D7F84D8E0A38536B2FBB5369 /* UIXToolbarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		34EF681F62E1423B37A9D1E1 /* PBXTargetDependency */ = {
+		0AB5A14CCA84C82B826EDF42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-vfrReader";
-			target = 4F591A31FB9D76E381965E8A /* Pods-vfrReader */;
-			targetProxy = 448E9EB2C292DEFDA049D094 /* PBXContainerItemProxy */;
+			target = DE0E9A7647BA75C70A89B458 /* Pods-vfrReader */;
+			targetProxy = EF224B5FFA946A8A0FDEE956 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3FBA9D60AFE30948FEEBF272 /* Debug */ = {
+		18851A5CB5F30DC8E5720397 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C01329F9D8E99B3553D5A284 /* Pods-vfrReader-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-vfrReader/Pods-vfrReader-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		86EE047E6B1CC682D5CE9EA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8B693065FDCC02085578CA50 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 778D56608567F94C22934552 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 82BA4F2E1B9A97BE9E94A769 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -532,7 +482,23 @@
 			};
 			name = Release;
 		};
-		B7F93261BAD74A8C625B24C6 /* Debug */ = {
+		3B2909BC2C3ED78D1EE0D33D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6538E7FC835FD2DD66DAB1F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		623154CF7571084B0A6BB212 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -571,9 +537,43 @@
 			};
 			name = Debug;
 		};
-		DFFAE32C567B0CB330C01A06 /* Release */ = {
+		6FFA2D11CAB3988BAEC5E6A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C01329F9D8E99B3553D5A284 /* Pods-vfrReader-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8498637C9D0ED6232776779C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A14D5D955A7A57DABD04EA /* Pods-vfrReader-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-vfrReader/Pods-vfrReader-prefix.pch";
@@ -587,16 +587,16 @@
 			};
 			name = Release;
 		};
-		FA740F093E0B348F6A1D48A9 /* Debug */ = {
+		BB54E00E2F24981AF90C02E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72E3D0DF2C8BF4D4A5ABB8B5 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D4A14D5D955A7A57DABD04EA /* Pods-vfrReader-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-vfrReader/Pods-vfrReader-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -606,34 +606,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39064B9000A61B5729F36A39 /* Build configuration list for PBXProject "Pods" */ = {
+		248D0FD109F88CFF92F4D0B1 /* Build configuration list for PBXNativeTarget "Pods-vfrReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7F93261BAD74A8C625B24C6 /* Debug */,
-				86EE047E6B1CC682D5CE9EA6 /* Release */,
+				BB54E00E2F24981AF90C02E3 /* Debug */,
+				8498637C9D0ED6232776779C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B4205D1315175FF19F7C78D /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		3184EBB15DBDDE3C47C9B62D /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA740F093E0B348F6A1D48A9 /* Debug */,
-				8B693065FDCC02085578CA50 /* Release */,
+				3B2909BC2C3ED78D1EE0D33D /* Debug */,
+				18851A5CB5F30DC8E5720397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FCB0C90FF24E647C41419D9 /* Build configuration list for PBXNativeTarget "Pods-vfrReader" */ = {
+		825AA281F07CFEAAD9F47F33 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3FBA9D60AFE30948FEEBF272 /* Debug */,
-				DFFAE32C567B0CB330C01A06 /* Release */,
+				623154CF7571084B0A6BB212 /* Debug */,
+				6FFA2D11CAB3988BAEC5E6A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F4581CA119B72CDEFA98A81A /* Project object */;
+	rootObject = 232F7CCFB9B8293903A68E47 /* Project object */;
 }
